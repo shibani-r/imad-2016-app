@@ -16,7 +16,7 @@ var articleOne={
             </p>`
     
 };
-var articletwo={
+var articleTwo={
     title:'Article two | shibani',
     heading:'Article two',
     date:'sep 10,2016',
