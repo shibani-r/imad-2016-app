@@ -44,7 +44,7 @@ var articles = {
             this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.
             </p>`
     
-};
+}
 };
 function createTemplate(data){
     var title = data.title;
