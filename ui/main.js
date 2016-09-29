@@ -3,5 +3,5 @@ var element = document.getElementById("main-text");
 element.innerHTML = "new value";
 var img = document.getElementById("pic");
 img.onclick = function (){
-    img.style.marginLeft = '100px';
+    img.style.marginLeft = "100px";
 };
