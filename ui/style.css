@@ -62,7 +62,7 @@ body {
             }
 #sidebar-right{
     background-color:#7f99e8;
-    height:900px;
+    height:1000px;
     width:250px;
     float:right;
     border:2px solid #7f99e8;
@@ -72,7 +72,7 @@ body {
 }
 #sidebar-left{
     background-color:#bee0ff;
-    height:900px;
+    height:1000px;
     width:250px;
     float:left;
     border:2px solid #bee0ff;
