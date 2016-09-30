@@ -56,8 +56,17 @@ body {
                 font-size:30px;
        font-family:cursive;
             }
-            .footer{ color:#d18000;
+.footer{ color:#d18000;
             font-family:cursive;
             }
-            
+#sidebar{
+    background-color:#7f99e8;
+    height:50px;
+    width:50px;
+    float:right;
+    border:20px solid #7f99e8;
+    border-radius:50px;
+}
+    
+}      
             
