@@ -61,10 +61,10 @@ body {
             }
 #sidebar{
     background-color:#7f99e8;
-    height:50px;
-    width:50px;
+    height:1000px;
+    width:500px;
     float:right;
-    border:20px solid #7f99e8;
+    border:2px solid #7f99e8;
     border-radius:5px;
 }
     
