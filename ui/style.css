@@ -60,12 +60,21 @@ body {
 .footer{ color:#d18000;
             font-family:cursive;
             }
-#sidebar{
+#sidebar-right{
     background-color:#7f99e8;
     height:900px;
     width:250px;
     float:right;
     border:2px solid #7f99e8;
+    border-radius:5px;
+    margin:auto;
+}
+#sidebar-left{
+    background-color:#bee0ff;
+    height:900px;
+    width:250px;
+    float:left;
+    border:2px solid #bee0ff;
     border-radius:5px;
     margin:auto;
 }
