@@ -29,8 +29,10 @@ body {
     padding-left: 20px;
     padding-right: 20px;
             }
-            .sim{
+.sim{
                 float:right;
+            }
+            #p1{height:200px;
             }
 #items{
                 color:#f8cb09;
