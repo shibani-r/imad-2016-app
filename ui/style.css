@@ -64,7 +64,8 @@ body {
 #namelist{ 
     text-align:left;
 }
-.panel{
+.panel{ 
+    position:fixed;
     background-color:#bee0ff;
     height:1000px;
     width:250px;
