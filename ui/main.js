@@ -63,8 +63,8 @@ var name = nameInput.value;
    
    //submit comment
 
-var submit = document.getElementById('add_btn');
-submit.onclick = function () {
+var add = document.getElementById('add_btn');
+add.onclick = function () {
     //make a request to the server and send the comment
     
      //create a request object
