@@ -20,8 +20,8 @@ body {
     height: 300px;
 }
 
- .container{
-            max-width: 800px;
+.container{
+    max-width: 800px;
     margin: 0 auto;
     color: black;
     font-family: sans-serif;
@@ -29,58 +29,61 @@ body {
     padding-left: 20px;
     padding-right: 20px;
  }
-        
-#items{
-                color:#f8cb09;
-                text-align:left;
-                font-family:cursive;
-                font-size:20px;
-            }
-#bn{margin:auto;
-        color:#f8cb09;
-        font-size:20px;    
-            }
-#go{ 
-       text-align:center;
-       color:#f8cb09;
-       font-size:50px;
-       font-family:cursive;
-            }
-#bp{
-                height:200px;
-                display:block;
-                margin:auto;
-            margin-top:-100px;
-                
-            }
-#t{ color:#d18000;
-                font-size:30px;
-       font-family:cursive;
-            }
-.footer{ color:#d18000;
-            font-family:cursive;
-            }
-#sidebar-right{
-    background-color:#7f99e8;
-    height:1000px;
-    width:250px;
-    float:right;
-    border:2px solid #7f99e8;
-    border-radius:5px;
+#peeled-banana{
+    height:200px;
+    display:block;
     margin:auto;
-    margin-top:-40px;
+    margin-top:-100px;
+ }
+#head-1{ 
+    text-align:center;
+    color:#f8cb09;
+    font-size:50px;
+    font-family:cursive;
+} 
+#head-2{ 
+    color:#d18000;
+    font-size:30px;
+    font-family:cursive;
 }
-#sidebar-left{
+#items{
+    color:#f8cb09;
+    text-align:left;
+    font-family:cursive;
+    font-size:20px;
+}
+.footer{ 
+    color:#d18000;
+    font-family:cursive;
+}
+#likes{ 
+    margin:auto;
+    color:#f8cb09;
+    font-size:20px;    
+}
+#namelist{ 
+    text-align:left;
+}
+.panel{
     background-color:#bee0ff;
     height:1000px;
     width:250px;
-    float:left;
-    border:2px solid #bee0ff;
     border-radius:5px;
     margin:auto;
     margin-top:-40px;
 }
- #namelist{ text-align:left;
- }
-     
+#r-panel{
+    background-color:#7f99e8;
+    float:right;
+    border:2px solid #7f99e8;
+}
+#l-panel{
+    background-color:#bee0ff;
+    float:left;
+    border:2px solid #bee0ff;
+}
+.panel-pic{
+    height:100px;
+    width:100px;
+}
             
