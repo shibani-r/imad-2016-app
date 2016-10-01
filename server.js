@@ -66,11 +66,11 @@ var htmlTemplate=`
               <a href="/">home</a>
              </div>
            <hr/>
-             <h3>
+             <h3 class="article-heading">
                ${heading}
              </h3>
-            <div>${date}</div>
-           <div>
+            <div class="article-date">${date}</div>
+           <div class="article-heading">
         ${content}
         </div>
    </div>
