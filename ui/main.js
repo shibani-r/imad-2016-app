@@ -80,8 +80,8 @@ add.onclick = function () {
     var comments = request.responseText;
     comments = JSON.parse(comments);
     var clist = '';
-    for(var i=0; i< comments.length; i++){
-        clist += '<li>' + comments[i] + '</li>';
+    for(var j=0; j< comments.length; j++){
+        clist += '<li>' + comments[j] + '</li>';
     }
     var ul = document.getElementById('commentlist');
     ul.innerHTML = clist;
