@@ -70,7 +70,7 @@ var htmlTemplate=`
                ${heading}
              </h3>
             <div class="article-date">${date}</div>
-           <div class="article-heading">
+           <div class="article-content">
         ${content}
         </div>
    </div>
