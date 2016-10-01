@@ -69,7 +69,9 @@ var htmlTemplate=`
              <h3 class="article-heading">
                ${heading}
              </h3>
+             <hr/>
             <div class="article-date">${date}</div>
+            <hr/>
            <div class="article-content">
         ${content}
         </div>
