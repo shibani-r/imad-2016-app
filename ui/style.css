@@ -103,7 +103,8 @@ h2{
 }
 .article-date{}
 .article-content{
-    color:#8e00ff;
+    color:#7f99e8;
+    font-weight:bold;
 }
 .article-body{
     background-color:#ffffb3;
