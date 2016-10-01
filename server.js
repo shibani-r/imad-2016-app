@@ -87,6 +87,15 @@ app.get('/counter',function(req, res){
     counter = counter+1;
     res.send(counter.toString());
 })
+var comments = [];
+app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
+    //get the comment from the request
+    var comment = req.query.comment;
+    
+    comments.push(comment);
+    //JSON: javascript object notation
+    res.send(JSON.stringify(comments));
+});
 var names = [];
 app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
     //get the name from the request
