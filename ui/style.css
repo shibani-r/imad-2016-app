@@ -64,6 +64,10 @@ body {
 #namelist{ 
     text-align:left;
 }
+#commentlist{
+    text-align:left;
+    color:#7f99e8;
+}
 .panel{ 
     background-color:#bee0ff;
     height:1000px;
