@@ -66,10 +66,11 @@ body {
 }
 #namelist{ 
     text-align:left;
+    color:#69C300;
 }
 #commentlist{
     text-align:left;
-    color:#7f99e8;
+    color:#69C300;
 }
 .panel{ 
     background-color:#bee0ff;
