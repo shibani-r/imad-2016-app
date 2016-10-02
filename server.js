@@ -75,12 +75,6 @@ var htmlTemplate=`
            <div class="article-content">
         ${content}
         </div>
-         <br/>
-                <hr/>   <h2 class="list-heading">POST YOUR COMMENTS HERE!</h2>
-                        <input type="text" id="comment" palceholder="comment"></input>
-                        <input type="submit" value="add" id="add_btn"></input>
-                        <ul id="commentlist" class="listing">
-                        </ul>
    </div>
    </body>
 </html>
