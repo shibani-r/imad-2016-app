@@ -95,13 +95,6 @@ var commentInput = document.getElementById('comment');
 var comment = commentInput.value;
     request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
     request.send(null);
-    
-    
-    //make the request
-var commentInput1 = document.getElementById('comment');
-var comment1 = commentInput1.value;
-    request.open('GET','http://shibani-r.imad.hasura-app.io/article-one/add-comment?comment=' + comment1, true);
-    request.send(null);
 
 };
 
