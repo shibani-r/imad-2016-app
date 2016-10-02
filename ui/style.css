@@ -64,13 +64,10 @@ body {
 .list-heading{
     color:#7f99e8;
 }
-#namelist{ 
+.listing{
     text-align:left;
     color:#69C300;
-}
-#commentlist{
-    text-align:left;
-    color:#69C300;
+    font-size:20px;
 }
 .panel{ 
     background-color:#bee0ff;
