@@ -32,10 +32,10 @@ body {
  }
  #top{
      background-color:#f0802b;
-     height:50px;
+     height:100px;
      width:500px;
      color:#013364;
-     font-size:40px;
+     font-size:20px;
      border-radius:5px;
      font-weight:bold;
  }
