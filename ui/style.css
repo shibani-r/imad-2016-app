@@ -38,7 +38,7 @@ body {
  }
  
  .item-bck{
-     background-color: #d7f4ff;
+     border:2px solid #ffbe4c;
      margin:auto;
      border-radius:5px;
  }
