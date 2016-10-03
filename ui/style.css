@@ -36,7 +36,9 @@ body {
 	background-color: #F38630;
 	margin: 20px 20px 60px 20px;
 	border-radius:5px;
-	clear:both;
+	clear:both; 
+	color:#013364;
+	font-size:20px;
      }
 .heading{
     color:#013364;
