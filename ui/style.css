@@ -66,8 +66,7 @@ body {
 }
 
 .panel{ 
-    background-color:#69D2E7;
-    border:2px solid #69D2E7;
+    background-image:URL("http://eskipaper.com/images/blue-pattern-background-1.jpg");
     height:1000px;
     width:250px;
     border-radius:5px;
