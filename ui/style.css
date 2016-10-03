@@ -61,7 +61,8 @@ body {
 }
 
 .panel{ 
-    background-color:#bee0ff;
+    background-color:#f0802b;
+    border:2px solid #f0802b;
     height:1000px;
     width:250px;
     border-radius:5px;
@@ -69,14 +70,10 @@ body {
     margin-top:-40px;
 }
 #r-panel{
-    background-color:#7f99e8;
     float:right;
-    border:2px solid #7f99e8;
 }
 #l-panel{
-    background-color:#bee0ff;
     float:left;
-    border:2px solid #bee0ff;
 }
 .panel-pic{
     height:200px;
