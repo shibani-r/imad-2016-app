@@ -31,7 +31,8 @@ body {
     padding-right: 20px;
  }
  #top{
-    height: 50px;
+    height: 100px;
+    width:1000px;
 	background-color: #F38630;
 	margin-bottom: 10px;
 	border-radius:5px;
