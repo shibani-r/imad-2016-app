@@ -24,7 +24,6 @@ body {
 .container{
     max-width: 800px;
     margin: 0 auto;
-    color: black;
     font-family: sans-serif;
     padding-top: 60px;
     padding-left: 20px;
@@ -41,7 +40,7 @@ body {
     font-size:20px;
  }
 .items{
-    color:#013364;
+    color:#428bca;
     text-align:left;
     font-family:sans-serif;
     font-size:20px;
