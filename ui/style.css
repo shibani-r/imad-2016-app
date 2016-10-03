@@ -32,9 +32,9 @@ body {
  }
  #top{
     height: 50px;
-    width:1500px;
+    width:1000px;
 	background-color: #F38630;
-	margin-top: -10px;
+	margin-top: -20px;
 	border-radius:5px;
 	clear:both;
      }
