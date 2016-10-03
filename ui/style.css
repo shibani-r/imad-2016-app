@@ -77,7 +77,8 @@ body {
 
 #r-panel{
     float:right;
-    background-color:#F38630;
+    background-color:#F8ca09;
+    border:2px solid #f8ca09;
 }
 
 #l-panel{
