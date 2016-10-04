@@ -82,7 +82,7 @@ var htmlTemplate=`
                         </ul>
    </div>
    </body>
-   <script type="text/javascript" src="/ui/article.js" ></script>
+   <script type="text/javascript" src="/ui/main.js" ></script>
 </html>
 `;
 return htmlTemplate;
@@ -90,14 +90,23 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
+var names = [];
+app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
+    //get the name from the request
+    var name = req.query.name;
+    
+    names.push(name);
+    //JSON: javascript object notation
+    res.send(JSON.stringify(names));
+});
+
 var counter = 0;
 app.get('/counter',function(req, res){
     counter = counter+1;
     res.send(counter.toString());
 })
-app.get('/ui/article.css',function(req,res){
-     res.sendFile(path.join(__dirname,'ui','article.css'));
-  });
+
 var comments = [];
 app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
     //get the comment from the request
@@ -110,19 +119,6 @@ app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-app.get('/ui/article.js',function(req,res){
-     res.sendFile(path.join(__dirname,'ui','article.js'));
-  });
-var names = [];
-app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
-    //get the name from the request
-    var name = req.query.name;
-    
-    names.push(name);
-    //JSON: javascript object notation
-    res.send(JSON.stringify(names));
-});
-
 
 app.get('/:articleName', function (req, res){
     var articleName = req.params.articleName;
