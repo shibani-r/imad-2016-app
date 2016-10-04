@@ -77,7 +77,6 @@ body {
     border-radius:5px;
     margin:auto;
     margin-top:-40px;
-    background-color:transparent;
 }
 
 #r-panel{
@@ -94,6 +93,8 @@ body {
     margin:20px 20px 20px 20px;
     border-radius:100px;
     
+}
+.panel-pic:before{ opacity:0.5;
 }
 
 h2{ 
