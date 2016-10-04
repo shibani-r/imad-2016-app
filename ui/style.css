@@ -88,11 +88,14 @@ body {
     float:left;
 }
 
-.panel-pic:hover{
+.panel-pic{
     height:200px;
     width:200px;
     margin:20px 20px 20px 20px;
     border-radius:100px;
+    
+}
+.panel-pic:hover{
     opacity:1;
 }
 
