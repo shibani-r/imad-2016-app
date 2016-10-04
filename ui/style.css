@@ -93,12 +93,14 @@ body {
     width:200px;
     margin:20px 20px 20px 20px;
     border-radius:100px;
+    opacity:1;
 }
 
 h2{ 
     text-align:center;
     color:#81c2fd;
     font-family:sans-serif;
+    opacity:1;
 }
 
 .article-heading{
