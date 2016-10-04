@@ -81,8 +81,8 @@ var htmlTemplate=`
                         <ul id="commentlist" class="listing">
                         </ul>
    </div>
-   </body>
    <script type="text/javascript" src="/ui/main.js" ></script>
+   </body>
 </html>
 `;
 return htmlTemplate;
