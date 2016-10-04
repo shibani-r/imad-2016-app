@@ -75,13 +75,15 @@ var htmlTemplate=`
            <div class="article-content">
         ${content}
         </div>
-        <hr/>   <h2 class="list-heading">POST YOUR COMMENTS HERE!</h2>
-                  <br/>
+        <hr/>  
+            <br/>
+                <h2 class="list-heading">POST YOUR COMMENTS HERE!</h2>
+            <br/>
                         <input type="text" id="comment" palceholder="comment"></input>
                         <input type="submit" value="add" id="add_btn"></input>
                         <ul id="commentlist" class="listing">
                         </ul>
-   </div>
+        </div>
    <script type="text/javascript" src="/ui/main.js" ></script>
    </body>
 </html>
