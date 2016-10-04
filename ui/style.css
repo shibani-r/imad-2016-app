@@ -76,9 +76,11 @@ body {
 }
 
 .panel-pic{
-   
+    height:200px;
+    width:200px;
+    margin:20px 20px 20px 20px;
     border-radius:100px;
-    display:inline;
+    display:inline-block;
 }
 
 h2{ 
