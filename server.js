@@ -59,7 +59,7 @@ var htmlTemplate=`
         </title>
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
-    <body class="article-body">
+    <body>
         <div class="container">
           
              <div>
