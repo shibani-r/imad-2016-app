@@ -87,6 +87,7 @@ h2{
     text-align:center;
     color:#ffcc5c;
     font-family:sans-serif;
+    display:inline-block;
 }
 a{
     font-size:30px;
