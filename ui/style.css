@@ -82,6 +82,7 @@ body {
     width:200px;
     margin:20px 20px 20px 20px;
     border-radius:100px;
+    display:block;
 }
 
 h2{ 
