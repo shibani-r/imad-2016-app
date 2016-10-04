@@ -97,6 +97,10 @@ h2{
     color:#ffcc5c;
     font-family:sans-serif;
 }
+a{
+    font:none;
+    font-size:20px;
+}
 
 .article-heading{
     color:#f0802b;
