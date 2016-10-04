@@ -43,7 +43,6 @@ body {
  
  .item-bck{
      background-color:rgba(255,190,76,0.25);
-     border:2px solid rgba(255,190,76,0.25);
      margin:auto;
      border-radius:5px;
  }
