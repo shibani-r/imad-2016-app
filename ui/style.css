@@ -80,6 +80,9 @@ body {
     opacity:0.5;
 }
 .inside-panel{
+    position: relative;
+    top: -295px;
+    z-index: 2;
     opacity:1;
 }
 #r-panel{
