@@ -104,11 +104,12 @@ h2{
 }
 
 .article-date{
-    color:#587a04;
+    color:#64b89a;
+    font-weight:bold;
 }
 
 .article-content{
-    color:#64b89a;
+    color:#ffcc5c;
     font-weight:bold;
 }
 
