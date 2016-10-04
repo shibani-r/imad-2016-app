@@ -96,5 +96,7 @@ var comment = commentInput.value;
     request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
     request.send(null);
 
+ request.open('GET','http://shibani-r.imad.hasura-app.io/article-one/add-comment?comment=' + comment, true);
+    request.send(null);
 };
 
