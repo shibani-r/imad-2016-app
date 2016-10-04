@@ -97,6 +97,9 @@ app.get('/counter',function(req, res){
     res.send(counter.toString());
 });
 
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 var comments = [];
 app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
     //get the comment from the request
@@ -124,10 +127,6 @@ app.get('/:articleName', function (req, res){
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
