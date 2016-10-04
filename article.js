@@ -10,7 +10,8 @@ app.use(morgan('combined'));
 var add = document.getElementById('add_btn');
 add.onclick = function () {
     //make a request to the server and send the comment
-    
+    var commentInput = document.getElementById('comment');
+    var comment = commentInput.value;
      //create a request object
     var request = new XMLHttpRequest();
     
@@ -35,15 +36,11 @@ add.onclick = function () {
 };
 
 //make the request
-var commentInput = document.getElementById('comment');
-var comment = commentInput.value;
+
     request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
     request.send(null);
 
 };
 
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
-});
+
 
