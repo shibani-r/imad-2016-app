@@ -95,7 +95,7 @@ add.onclick = function () {
 //make the request
 var commentInput = document.getElementById('comment');
 var comment = commentInput.value;
-    request.open('GET','https://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
+    request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
     request.send(null);
 
 };
