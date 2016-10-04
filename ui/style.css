@@ -81,7 +81,6 @@ body {
 }
 .inside-panel{
     position: relative;
-    top: -295px;
     z-index: 2;
     opacity:1;
 }
