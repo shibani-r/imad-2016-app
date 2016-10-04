@@ -41,7 +41,7 @@ body {
  }
  
  .item-bck{
-    
+     background-color:rgba(0,119,119,0.25);
      margin:auto;
      border-radius:5px;
  }
