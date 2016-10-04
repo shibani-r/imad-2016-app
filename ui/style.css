@@ -74,13 +74,14 @@ body {
     border-radius:5px;
     margin: 0 auto;
 }
-
+.seg{
+    display:inline-block;
+}
 .panel-pic{
     height:200px;
     width:200px;
     margin:20px 20px 20px 20px;
     border-radius:100px;
-    display:inline-block;
 }
 
 h2{ 
@@ -88,7 +89,7 @@ h2{
     color:#ffcc5c;
     font-family:sans-serif;
     display:inline-block;
-    margin:20px 30px 20px 30px;
+    margin:20px 20px 20px 20px;
 }
 a{
     font-size:30px;
