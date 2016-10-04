@@ -103,13 +103,13 @@ h2{
     font-size:50px;
 }
 
-.article-date{}
+.article-date{
+    color:#587a04;
+}
 
 .article-content{
-    color:#013364;
+    color:#64b89a;
     font-weight:bold;
 }
 
-.article-body{
-    background-color:#d7f4ff;
-}      
+  
