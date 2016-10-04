@@ -42,7 +42,8 @@ body {
  }
  
  .item-bck{
-     border:2px solid #ffbe4c;
+     background-color:rgba(255,190,76,0.25);
+     border:2px solid rgba(255,190,76,0.25);
      margin:auto;
      border-radius:5px;
  }
@@ -90,14 +91,12 @@ body {
     width:200px;
     margin:20px 20px 20px 20px;
     border-radius:100px;
-    
 }
 
 h2{ 
     text-align:center;
     color:#81c2fd;
     font-family:sans-serif;
-    opacity:1;
 }
 
 .article-heading{
