@@ -75,6 +75,11 @@ var htmlTemplate=`
            <div class="article-content">
         ${content}
         </div>
+        <hr/>   <h2 class="list-heading">POST YOUR COMMENTS HERE!</h2>
+                        <input type="text" id="comment" palceholder="comment"></input>
+                        <input type="submit" value="add" id="add_btn"></input>
+                        <ul id="commentlist" class="listing">
+                        </ul>
    </div>
    </body>
 </html>
@@ -107,6 +112,9 @@ app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
     //JSON: javascript object notation
     res.send(JSON.stringify(names));
 });
+app.get('/ui/article.js',function(req,res){
+     res.sendFile(path.join(__dirname,'ui','article.js'));
+  });
 app.get('/:articleName', function (req, res){
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
