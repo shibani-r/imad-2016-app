@@ -71,7 +71,6 @@ body {
 
 .panel{ 
     background-color:rgba(156,13,49,0.5);
-    border:4px solid rgba(156,13,49,0.5);
     height:1000px;
     width:250px;
     border-radius:5px;
