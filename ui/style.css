@@ -137,7 +137,7 @@ input[type=submit] {
     margin: 0;
     opacity: 1;
     transition: 0s
-
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
