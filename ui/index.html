@@ -2,6 +2,18 @@
 <html>
 <head>
     <link href="/ui/style.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+ $('#img1').click(function() {
+  $('#aum').html('Text 1');
+});
+
+$('#img2').click(function() {
+  $('#aum').html('Text 2');
+});
+});
+</script>
 </head>
 <body>
 <div id="mySidenav" class="sidenav">
@@ -13,10 +25,14 @@
 <div id="main">
   <ul id="topnav">
   <li><a class="active" href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="/interests">My Interests</a></li>
-  <li><a href="/contact">Contact</a></li>
+  <li><a href="">About</a></li>
+  <li><a href="">My Interests</a></li>
+  <li><a href="">Contact</a></li>
 </ul>
+<img src="http://tomroof.com/tinymonster/wp-content/uploads/2013/02/pic1.png" id="img1" alt="img1"/>
+  <img src="http://tomroof.com/tinymonster/wp-content/uploads/2013/02/pic2.png" id="img2" alt="img2"/>
+  <div id="aum"></div>
+
  <img class="img-medium" src="https://s-media-cache-ak0.pinimg.com/originals/5c/94/7a/5c947a6590c6d855e31219780bd16aa2.jpg"/>
   <h2>PERSONAL</h2>
   <p>22 years old.</p>
