@@ -2,6 +2,8 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
+    background-image: URL("https://s-media-cache-ak0.pinimg.com/originals/39/da/88/39da887a5436fc849e18a8b20bbb2442.jpg");
+    color:white;
 }
 
 .sidenav {
@@ -154,9 +156,6 @@ input[type=submit]:hover{
   .sidenav a {font-size: 18px;}
 }
 
-#index-content{
-    background-image: URL("https://s-media-cache-ak0.pinimg.com/originals/39/da/88/39da887a5436fc849e18a8b20bbb2442.jpg");
-    color:white;
-    border-radius:5px;
-    padding:20px;
-}
+
+    
+    
