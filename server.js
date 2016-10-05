@@ -69,13 +69,13 @@ var htmlTemplate=`
              <h3 class="article-heading">
                ${heading}
              </h3>
-             <hr/>
+             <br/>
             <div class="article-date">${date}</div>
-            <hr/>
+            <br/>
            <div class="article-content">
         ${content}
         </div>
-        <hr/>  
+        <br/>  
             <br/>
                 <h2>post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
