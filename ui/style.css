@@ -59,7 +59,7 @@ body {
     text-decoration: none;
 }
 
-#topnav li span:hover {
+#topnav li span:hover:not(#home) {
     background-color: #111;
     cursor:pointer;
 }
@@ -68,6 +68,10 @@ body {
     background-color: #630a28;
 }
 
+#home:hover{
+    background-color: #310514;
+    cursor:pointer;
+}
 #main {
     transition: margin-left .5s;
     padding: 16px;
