@@ -77,7 +77,11 @@ body {
     padding: 16px;
     display:inline-block;
 }
- 
+ #entire{
+    transition: margin-left .5s;
+    padding: 16px;
+    display:inline-block;
+ }
  .img-medium {
     height: 200px;
     width:  200px;
