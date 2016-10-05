@@ -88,7 +88,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: auto;
+    margin: 4px 4px 4px 4px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     overflow: hidden;
