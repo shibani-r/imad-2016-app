@@ -6,7 +6,7 @@
 <script>
 $(function() {
  $('#about').click(function() {
-  $('#aum').html(`<img class="img-medium" src="https://s-media-cache-ak0.pinimg.com/originals/5c/94/7a/5c947a6590c6d855e31219780bd16aa2.jpg"/>
+  $('#index-content').html(`<img class="img-medium" src="https://s-media-cache-ak0.pinimg.com/originals/5c/94/7a/5c947a6590c6d855e31219780bd16aa2.jpg"/>
   <h2>PERSONAL</h2>
   <p>22 years old.</p>
   <p>Native of Kerala.</p>
@@ -16,11 +16,11 @@ $(function() {
 });
 
  $('#interest').click(function() {
-  $('#aum').html('Text 2');
+  $('#index-contact').html('Text 2');
 });
 
 $('#contact').click(function() {
-  $('#aum').html('Text 3');
+  $('#index-contact').html('Text 3');
 });
 });
 </script>
@@ -39,14 +39,10 @@ $('#contact').click(function() {
   <li><span id="interest">My Interests</span></li>
   <li><span id="contact">Contact</span></li>
 </ul>
-
-  <div id="aum">
-
- 
- 
-  </div>
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open contents</span>
   <br/>
+  <div id="aum">
+  </div>
   <br/>
   <div id="footer">
     <button id="counter" class="button button5"><span id="count">0</span>  LIKES</button>
