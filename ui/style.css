@@ -157,4 +157,5 @@ input[type=submit]:hover{
 #index-content{
     background-color:black;
     color:white;
+    border-radius:5px;
 }
