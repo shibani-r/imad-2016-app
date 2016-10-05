@@ -57,7 +57,7 @@ body {
     text-decoration: none;
 }
 
-#topnav li span:hover:not(.active) {
+#topnav li span:hover {
     background-color: #111;
 }
 
