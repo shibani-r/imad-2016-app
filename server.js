@@ -59,34 +59,36 @@ var htmlTemplate=`
         </title>
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
-    <body>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; goto</span>
-            <div id="mySidenav" class="sidenav">
+    <body><div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="/">Home</a>
                 <a href="/article-one">Article One</a>
                 <a href="/article-two">Article Two</a>
                 <a href="/article-three">Article Three</a>
                 </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; goto</span>
+            
         <div class="container">
           
            <hr/>
-             <h1 class="article-heading">
-               ${heading}
-             </h1>
+                <h1 class="article-heading">
+                ${heading}
+                </h1>
              <br/>
-            <div class="article-date">${date}</div>
+                <div class="article-date">${date}</div>
             <br/>
-           <div class="article-content">
-        ${content}
-        </div>
-        <br/>  
+                <div class="article-content">
+                 ${content}
+                </div>
+            <br/>  
             <br/>
                 <h2>post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
                     <input type="submit" value="add" id="add_btn"></input>
                     <ul id="commentlist">
                     </ul>
+        </div>
         </div>
    <script>
             //submit comment
