@@ -5,15 +5,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
 $(function() {
- $('#img1').click(function() {
+ $('#about').click(function() {
   $('#aum').html('Text 1');
 });
 
- $('#img3').click(function() {
+ $('#interest').click(function() {
   $('#aum').html('Text 3');
 });
 
-$('#img2').click(function() {
+$('#contact').click(function() {
   $('#aum').html('Text 2');
 });
 });
@@ -29,12 +29,12 @@ $('#img2').click(function() {
 <div id="main">
   <ul id="topnav">
   <li><span id="home">Home</span></li>
-  <li><span id="img1">About</span></li>
-  <li><span id="img2">My Interests</span></li>
-  <li><span id="img3">Contact</span></li>
+  <li><span id="about">About</span></li>
+  <li><span id="interest">My Interests</span></li>
+  <li><span id="contact">Contact</span></li>
 </ul>
 
-  <div id="aum"></div>
+  <div id="aum">
 
  <img class="img-medium" src="https://s-media-cache-ak0.pinimg.com/originals/5c/94/7a/5c947a6590c6d855e31219780bd16aa2.jpg"/>
   <h2>PERSONAL</h2>
@@ -43,6 +43,8 @@ $('#img2').click(function() {
   <h2>PROFESSIONAL</h2>
   <p>B.Tech Graduate.</p>
   <p>Currently pursuing App Development Course.</p>
+ 
+  </div>
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open contents</span>
   <br/>
   <br/>
