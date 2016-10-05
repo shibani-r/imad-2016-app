@@ -71,6 +71,7 @@ body {
 #main {
     transition: margin-left .5s;
     padding: 16px;
+    display:inline-block;
 }
  
  .img-medium {
