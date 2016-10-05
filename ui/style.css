@@ -162,7 +162,9 @@ input[type=submit]:hover{
 #footer{
     float:right;
     border:2px solid orange;
-    margin:50px 200px 50px 50px;
+    margin:50px 50px 50px 50px;
+    height:700px;
+    width:500px;
 }
     
     
