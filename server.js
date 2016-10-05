@@ -60,11 +60,11 @@ var htmlTemplate=`
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open contents</span>
-    <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/">Home</a>
-</div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open contents</span>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/">Home</a>
+                </div>
         <div class="container">
           
            <hr/>
@@ -120,20 +120,21 @@ var htmlTemplate=`
                 var comment = commentInput.value;
                 request.open('GET','/add-comment?comment=' + comment, true);
                 request.send(null);
-};
+            };
     </script>
     <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+            }
+    </script>
    </body>
 </html>
 `;
