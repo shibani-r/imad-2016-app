@@ -69,7 +69,7 @@ body {
 }
 
 #home:hover{
-    background-color: #310514;
+    background-color: #4F0820;
     cursor:pointer;
 }
 #main {
@@ -83,7 +83,11 @@ body {
     width:  200px;
     border-radius:100%;
 }
-
+.img-small {
+    height: 100px;
+    width:  100px;
+    border-radius:100%;
+}
 .button {
     background-color: white; 
     border: none;
