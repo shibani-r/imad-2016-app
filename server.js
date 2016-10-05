@@ -60,11 +60,13 @@ var htmlTemplate=`
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open contents</span>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/">Home</a>
+</div>
         <div class="container">
           
-             <div>
-              <a href="/">home</a>
-             </div>
            <hr/>
              <h1 class="article-heading">
                ${heading}
@@ -79,7 +81,7 @@ var htmlTemplate=`
             <br/>
                 <h2>post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
-                    <input type="submit" value="add" id="add_btn" style="vertical-align:middle"></input>
+                    <input type="submit" value="add" id="add_btn"></input>
                     <ul id="commentlist">
                     </ul>
         </div>
@@ -120,6 +122,18 @@ var htmlTemplate=`
                 request.send(null);
 };
     </script>
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
    </body>
 </html>
 `;
