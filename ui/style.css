@@ -169,6 +169,7 @@ input[type=submit]:hover{
 #footer{
     float:right;
     margin:20px;
+    display:inline-block;
 }
     
     
