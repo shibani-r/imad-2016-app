@@ -5,6 +5,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
 $(function() {
+    
+ $('#home').click(function() {
+  $('#actual-content').html(`<img class="img-medium" src="https://s-media-cache-ak0.pinimg.com/originals/5c/94/7a/5c947a6590c6d855e31219780bd16aa2.jpg"/>
+      <br/>
+      <strong><h3> Hello!</h3>
+      <h3> Welcome to my blog.</h3>
+      <h3> You can view the Articles of my blog.</h3>
+      <h3> You can like them, and even post your comments.</h3></strong>`
+      );
+});
  $('#about').click(function() {
   $('#actual-content').html(`<h2>SHIBANI.R</h2>
   <br/>
@@ -14,8 +24,13 @@ $(function() {
   <h3>Currently pursuing App Development Course.</h3>`);
 });
 
- $('#interest').click(function() {
-  $('#actual-content').html('Text 2');
+ $('#interests').click(function() {
+  $('#actual-content').html(`<img class="interests-pic" src="http://www.soundencore.com/wp-content/uploads/2015/03/music-headphones-770x472.jpg"/>
+            <h2>MUSIC</h2>
+            <img class="interests-pic" src="https://s-media-cache-ak0.pinimg.com/736x/a1/92/40/a192405c3c8160fd361493697dda7177.jpg"/>
+            <h2>DRAWING</h2>
+            <img class="interests-pic" src="http://epaabuse.com/wp-content/uploads/2012/03/treehugger1.jpg"/>
+                            <h2>NATURE</h2>`);
 });
 
 $('#contact').click(function() {
@@ -36,7 +51,7 @@ $('#contact').click(function() {
 <ul id="topnav">
   <li><span id="home">Home</span></li>
   <li><span id="about">About</span></li>
-  <li><span id="interest">My Interests</span></li>
+  <li><span id="interests">My Interests</span></li>
   <li><span id="contact">Contact</span></li>
 </ul>
 <div id="main">
