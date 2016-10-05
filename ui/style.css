@@ -160,9 +160,9 @@ input[type=submit]:hover{
 
 
 #footer{
-
+    float:right;
     border:2px solid orange;
-    margin-left:500px;
+    margin:auto;
 }
     
     
