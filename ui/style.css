@@ -29,6 +29,6 @@ li a:hover {
     background-color: #630a28;
 }
 #home-img{
-    width:100%;
+    background-image: URL("https://static.pexels.com/photos/27665/pexels-photo-27665-large.jpg");
     border:2px solid orange;
 }
