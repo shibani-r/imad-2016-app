@@ -47,7 +47,9 @@ li span:hover {
  #white-box{
      width:100%;
      height:250px;
-      border:2px solid orange;
+     border:2px solid orange;
+     color:grey;
+     text-align:center;
  }
  
  .seg{
