@@ -62,6 +62,7 @@ li span:hover {
  .seg{
      display:inline-block;
      margin:auto;
+     margin-left:10px;
  }
  #orange-box{
      width:100%;
