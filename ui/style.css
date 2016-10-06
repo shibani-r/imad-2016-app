@@ -40,3 +40,10 @@ li a:hover {
      height:250px;
       border:2px solid orange;
  }
+ 
+ #grey-box{
+     width:100%;
+     height:250px;
+     color:#dddddd;
+      border:2px solid orange;
+ }
