@@ -31,4 +31,5 @@ li a:hover {
 #home-img{
     background-image: URL("https://static.pexels.com/photos/27665/pexels-photo-27665-large.jpg");
     border:2px solid orange;
+    width:100%;
 }
