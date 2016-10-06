@@ -31,6 +31,5 @@ li a:hover {
 #home-img{
     background-image: URL("https://s-media-cache-ak0.pinimg.com/originals/39/da/88/39da887a5436fc849e18a8b20bbb2442.jpg");
     border:2px solid orange;
-    width:1000px;
-    height:1000px;
+    width:100px;
 }
