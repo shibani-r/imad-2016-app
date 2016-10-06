@@ -34,11 +34,12 @@ li span:hover {
 
 /*welcome content*/
  #home-img{
-     width:100%;
+     width:50%;
      height:350px;
      color:white;
      text-align:center;
       border:2px solid red;
+      float:left;
  }
 
 /*interests pic*/
