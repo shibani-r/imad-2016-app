@@ -38,12 +38,6 @@ li span:hover {
      color:white;
      text-align:center;
  }
- 
- .img-medium {
-    height: 200px;
-    width:  200px;
-    border-radius:100%;
-}
 
 .img-small {
     height: 150px;
