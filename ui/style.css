@@ -50,6 +50,9 @@ li span:hover {
       border:2px solid orange;
  }
  
+ .seg{
+     display:inline-block;
+ }
  #orange-box{
      width:100%;
      height:250px;
