@@ -3,11 +3,44 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/ui/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+            $('#about').click(function() {
+            $('#white-box').html(`<h2>SHIBANI.R</h2>
+            <br/>
+            <h3>22 years old.</h3>
+            <h3>Native of Kerala.</h3>
+            <h3>B.Tech Graduate in CSE.</h3>
+            <h3>Currently pursuing App Development Course.</h3>`);
+            });
+
+            $('#interests').click(function() {
+            $('#white-box').html(`<div class="seg">
+            <img class="img-small" src="http://www.soundencore.com/wp-content/uploads/2015/03/music-headphones-770x472.jpg"/>
+            <h2>MUSIC</h2>
+            </div>
+            <div class="seg">
+            <img class="img-small" src="https://s-media-cache-ak0.pinimg.com/736x/a1/92/40/a192405c3c8160fd361493697dda7177.jpg"/>
+            <h2>DRAWING</h2>
+            </div>
+            <div class="seg">
+            <img class="img-small" src="http://epaabuse.com/wp-content/uploads/2012/03/treehugger1.jpg"/>
+            <h2>NATURE</h2>
+            </div>`);
+            });
+
+            $('#contact').click(function() {
+            $('#white-box').html(`<h2>Sent me your reviews about my blog via gmail.</h2>
+            <h3>Mail-ID:</h3>
+            <h3>shibani.v94@gmail.com</h3>`);
+            });
+            });
+        </script>
     </head>
     <body>
 
         <ul>
-            <li><span id="home">Home</span></li>
             <li><span id="about">About</span></li>
             <li><span id="interests">My Interests</span></li>
             <li><span id="contact">Contact</span></li>
