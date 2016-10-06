@@ -1,87 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link href="/ui/style.css" rel="stylesheet" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>
-$(function() {
-    
- $('#home').click(function() {
-  $('#actual-content').html(`<img class="img-medium" src="https://s-media-cache-ak0.pinimg.com/originals/5c/94/7a/5c947a6590c6d855e31219780bd16aa2.jpg"/>
-      <br/>
-      <strong><h3> Hello!</h3>
-      <h3> Welcome to my blog.</h3>
-      <h3> You can view the Articles of my blog.</h3>
-      <h3> You can like them, and even post your comments.</h3></strong>`
-      );
-});
- $('#about').click(function() {
-  $('#actual-content').html(`<h2>SHIBANI.R</h2>
-  <br/>
-  <h3>22 years old.</h3>
-  <h3>Native of Kerala.</h3>
-  <h3>B.Tech Graduate in CSE.</h3>
-  <h3>Currently pursuing App Development Course.</h3>`);
-});
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
 
- $('#interests').click(function() {
-  $('#actual-content').html(`<img class="img-small" src="http://www.soundencore.com/wp-content/uploads/2015/03/music-headphones-770x472.jpg"/>
-            <h2>MUSIC</h2>
-            <img class="img-small" src="https://s-media-cache-ak0.pinimg.com/736x/a1/92/40/a192405c3c8160fd361493697dda7177.jpg"/>
-            <h2>DRAWING</h2>
-            <img class="img-small" src="http://epaabuse.com/wp-content/uploads/2012/03/treehugger1.jpg"/>
-                            <h2>NATURE</h2>`);
-});
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-$('#contact').click(function() {
-  $('#actual-content').html(`<h2>Sent me your reviews about my blog via gmail.</h2>
-  <h3>Mail-ID:</h3>
-  <h4>shibani.v94@gmail.com</h4>`);
-});
-});
-</script>
-</head>
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 <body>
+
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/article-one">Article One</a>
-  <a href="/article-two">Article Two</a>
-  <a href="/article-three">Article Three</a>
-  <br/>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
 
 <div id="main">
-  <ul id="topnav">
-  <li><span id="home">Home</span></li>
-  <li><span id="about">About</span></li>
-  <li><span id="interests">My Interests</span></li>
-  <li><span id="contact">Contact</span></li>
-</ul>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open contents</span>
-  <br/>
-  <br/>
-  <div id="actual-content">
-      <img class="img-medium" src="https://s-media-cache-ak0.pinimg.com/originals/5c/94/7a/5c947a6590c6d855e31219780bd16aa2.jpg"/>
-      <br/>
-      <strong><h3> Hello!</h3>
-      <h3> Welcome to my blog.</h3>
-      <h3> You can view the Articles of my blog.</h3>
-      <h3> You can like them, and even post your comments.</h3></strong>
-      </div>
-  <br/>
-  <div id="footer">
- <br/>
- <button id="counter" class="button button5"><span id="count">0</span>  LIKES</button>
- <h2>add your names here</h2>
- <form><input type="text" id="name" palceholder="name"></input></form>
- <br/>
- <input type="submit" value="submit" id="submit_btn"></input>
- <ul id="namelist">
- </ul>
- <br/>
-  </div>
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 </div>
-  
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -95,8 +79,7 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 </script>
-<script type="text/javascript" src="/ui/main.js">
-</script>
+     
 </body>
 </html>
 
