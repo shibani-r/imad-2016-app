@@ -56,14 +56,11 @@ li span:hover {
  #white-box{
      width:45%;
      height:400px;
-     color:black;
-     text-align:center;
-     background-color:white;
      border:2px solid green;
      float:right;
      padding:20px;
  }
-
+.mySlides {display:none;}
  /*interests pics gallery*/
  .seg{
      display:inline-block;
