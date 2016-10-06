@@ -24,7 +24,8 @@ li span {
 }
 
 li span:hover {
-    background-color: #191919;
+    background-color:orange;
+    color: #191919;
     cursor:pointer;
 }
 
