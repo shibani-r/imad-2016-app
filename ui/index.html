@@ -183,32 +183,6 @@ body {font-family: "Lato", sans-serif}
 <!-- End Page Content -->
 </div>
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-    
-function initialize() {
-    var mapProp = {
-    center: myCenter,
-    zoom: 12,
-    scrollwheel: false,
-    draggable: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-    
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    
-var marker = new google.maps.Marker({
-    position: myCenter,
-});
-    
-marker.setMap(map);
-}
-    
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
