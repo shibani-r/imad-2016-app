@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/ui/style.css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>
             $(function() {
@@ -57,10 +58,11 @@
         </div>
         
         <div id="white-box">
-            <br/><br/>
-            <em><p>"Clouds come floating into my life,</p>
-                <p>no longer to carry rain or usher storm,</p>
-                <p>but to add color to my sunset sky"</p></em>
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="img_la.jpg" style="width:100%">
+                <img class="mySlides" src="img_ny.jpg" style="width:100%">
+                <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+            </div>
         </div>
         
         <div id="orange-box">
@@ -84,7 +86,22 @@
                 <br/>
             </div>
         </div>
-        
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+            }
+             myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
