@@ -30,4 +30,5 @@ li a:hover {
 }
 #home-img{
     width:100%
+    border:2px solid orange;
 }
