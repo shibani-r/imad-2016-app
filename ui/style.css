@@ -41,10 +41,10 @@ li a:hover {
       border:2px solid orange;
  }
  
- #grey-box{
+ #orange-box{
      width:100%;
      height:250px;
-     background-color:#dddddd;
+     background-color:orange;
       border:2px solid orange;
  }
  
