@@ -2,5 +2,29 @@
 body{
     background-image: URL("https://s-media-cache-ak0.pinimg.com/originals/39/da/88/39da887a5436fc849e18a8b20bbb2442.jpg");
     color:white;
-     font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
+}
+/*top navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
