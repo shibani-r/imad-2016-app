@@ -1,6 +1,7 @@
 
 body{
     font-family: "Segoe UI",Arial,sans-serif;
+    background-color:black;
 }
 /*top navbar*/
 ul {
@@ -50,6 +51,7 @@ li span:hover {
      height:350px;
      color:black;
      text-align:center;
+     background-color:white;
  }
  /*interests pics gallery*/
  .seg{
