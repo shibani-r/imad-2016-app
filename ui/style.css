@@ -42,6 +42,7 @@ li span:hover {
       float:left;
       padding:20px;
       background-color:white;
+      display:inline-block;
  }
 
 /*interests pic*/
