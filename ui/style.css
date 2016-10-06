@@ -46,10 +46,11 @@ li span:hover {
 }
 
 .img-small {
-    height: 200px;
-    width:  200px;
+    height: 150px;
+    width: 150px;
     border-radius:100%;
 }
+
  #white-box{
      width:100%;
      height:250px;
