@@ -1,1 +1,27 @@
+.button {
+    background-color: white; 
+    border: none;
+    color: #f4511e;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px 4px 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color:  #f4511e;
+    color: white;
+    border: 2px solid  #f4511e;
+}
+
+.button5:hover {
+    background-color: white;
+    color:  #f4511e;
+}
 
