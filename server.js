@@ -79,8 +79,8 @@ var htmlTemplate=`
                 <h2>post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
                     <input type="submit" value="add" id="add_btn"></input>
-                    <ul id="commentlist">
-                    </ul>
+                    <div id="commentlist">
+                    </div>
         </div>
         </div>
    <script>
@@ -104,10 +104,10 @@ var htmlTemplate=`
                 comments = JSON.parse(comments);
                 var clist = '';
                 for(var j=0; j< comments.length; j++){
-                clist += '<li>' + comments[j] + '</li>';
+                clist += '<p>' + 'comment ' + j + ' : ' + comments[j] + '</p>';
                 }
-                var ul = document.getElementById('commentlist');
-                ul.innerHTML = clist;
+                var div = document.getElementById('commentlist');
+                div.innerHTML = clist;
                 }
                 }
             //not done yet
