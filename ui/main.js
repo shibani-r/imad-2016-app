@@ -83,10 +83,10 @@ add.onclick = function () {
     comments = JSON.parse(comments);
     var clist = '';
     for(var j=0; j< comments.length; j++){
-         clist += '<li>' + 'comment ' + j + ' : ' + comments[j] + '</li>';
+         clist += '<p>' + 'comment ' + j + ' : ' + comments[j] + '</p>';
     }
-    var ul = document.getElementById('commentlist');
-    ul.innerHTML = clist;
+    var div = document.getElementById('commentlist');
+    div.innerHTML = clist;
     }
     }
     //not done yet
