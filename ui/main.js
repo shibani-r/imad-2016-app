@@ -46,10 +46,10 @@ submit.onclick = function () {
     names = JSON.parse(names);
     var list = '';
     for(var i=0; i< names.length; i++){
-        list += '<li>' + names[i] + '</li>';
+        list += '<p>' + names[i] + ":" + '</p>';
     }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+    var div = document.getElementById('namelist');
+    div.innerHTML = list;
     }
     }
     //not done yet
