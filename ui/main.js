@@ -65,7 +65,7 @@ var name = nameInput.value;
   
 //submit comment
 
-var add = document.getElementById('add_btn');
+var add = document.getElementById('submit_btn');
 add.onclick = function () {
     //make a request to the server and send the comment
     
@@ -83,10 +83,10 @@ add.onclick = function () {
     comments = JSON.parse(comments);
     var clist = '';
     for(var j=0; j< comments.length; j++){
-        clist += '<li>' + comments[j] + '</li>';
+        clist += '<p>' + '"' + comments[j] + '"' + '</p>';
     }
-    var ul = document.getElementById('commentlist');
-    ul.innerHTML = clist;
+    var div = document.getElementById('commentlist');
+    div.innerHTML = clist;
     }
     }
     //not done yet
