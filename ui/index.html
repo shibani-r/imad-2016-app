@@ -139,6 +139,12 @@ body {font-family: "Lato", sans-serif}
         <input type="submit" value="submit" id="submit_btn"></input>
         <div id="list">
        </div>
+       <form id="frm1" action="form_action.asp">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<button onclick="myFunction()">Try it</button>
       </div>
     </div>
   </div>
@@ -155,8 +161,20 @@ body {font-family: "Lato", sans-serif}
   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
 </footer>
-//main.js file access
+<!--main.js file access-->
 <script type="text/javascript" src="/ui/main.js">
+</script>
+<!--form-->
+<script>
+function myFunction() {
+    var x = document.getElementById("frm1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
 </script>
 <script>
 // Automatic Slideshow - change image every 4 seconds
