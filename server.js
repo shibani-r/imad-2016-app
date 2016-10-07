@@ -59,11 +59,19 @@ var htmlTemplate=`
         </title>
     <link href="/ui/style.css" rel="stylesheet" />
     </head>
-    <body>
+    <body id="article-body">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/">Home</a>
+  <a href="/article-one">Article One</a>
+  <a href="/article-two">Article Two</a>
+  <a href="/article-three">Article Three</a>
+</div>
+
     <div id="main">
             
         <div class="container">
-          
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; goto</span>
            <hr/>
                 <h1 class="article-heading">
                 ${heading}
@@ -83,6 +91,19 @@ var htmlTemplate=`
                     </div>
         </div>
         </div>
+        <script>
+            function openNav() {
+             document.getElementById("mySidenav").style.width = "250px";
+             document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+            function closeNav() {
+             document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+             document.body.style.backgroundColor = "white";
+            }
+        </script>
    <script>
             //submit comment
 
