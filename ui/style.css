@@ -25,3 +25,17 @@
     color:  #f4511e;
 }
 
+input[type=submit] {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 6px 2px;
+    cursor: pointer;
+    font-size:20px;
+}
+
+input[type=submit]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
