@@ -72,7 +72,7 @@ input[type=submit]:hover{
     transition: background-color .5s;
     color:white;
     text-align:left;
-    background:URL("https://static.pexels.com/photos/93013/pexels-photo-93013-medium.jpeg") no-repeat center center fixed; 
+    background:URL("https://static.pexels.com/photos/93013/pexels-photo-93013-large.jpeg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
