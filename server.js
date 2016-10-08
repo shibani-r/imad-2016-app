@@ -98,7 +98,7 @@ var htmlTemplate=`
                 </div>
             <br/>  
             <br/>
-            <div id="video">
+            <div id="v">
             ${video}
             </div>
             <br/>
