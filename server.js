@@ -9,7 +9,6 @@ var articles = {
     title:'Article one | shibani',
     heading:'Article one',
     date:'Sep 5,2016',
-    video:`<iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>`,
     content: 
     `<p>
              this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article.
@@ -33,7 +32,6 @@ var articles = {
     title:'Article two | shibani',
     heading:'Article two',
     date:'Sep 10,2016',
-     video:`<iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>`,
     content: 
     `<p>
             
@@ -49,7 +47,6 @@ var articles = {
     title:'Article three | shibani',
     heading:'Article three',
     date:'Sep 15,2016',
-     video:`<iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>`,
     content: 
     `<p>
              this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.
@@ -96,11 +93,6 @@ var htmlTemplate=`
                 <div class="article-content">
                  ${content}
                 </div>
-            <br/>  
-            <br/>
-            <div id="v">
-            ${video}
-            </div>
             <br/>
             <br/>
                 <h2>post your comments here</h2>
