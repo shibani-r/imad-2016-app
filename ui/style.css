@@ -72,7 +72,11 @@ input[type=submit]:hover{
     transition: background-color .5s;
     color:white;
     text-align:left;
-    background-image:URL("http://www.dailybeautyhack.com/wp-content/uploads/2016/08/Beauty-young-girl-outdoors-enjoying-nature-805x537.jpg");
+    background:URL("http://www.dailybeautyhack.com/wp-content/uploads/2016/08/Beauty-young-girl-outdoors-enjoying-nature-805x537.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .sidenav {
