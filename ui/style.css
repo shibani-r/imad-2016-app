@@ -70,6 +70,8 @@ input[type=submit]:hover{
 #article-body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
+    color:white;
+    background-image:URL("http://wallpapercave.com/wp/EWHbfcC.jpg");
 }
 
 .sidenav {
