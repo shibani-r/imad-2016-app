@@ -9,7 +9,7 @@ var articles = {
     title:'Article one | shibani',
     heading:'Article one',
     date:'Sep 5,2016',
-    video:`<iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>`
+    video:`<iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>`,
     content: 
     `<p>
              this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article.
