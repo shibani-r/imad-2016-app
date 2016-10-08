@@ -70,9 +70,9 @@ input[type=submit]:hover{
 #article-body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    color:black;
+    color:white;
     text-align:left;
-    background-image:URL("https://static.pexels.com/photos/54204/pexels-photo-54204-large.jpeg");
+    background-image:URL("https://static.pexels.com/photos/34090/pexels-photo-large.jpg");
 }
 
 .sidenav {
