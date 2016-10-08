@@ -33,6 +33,7 @@ var articles = {
     title:'Article two | shibani',
     heading:'Article two',
     date:'Sep 10,2016',
+     video:`<iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>`,
     content: 
     `<p>
             
@@ -48,6 +49,7 @@ var articles = {
     title:'Article three | shibani',
     heading:'Article three',
     date:'Sep 15,2016',
+     video:`<iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>`,
     content: 
     `<p>
              this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.
