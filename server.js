@@ -104,7 +104,7 @@ var htmlTemplate=`
             function openNav() {
              document.getElementById("mySidenav").style.width = "250px";
              document.getElementById("main").style.marginLeft = "250px";
-            document.main.style.opacity = 0.25;
+            document.main.style.opacity = 0.4;
             }
 
             function closeNav() {
