@@ -193,10 +193,6 @@ app.get('/:articleName', function (req, res){
     res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/ui/who do you think you are running around leaving scars ♥ (320 kbps).mp3', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'who do you think you are running around leaving scars ♥ (320 kbps).mp3'));
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
