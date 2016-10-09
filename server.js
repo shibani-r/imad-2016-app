@@ -110,7 +110,7 @@ var htmlTemplate=`
             function closeNav() {
              document.getElementById("mySidenav").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
-             document.body.style.background = URL("https://static.pexels.com/photos/54204/pexels-photo-54204.jpeg") no-repeat center center fixed; ;
+             document.body.style.background = URL("https://static.pexels.com/photos/54204/pexels-photo-54204.jpeg") no-repeat center center fixed; 
             }
         </script>
    <script>
