@@ -81,7 +81,6 @@ var htmlTemplate=`
 
     <div id="main">
             
-        <div class="container">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; goto</span>
            <hr/>
                 <h1 class="article-heading">
@@ -100,7 +99,6 @@ var htmlTemplate=`
                     <input type="submit" value="add" id="add_btn"></input>
                     <div id="commentlist">
                     </div>
-        </div>
     </div>
         <script>
             function openNav() {
