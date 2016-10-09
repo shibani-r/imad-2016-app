@@ -116,7 +116,6 @@ input[type=submit]:hover{
 #main {
     transition: margin-left .5s;
     padding: 16px;
-    opacity:1;
 }
 
 @media screen and (max-height: 450px) {
