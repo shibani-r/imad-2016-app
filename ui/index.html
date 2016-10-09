@@ -6,6 +6,20 @@
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+    
+ $('#let her go').click(function() {
+  $('#video').html(``
+      );
+});
+ $('#roar').click(function() {
+  $('#video').html(``);
+});
+
+});
+</script>
 </head>
 <body>
 <!-- Navbar -->
@@ -102,10 +116,20 @@
   </div>
   
   <!--video section-->
-<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="video">
-    <h2 class="w3-wide w3-center">ENJOY SOME MUSIC</h2>
- <iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>
-  </div>
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="video section">
+    <h2 class="w3-wide w3-center">ENJOY SOME MUSIC</h2><br/>
+    <div id="playlist">
+        <h3>PLAYLIST</h3>
+        <br/>
+         <ul>
+            <li><span id="let her go">Let Her Go</span></li>
+            <li><span id="roar">Roar</span></li>
+        </ul>
+    </div>
+    <div id="video">
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/PBZfCmlRIVs" frameborder="0" allowfullscreen></iframe>
+    </div>
+ </div>
  
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
