@@ -123,3 +123,6 @@ input[type=submit]:hover{
   .sidenav a {font-size: 18px;}
 }
 
+h3 > ul:hover{
+    cursor:pointer;
+}
