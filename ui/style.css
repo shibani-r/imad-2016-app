@@ -70,9 +70,9 @@ input[type=submit]:hover{
 #article-body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    color:white;
+    color:black;
     text-align:left;
-    background:URL("https://static.pexels.com/photos/54204/pexels-photo-54204.jpeg") no-repeat center center fixed; 
+    background:URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
