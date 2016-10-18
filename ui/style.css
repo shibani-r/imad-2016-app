@@ -63,14 +63,9 @@ input[type=submit]:hover{
     background-color:#191919;
 }
 
-#commentlist{
-    color:white;
-}
-
 #article-body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    color:black;
     text-align:left;
     background:URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
