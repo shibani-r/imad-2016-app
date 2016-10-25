@@ -120,7 +120,7 @@ add.onclick = function () {
         //take some action
         if(request.status === 200){
          //capture a list of comments and render it as a list
-    var comments1 = request.responseText;
+    var comments = request.responseText;
     comments = JSON.parse(comments);
     var clist = '';
     for(var i=0; i< comments.length; i++){
