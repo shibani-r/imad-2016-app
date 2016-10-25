@@ -26,7 +26,7 @@ var articles = {
             </p>`,
     commentbox:
     `<form><input type="text" id="comment1" palceholder="comment1"></input></form>
-                    <input type="submit" value="add1" id="add_btn1"></input>
+                    <input type="submit" value="add" id="add_btn1"></input>
                     <div id="commentlist1">
                     </div>`,
     script:
@@ -83,7 +83,7 @@ var comment1 = commentInput1.value;
             </p>`,
     commentbox:
     `<form><input type="text" id="comment2" palceholder="comment2"></input></form>
-                    <input type="submit" value="add2" id="add_btn2"></input>
+                    <input type="submit" value="add" id="add_btn2"></input>
                     <div id="commentlist2">
                     </div>`,
             script:
@@ -139,7 +139,7 @@ var comment2 = commentInput2.value;
             </p>`,
             commentbox:
     `<form><input type="text" id="comment3" palceholder="comment3"></input></form>
-                    <input type="submit" value="add3" id="add_btn3"></input>
+                    <input type="submit" value="add" id="add_btn3"></input>
                     <div id="commentlist3">
                     </div>`,
             script:
