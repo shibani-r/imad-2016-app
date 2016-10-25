@@ -129,7 +129,7 @@ add.onclick = function () {
     var comments = request.responseText;
     comments = JSON.parse(comments);
     var clist = '';
-    for(var j=1; j<= comments.length; j++){
+    for(var j=0; j< comments.length; j++){
         clist += '<p>' + 'comment ' + j + ' : ' + '"' + comments[j] + '"' + '</p>';
     }
     var div = document.getElementById('commentlist');
