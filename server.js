@@ -25,7 +25,7 @@ var articles = {
             <p> this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article.
             </p>`,
     commentbox:
-    `<form><input type="text" id="comment1" palceholder="comment"></input></form>
+    `<form><input type="text" id="comment1" palceholder="comment1"></input></form>
                     <input type="submit" value="add1" id="add_btn1"></input>
                     <div id="commentlist1">
                     </div>`,
@@ -82,7 +82,7 @@ var comment1 = commentInput1.value;
             this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. 
             </p>`,
     commentbox:
-    `<form><input type="text" id="comment2" palceholder="comment"></input></form>
+    `<form><input type="text" id="comment2" palceholder="comment2"></input></form>
                     <input type="submit" value="add2" id="add_btn2"></input>
                     <div id="commentlist2">
                     </div>`,
@@ -104,7 +104,7 @@ add2.onclick = function () {
         if(request.status === 200){
          //capture a list of comments and render it as a list
     var comments2 = request.responseText;
-    comments2 = JSON.parse(comments1);
+    comments2 = JSON.parse(comments2);
     var clist2 = '';
     for(var j=0; j< comments2.length; j++){
         clist2 += '<p>' + 'comment ' + j + ' : ' + '"' + comments2[j] + '"' + '</p>';
@@ -138,7 +138,7 @@ var comment2 = commentInput2.value;
             this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.
             </p>`,
             commentbox:
-    `<form><input type="text" id="comment3" palceholder="comment"></input></form>
+    `<form><input type="text" id="comment3" palceholder="comment3"></input></form>
                     <input type="submit" value="add3" id="add_btn3"></input>
                     <div id="commentlist3">
                     </div>`,
@@ -262,7 +262,7 @@ app.get('/counter',function(req, res){
 var comments1 = [];
 app.get('/add-comment1', function(req,res){// /add-comment1?comment=xxxx
     //get the comment from the request
-    var comment1 = req.query.commen1t;
+    var comment1 = req.query.comment1;
     
     comments1.push(comment1);
     //JSON: javascript object notation
