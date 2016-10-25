@@ -14,49 +14,7 @@ var articles = {
     `<p>
              this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article.
             
-            </p>`,
-    commentbox:
-    `<form><input type="text" id="comment1" palceholder="comment"></input></form>
-                    <input type="submit" value="add" id="add_btn1"></input>
-                    <div id="commentlist1">
-                    </div>`,
-    script:
-    `//submit comment
-
-var add1 = document.getElementById('add_btn1');
-add1.onclick = function () {
-    //make a request to the server and send the comment
-    
-     //create a request object
-    var request = new XMLHttpRequest();
-    
-    //capture the response and store it in a variable
-    request.onreadystatechange = function(){
-    // process the server response
-    if(request.readyState === XMLHttpRequest.DONE){
-        //take some action
-        if(request.status === 200){
-         //capture a list of comments and render it as a list
-    var comments1 = request.responseText;
-    comments1 = JSON.parse(comments1);
-    var clist1 = '';
-    for(var i=0; i< comments1.length; i++){
-        clist1 += '<p>' + 'comment ' + i + ' : ' + '"' + 'comments1[i]' + '"' + '</p>';
-    }
-    var div = document.getElementById('commentlist1');
-    div.innerHTML = clist1;
-    }
-    }
-    //not done yet
-};
-
-//make the request
-var commentInput1 = document.getElementById('comment1');
-var comment1 = commentInput1.value;
-    request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment1?comment=' + comment1, true);
-    request.send(null);
-
-};`
+            </p>`
 
 },
  'article-two':{
@@ -71,49 +29,7 @@ var comment1 = commentInput1.value;
             </p>
             <p> 
             this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. 
-            </p>`,
-    commentbox:
-    `<form><input type="text" id="comment2" palceholder="comment2"></input></form>
-                    <input type="submit" value="add" id="add_btn2"></input>
-                    <div id="commentlist2">
-                    </div>`,
-            script:
-    `//submit comment
-
-var add2 = document.getElementById('add_btn2');
-add2.onclick = function () {
-    //make a request to the server and send the comment
-    
-     //create a request object
-    var request = new XMLHttpRequest();
-    
-    //capture the response and store it in a variable
-    request.onreadystatechange = function(){
-    // process the server response
-    if(request.readyState === XMLHttpRequest.DONE){
-        //take some action
-        if(request.status === 200){
-         //capture a list of comments and render it as a list
-    var comments2 = request.responseText;
-    comments2 = JSON.parse(comments2);
-    var clist2 = '';
-    for(var j=0; j< comments2.length; j++){
-        clist2 += '<p>' + 'comment ' + j + ' : ' + '"' + 'comments2[j]' + '"' + '</p>';
-    }
-    var div = document.getElementById('commentlist2');
-    div.innerHTML = clist2;
-    }
-    }
-    //not done yet
-};
-
-//make the request
-var commentInput2 = document.getElementById('comment2');
-var comment2 = commentInput2.value;
-    request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment2?comment=' + comment2, true);
-    request.send(null);
-
-};`
+            </p>`
 
     
 },
@@ -127,49 +43,7 @@ var comment2 = commentInput2.value;
             </p>
             <p> 
             this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.
-            </p>`,
-            commentbox:
-    `<form><input type="text" id="comment3" palceholder="comment3"></input></form>
-                    <input type="submit" value="add" id="add_btn3"></input>
-                    <div id="commentlist3">
-                    </div>`,
-            script:
-    `//submit comment
-
-var add3 = document.getElementById('add_btn3');
-add3.onclick = function () {
-    //make a request to the server and send the comment
-    
-     //create a request object
-    var request = new XMLHttpRequest();
-    
-    //capture the response and store it in a variable
-    request.onreadystatechange = function(){
-    // process the server response
-    if(request.readyState === XMLHttpRequest.DONE){
-        //take some action
-        if(request.status === 200){
-         //capture a list of comments and render it as a list
-    var comments3 = request.responseText;
-    comments3 = JSON.parse(comments3);
-    var clist3 = '';
-    for(var k=0; k< comments3.length; k++){
-        clist3 += '<p>' + 'comment ' + k + ' : ' + '"' + 'comments3[k]' + '"' + '</p>';
-    }
-    var div = document.getElementById('commentlist3');
-    div.innerHTML = clist3;
-    }
-    }
-    //not done yet
-};
-
-//make the request
-var commentInput3 = document.getElementById('comment3');
-var comment3 = commentInput3.value;
-    request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment3?comment=' + comment3, true);
-    request.send(null);
-
-};`
+            </p>`
 
     
 }
@@ -179,8 +53,7 @@ function createTemplate(data){
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
-    var script = data.script;
-    var commentbox = data.commentbox;
+   
 var htmlTemplate=`
 <html>
     <head>
@@ -214,7 +87,10 @@ var htmlTemplate=`
             <br/>
             <br/>
                 <h2>post your comments here</h2>
-                    ${commentbox}
+                    <form><input type="text" id="comment" palceholder="comment"></input></form>
+                    <input type="submit" value="add" id="add_btn"></input>
+                    <div id="commentlist">
+                    </div>
     </div>
         <script>
             function openNav() {
@@ -228,7 +104,42 @@ var htmlTemplate=`
             }
         </script>
    <script>
-    ${script}
+    //submit comment
+
+var add = document.getElementById('add_btn');
+add.onclick = function () {
+    //make a request to the server and send the comment
+    
+     //create a request object
+    var request = new XMLHttpRequest();
+    
+    //capture the response and store it in a variable
+    request.onreadystatechange = function(){
+    // process the server response
+    if(request.readyState === XMLHttpRequest.DONE){
+        //take some action
+        if(request.status === 200){
+         //capture a list of comments and render it as a list
+    var comments1 = request.responseText;
+    comments = JSON.parse(comments);
+    var clist = '';
+    for(var i=0; i< comments.length; i++){
+        clist += '<p>' + 'comment ' + i + ' : ' + '"' + 'comments[i]' + '"' + '</p>';
+    }
+    var div = document.getElementById('commentlist');
+    div.innerHTML = clist;
+    }
+    }
+    //not done yet
+};
+
+//make the request
+var commentInput = document.getElementById('comment');
+var comment = commentInput.value;
+    request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
+    request.send(null);
+
+};
     </script>
        </body>
 </html>
@@ -250,35 +161,17 @@ app.get('/counter',function(req, res){
     res.send(counter.toString());
 });
 
-var comments1 = [];
-app.get('/add-comment1', function(req,res){// /add-comment1?comment=xxxx
+var comments = [];
+app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
     //get the comment from the request
-    var comment1 = req.query.comment1;
+    var comment = req.query.comment;
     
-    comments1.push(comment1);
+    comments.push(comment);
     //JSON: javascript object notation
-    res.send(JSON.stringify(comments1));
+    res.send(JSON.stringify(comments));
 });
 
-var comments2 = [];
-app.get('/add-comment2', function(req,res){// /add-comment2?comment=xxxx
-    //get the comment from the request
-    var comment2 = req.query.comment2;
-    
-    comments2.push(comment2);
-    //JSON: javascript object notation
-    res.send(JSON.stringify(comments2));
-});
 
-var comments3 = [];
-app.get('/add-comment3', function(req,res){// /add-comment3?comment=xxxx
-    //get the comment from the request
-    var comment3 = req.query.comment3;
-    
-    comments3.push(comment3);
-    //JSON: javascript object notation
-    res.send(JSON.stringify(comments3));
-});
                             /*if want to add namelist
                             var names = [];
                             app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
