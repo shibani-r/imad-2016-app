@@ -41,7 +41,7 @@ add1.onclick = function () {
     comments1 = JSON.parse(comments1);
     var clist1 = '';
     for(var i=0; i< comments1.length; i++){
-        clist1 += '<p>' + 'comment ' + i + ' : ' + '"' + comments1[i] + '"' + '</p>';
+        clist1 += '<p>' + 'comment ' + i + ' : ' + '"' + 'comments1[i]' + '"' + '</p>';
     }
     var div = document.getElementById('commentlist1');
     div.innerHTML = clist1;
@@ -98,7 +98,7 @@ add2.onclick = function () {
     comments2 = JSON.parse(comments2);
     var clist2 = '';
     for(var j=0; j< comments2.length; j++){
-        clist2 += '<p>' + 'comment ' + j + ' : ' + '"' + comments2[j] + '"' + '</p>';
+        clist2 += '<p>' + 'comment ' + j + ' : ' + '"' + 'comments2[j]' + '"' + '</p>';
     }
     var div = document.getElementById('commentlist2');
     div.innerHTML = clist2;
@@ -154,7 +154,7 @@ add3.onclick = function () {
     comments3 = JSON.parse(comments3);
     var clist3 = '';
     for(var k=0; k< comments3.length; k++){
-        clist3 += '<p>' + 'comment ' + k + ' : ' + '"' + comments3[k] + '"' + '</p>';
+        clist3 += '<p>' + 'comment ' + k + ' : ' + '"' + 'comments3[k]' + '"' + '</p>';
     }
     var div = document.getElementById('commentlist3');
     div.innerHTML = clist3;
@@ -279,17 +279,17 @@ app.get('/add-comment3', function(req,res){// /add-comment3?comment=xxxx
     //JSON: javascript object notation
     res.send(JSON.stringify(comments3));
 });
-
-var names = [];
-app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
-    //get the name from the request
-    var name = req.query.name;
-    
-    names.push(name);
-    //JSON: javascript object notation
-    res.send(JSON.stringify(names));
-});
-
+                            /*if want to add namelist
+                            var names = [];
+                            app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
+                                //get the name from the request
+                                var name = req.query.name;
+                                
+                                names.push(name);
+                                //JSON: javascript object notation
+                                res.send(JSON.stringify(names));
+                            });
+                            */
 app.get('/:articleName', function (req, res){
     var articleName = req.params.articleName;
     
