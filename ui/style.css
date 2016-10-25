@@ -118,7 +118,5 @@ input[type=submit]:hover{
   .sidenav a {font-size: 18px;}
 }
 
-#song-title > li:hover{
-    cursor:pointer;
-}
+
 
