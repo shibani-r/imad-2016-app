@@ -189,7 +189,7 @@ function createTemplate(data){
     var date = data.date;
     var content = data.content;
     var script = data.script;
-    var coomentbox = data.commentbox;
+    var commentbox = data.commentbox;
 var htmlTemplate=`
 <html>
     <head>
