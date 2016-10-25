@@ -49,8 +49,8 @@ add1.onclick = function () {
     var comments1 = request.responseText;
     comments1 = JSON.parse(comments1);
     var clist1 = '';
-    for(var j=0; j< comments1.length; j++){
-        clist1 += '<p>' + 'comment ' + j + ' : ' + '"' + comments1[j] + '"' + '</p>';
+    for(var i=0; i< comments1.length; i++){
+        clist1 += '<p>' + 'comment ' + i + ' : ' + '"' + comments1[i] + '"' + '</p>';
     }
     var div = document.getElementById('commentlist1');
     div.innerHTML = clist1;
@@ -162,8 +162,8 @@ add3.onclick = function () {
     var comments3 = request.responseText;
     comments3 = JSON.parse(comments3);
     var clist3 = '';
-    for(var j=0; j< comments3.length; j++){
-        clist3 += '<p>' + 'comment ' + j + ' : ' + '"' + comments3[j] + '"' + '</p>';
+    for(var k=0; k< comments3.length; k++){
+        clist3 += '<p>' + 'comment ' + k + ' : ' + '"' + comments3[k] + '"' + '</p>';
     }
     var div = document.getElementById('commentlist3');
     div.innerHTML = clist3;
