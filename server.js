@@ -25,7 +25,7 @@ var articles = {
             <p> this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article.
             </p>`,
     commentbox:
-    `<form><input type="text" id="comment1" palceholder="comment1"></input></form>
+    `<form><input type="text" id="comment1" palceholder="comment"></input></form>
                     <input type="submit" value="add" id="add_btn1"></input>
                     <div id="commentlist1">
                     </div>`,
