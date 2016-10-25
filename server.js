@@ -158,7 +158,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/test-db',function(req,res){
-    res.send('db coonection');
+    res.send('db connection');
 });
 
 var counter = 0;
