@@ -61,6 +61,7 @@ var htmlTemplate=`
             ${title}
         </title>
     <link href="/ui/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body id="article-body">
     <div id="mySidenav" class="sidenav">
