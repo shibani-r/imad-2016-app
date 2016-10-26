@@ -8,7 +8,7 @@ var config = {
     database : 'shibani-r',
     host : 'db.imad.hasura-app.io',
     port : '5432',
-    password : process.env.DB_PASSWORD
+    password : 'db-shibani-r-70402'
 };
 var app = express();
 app.use(morgan('combined'));
