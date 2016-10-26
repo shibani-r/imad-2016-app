@@ -3,7 +3,13 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg');
 
-
+var config = {
+    user : 'shibani-r',
+    database : 'shibani-r',
+    host : 'db.imad.hasura-app.io',
+    port : '5432',
+    password : process.env.DB_PASSWORD
+};
 var app = express();
 app.use(morgan('combined'));
 var articles = {
