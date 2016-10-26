@@ -66,7 +66,7 @@ var htmlTemplate=`
     <body id="article-body">
     <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/"><i class="fa fa-home w3-xxlarge"></i></a>
+  <a href="/"><i class="fa fa-home w3-xxxlarge"></i></a>
   <a href="/article-one">Article One</a>
   <a href="/article-two">Article Two</a>
   <a href="/article-three">Article Three</a>
