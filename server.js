@@ -61,7 +61,7 @@ var htmlTemplate=`
             ${title}
         </title>
     <link href="/ui/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+   
     </head>
     <body id="article-body">
     <div id="mySidenav" class="sidenav">
@@ -89,7 +89,7 @@ var htmlTemplate=`
             <br/>
                 <h2>post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
-                    <input type="submit" id="add_btn"><i class="fa fa-comment w3-large">post</i></input>
+                    <input type="submit" value="add" id="add_btn"></input>
                     <div id="commentlist">
                     </div>
     </div>
