@@ -192,17 +192,6 @@ app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
 });
 
 
-                            /*if want to add namelist
-                            var names = [];
-                            app.get('/submit-name', function(req,res){// /submit-name?name=xxxx
-                                //get the name from the request
-                                var name = req.query.name;
-                                
-                                names.push(name);
-                                //JSON: javascript object notation
-                                res.send(JSON.stringify(names));
-                            });
-                            */
 app.get('/:articleName', function (req, res){
     var articleName = req.params.articleName;
     
