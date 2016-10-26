@@ -87,7 +87,7 @@ var htmlTemplate=`
                 </div>
             <br/>
             <br/>
-                <h2><i class="fa fa-pencil"></i> post your comments here</h2>
+                <h2><i class="fa fa-pencil"></i>  post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
                     <input type="submit" value="post" id="add_btn"></input>
                     <div id="commentlist">
