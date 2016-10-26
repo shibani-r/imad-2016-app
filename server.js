@@ -74,7 +74,7 @@ var htmlTemplate=`
 
     <div id="main">
             
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-tiny"></i> goto</span>
            <hr/>
                 <h1 class="article-heading">
                 ${heading}
