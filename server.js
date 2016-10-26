@@ -89,7 +89,7 @@ var htmlTemplate=`
             <br/>
                 <h2>post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
-                    <input type="submit" value="post" id="add_btn"><i class="fa fa-comment w3-large"></i></input>
+                    <input type="submit" id="add_btn"><i class="fa fa-comment w3-large">post</i></input>
                     <div id="commentlist">
                     </div>
     </div>
