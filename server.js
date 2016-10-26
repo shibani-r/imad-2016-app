@@ -8,7 +8,7 @@ var config = {
     database : 'shibani-r',
     host : 'db.imad.hasura-app.io',
     port : '5432',
-    password : process.env.DB_PASSWORD
+    password : process.env.DB_PASSWORD,
 };
 var app = express();
 app.use(morgan('combined'));
@@ -163,7 +163,7 @@ var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     //make a select request
     //return a response with the results
-    pool.query('SELECT * FROM test',function(err,res){
+    pool.query('SELECT * FROM test',function(err,result){
     if(err)
     {
         res.status(500).send(err.toString());
