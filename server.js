@@ -88,7 +88,7 @@ var htmlTemplate=`
             <br/>
                 <h2>post your comments here</h2>
                     <form><input type="text" id="comment" palceholder="comment"></input></form>
-                    <input type="submit" value="add" id="add_btn"></input>
+                    <input type="submit" value="post" id="add_btn"></input>
                     <div id="commentlist">
                     </div>
     </div>
