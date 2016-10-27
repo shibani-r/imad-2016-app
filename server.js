@@ -198,8 +198,8 @@ app.get('/articles/:articleName', function (req, res){
     //articleName == Article one | shibani
     //articles[articleName] == {} content object for Article one | shibani
     
-    //SELECT * FROM article WHERE title = 'Article one | shibani'
-    pool.query("SELECT * FROM article WHERE title ='" + req.params.articleName + "'",function(err,result){
+    //SELECT * FROM article WHERE title = '/'; DELETE WHERE a = /'asdf'
+    pool.query("SELECT * FROM article WHERE title =$1", [req.params.articleName], function(err,result){
     if(err)
     {
         res.status(500).send(err.toString());
