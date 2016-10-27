@@ -156,8 +156,8 @@ app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
 
 
 app.get('/articles/:articleName', function (req, res){
-    //articleName == Article one | shibani
-    //articles[articleName] == {} content object for Article one | shibani
+    //articleName == article-one
+    //articles[articleName] == {} content object for article-one
     
     //SELECT * FROM article WHERE title = '/'; DELETE WHERE a = /'asdf'
     pool.query("SELECT * FROM article WHERE title =$1", [req.params.articleName], function(err,result){
