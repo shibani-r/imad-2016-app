@@ -87,7 +87,9 @@ var htmlTemplate=`
                 ${heading}
                 </h1>
              <br/>
-                <div class="article-date">${date}</div>
+                <div class="article-date">
+                ${date.toDateString()}
+                </div>
             <br/>
                 <div class="article-content">
                  ${content}
