@@ -12,49 +12,7 @@ var config = {
 };
 var app = express();
 app.use(morgan('combined'));
-var articles = {
- 'article-one':{
-    title:'Article one | shibani',
-    heading:'Article one : Music',
-    date:'Sep 5, 2016',
-    content: 
-    `<p>
-             this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article. this is the content for my first article.
-            
-            </p>`
 
-},
- 'article-two':{
-    title:'Article two | shibani',
-    heading:'Article two : Smile',
-    date:'Sep 10, 2016',
-    content: 
-    `<p>
-            
-             this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. 
-        
-            </p>
-            <p> 
-            this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. this is the content for my second article. 
-            </p>`
-
-    
-},
- 'article-three':{
-    title:'Article three | shibani',
-    heading:'Article three : Nature',
-    date:'Sep 15, 2016',
-    content: 
-    `<p>
-             this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.
-            </p>
-            <p> 
-            this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.this is the content for my third article.
-            </p>`
-
-    
-}
-};
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
