@@ -19,106 +19,104 @@ function createTemplate(data){
     var date = data.date;
     var content = data.content;
    
-    var htmlTemplate = `
-    <html>
-        <head>
-        
-            <title>
-                ${title}
-            </title>
-            <link href="/ui/style.css" rel="stylesheet" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-            
-        </head>
-        
-        <body id="article-body">
-            
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="/"><i class="fa fa-home w3-jumbo"> </i> Home</a>
-              <a href="/article-one">Article One</a>
-              <a href="/article-two">Article Two</a>
-              <a href="/article-three">Article Three</a>
-            </div>
-    
-            <div id="main">
-                
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"> </i> goto</span>
-               <hr/>
-                    <h1 class="article-heading">
-                    ${heading}
-                    </h1>
-                 <br/>
-                    <div class="article-date">
-                    ${date.toDateString()}
-                    </div>
-                <br/>
-                    <div class="article-content">
-                     ${content}
-                    </div>
-                <br/>
-                <br/>
-                    <h2><i class="fa fa-pencil"> </i>  post your comments here</h2>
-                        <form><input type="text" id="comment" palceholder="comment"></input></form>
-                        <input type="submit" value="post" id="add_btn"></input>
-                        <div id="commentlist">
-                        </div>
-            </div>
-            
-            <script>
-                function openNav() {
-                 document.getElementById("mySidenav").style.width = "250px";
-                 document.getElementById("main").style.marginLeft = "250px";
-                }
-    
-                function closeNav() {
-                 document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";
-                }
-            </script>
-            
-            <script>
-                //submit comment
-    
-                var add = document.getElementById('add_btn');
-                add.onclick = function () {
-                    //make a request to the server and send the comment
-                    
-                     //create a request object
-                    var request = new XMLHttpRequest();
-                    
-                    //capture the response and store it in a variable
-                    request.onreadystatechange = function(){
-                    // process the server response
-                    if(request.readyState === XMLHttpRequest.DONE){
-                        //take some action
-                        if(request.status === 200){
-                         //capture a list of comments and render it as a list
-                    var comments = request.responseText;
-                    comments = JSON.parse(comments);
-                    var clist = '';
-                    for(var i=0; i< comments.length; i++){
-                        clist += '<p>' + 'comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
-                    }
-                    var div = document.getElementById('commentlist');
-                    div.innerHTML = clist;
-                    }
-                    }
-                    //not done yet
-                };
-                
-                //make the request
-                var commentInput = document.getElementById('comment');
-                var comment = commentInput.value;
-                    request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
-                    request.send(null);
-                
-                };
-            </script>
-            
-        </body>
-    </html>
-    `;
+    var htmlTemplate = `<html>
+                            <head>
+                            
+                                <title>
+                                    ${title}
+                                </title>
+                                <link href="/ui/style.css" rel="stylesheet" />
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+                                
+                            </head>
+                            
+                            <body id="article-body">
+                                
+                                <div id="mySidenav" class="sidenav">
+                                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                  <a href="/"><i class="fa fa-home w3-jumbo"> </i> Home</a>
+                                  <a href="/article-one">Article One</a>
+                                  <a href="/article-two">Article Two</a>
+                                  <a href="/article-three">Article Three</a>
+                                </div>
+                        
+                                <div id="main">
+                                    
+                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"> </i> goto</span>
+                                   <hr/>
+                                        <h1 class="article-heading">
+                                        ${heading}
+                                        </h1>
+                                     <br/>
+                                        <div class="article-date">
+                                        ${date.toDateString()}
+                                        </div>
+                                    <br/>
+                                        <div class="article-content">
+                                         ${content}
+                                        </div>
+                                    <br/>
+                                    <br/>
+                                        <h2><i class="fa fa-pencil"> </i>  post your comments here</h2>
+                                            <form><input type="text" id="comment" palceholder="comment"></input></form>
+                                            <input type="submit" value="post" id="add_btn"></input>
+                                            <div id="commentlist">
+                                            </div>
+                                </div>
+                                
+                                <script>
+                                    function openNav() {
+                                     document.getElementById("mySidenav").style.width = "250px";
+                                     document.getElementById("main").style.marginLeft = "250px";
+                                    }
+                        
+                                    function closeNav() {
+                                     document.getElementById("mySidenav").style.width = "0";
+                                    document.getElementById("main").style.marginLeft= "0";
+                                    }
+                                </script>
+                                
+                                <script>
+                                    //submit comment
+                        
+                                    var add = document.getElementById('add_btn');
+                                    add.onclick = function () {
+                                        //make a request to the server and send the comment
+                                        
+                                         //create a request object
+                                        var request = new XMLHttpRequest();
+                                        
+                                        //capture the response and store it in a variable
+                                        request.onreadystatechange = function(){
+                                        // process the server response
+                                        if(request.readyState === XMLHttpRequest.DONE){
+                                            //take some action
+                                            if(request.status === 200){
+                                             //capture a list of comments and render it as a list
+                                        var comments = request.responseText;
+                                        comments = JSON.parse(comments);
+                                        var clist = '';
+                                        for(var i=0; i< comments.length; i++){
+                                            clist += '<p>' + 'comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
+                                        }
+                                        var div = document.getElementById('commentlist');
+                                        div.innerHTML = clist;
+                                        }
+                                        }
+                                        //not done yet
+                                    };
+                                    
+                                    //make the request
+                                    var commentInput = document.getElementById('comment');
+                                    var comment = commentInput.value;
+                                        request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
+                                        request.send(null);
+                                    
+                                    };
+                                </script>
+                                
+                            </body>
+                        </html>`;
     return htmlTemplate;
 }
 
