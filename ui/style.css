@@ -66,8 +66,8 @@ input[type=submit]:hover{
 #article-body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    text-align:center;
-    background:URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed; 
+    text-align: justify;
+    background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
