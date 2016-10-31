@@ -74,23 +74,6 @@ input[type=submit]:hover{
   background-size: cover;
 }
 
-#top-nav {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-#goto {
-   color: white; 
-   font-size:30px;
-}
-
-#goto:hover {
-    background-color: #111;
-    cursor : pointer;
-}
-
 .sidenav {
     height: 100%;
     width: 0;
