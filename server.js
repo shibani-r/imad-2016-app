@@ -49,6 +49,7 @@ function createTemplate(data){
                                         </h1>
                                      <br/>
                                         <div class="article-date">
+                                        <i class="fa fa-clock-o"> </i>
                                         ${date.toDateString()}
                                         </div>
                                     <br/>
