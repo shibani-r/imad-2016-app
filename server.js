@@ -41,14 +41,12 @@ function createTemplate(data){
                                 </div>
                         
                                 <div id="main">
-                                    <div id="top-nav">
-                                        <span id="goto" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
-                                    </div>
-                                   <hr/>
+                                    <span id="goto" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
+                                    <hr/>
                                         <h1 class="article-heading">
                                         ${heading}
                                         </h1>
-                                     <br/>
+                                    <br/>
                                         <div class="article-date">
                                         <i class="fa fa-clock-o"> </i>
                                         ${date.toDateString()}
