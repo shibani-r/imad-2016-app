@@ -42,7 +42,7 @@ function createTemplate(data){
                         
                                 <div id="main">
                                     
-                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"> </i> goto</span>
+                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
                                    <hr/>
                                         <h1 class="article-heading">
                                         ${heading}
@@ -58,7 +58,7 @@ function createTemplate(data){
                                         </div>
                                     <br/>
                                     <br/>
-                                        <h2><i class="fa fa-comments-o"> </i>  post your comments here</h2>
+                                        <h2><i class="fa fa-comments-o"></i> post your comments here</h2>
                                             <form><input type="text" id="comment" palceholder="comment"></input></form>
                                             <input type="submit" value="post" id="add_btn"></input>
                                             <div id="commentlist">
