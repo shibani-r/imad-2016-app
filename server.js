@@ -41,8 +41,9 @@ function createTemplate(data){
                                 </div>
                         
                                 <div id="main">
-                                    
-                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
+                                    <div id="top-nav">
+                                        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
+                                    </div>
                                    <hr/>
                                         <h1 class="article-heading">
                                         ${heading}
