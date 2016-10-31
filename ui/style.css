@@ -30,6 +30,10 @@ body {font-family: "Lato", sans-serif}
     color:  #f4511e;
 }
 
+#div1 {
+  font-size:20px;
+}
+
 input[type=text] {
     width: 50%;
     box-sizing: border-box;
