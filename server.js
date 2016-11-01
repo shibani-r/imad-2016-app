@@ -48,7 +48,7 @@ function createTemplate(data){
                                             <li><a href="#"><span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a></li>
                                         </ul>
                                     </div>
-                                        
+                                        <br>
                                         <h1 class="article-heading">
                                         ${heading}
                                         </h1>
