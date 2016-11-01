@@ -47,6 +47,16 @@ function createTemplate(data){
                 <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large">CONTACT</a></li>
             </ul>
         </div>
+        
+        
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <ul class="w3-navbar w3-left-align w3-black">
+                <li><a class="w3-padding-large" href="#about">ABOUT</a></li>
+                <li><a class="w3-padding-large" href="#contents">CONTENTS</a></li>
+                <li><a class="w3-padding-large" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
                                 <div id="mySidenav" class="sidenav">
                                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                   <a href="/"><i class="fa fa-home w3-jumbo"> </i> Home</a>
@@ -91,7 +101,18 @@ function createTemplate(data){
                                      document.getElementById("mySidenav").style.width = "0";
                                     document.getElementById("main").style.marginLeft= "0";
                                     }
-                                </script>
+                                     
+                                     // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } 
+                else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+                                
                                 
                                 <script>
                                 //submit comment
