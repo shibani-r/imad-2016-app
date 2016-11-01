@@ -34,14 +34,14 @@ function createTemplate(data){
                             <body id="article-body">
                                 
                                 <!-- Navbar -->
-        <div class="w3-top">
-            <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-                <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-                <li class="w3-hide-small"><a href="#about" class="w3-padding-large">ABOUT</a></li>
-                <li class="w3-hide-small"><a href="#contents" class="w3-padding-large">CONTENTS</a></li>
-                <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large">CONTACT</a></li>
-            </ul>
-        </div>
+                                <div class="w3-top">
+                                    <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+                                        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                                        <li class="w3-hide-small"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span></li>
+                                        <li class="w3-hide-small"><a href="#contents" class="w3-padding-large">CONTENTS</a></li>
+                                        <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large">CONTACT</a></li>
+                                    </ul>
+                                </div>
         
         
                                 <div id="mySidenav" class="sidenav">
@@ -53,8 +53,6 @@ function createTemplate(data){
                                 </div>
                         
                                 <div id="main">
-                                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
-                                    <hr/>
                                         <h1 class="article-heading">
                                         ${heading}
                                         </h1>
@@ -88,7 +86,6 @@ function createTemplate(data){
                                      document.getElementById("mySidenav").style.width = "0";
                                     document.getElementById("main").style.marginLeft= "0";
                                     }
-                                     
                                 </script>
                                 
                                 <script>
