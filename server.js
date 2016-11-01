@@ -27,6 +27,7 @@ function createTemplate(data){
                                 </title>
                                 <link href="/ui/style.css" rel="stylesheet" />
                                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+                                <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
                                 <meta name="viewport" content="width=device-width, initial-scale=1">
                             </head>
                             
@@ -41,7 +42,15 @@ function createTemplate(data){
                                 </div>
                         
                                 <div id="main">
-                                    <span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span>
+                                
+                                <div class="w3-top">
+  <ul class="w3-navbar w3-red w3-large">
+    <li><a href="#"><span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a></li>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+  </ul>
+</div>
+                                    
                                         <h1 class="article-heading">
                                         ${heading}
                                         </h1>
