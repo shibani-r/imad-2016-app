@@ -4,7 +4,8 @@ body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 
 #home {
-    color:  #f4511e;
+    background-color:  #f4511e;
+    color: white;
 }
 .button {
     background-color: white; 
