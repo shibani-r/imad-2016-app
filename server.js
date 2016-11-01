@@ -27,23 +27,11 @@ function createTemplate(data){
                                 </title>
                                 <link href="/ui/style.css" rel="stylesheet" />
                                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-                                <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
                                 <meta name="viewport" content="width=device-width, initial-scale=1">
                             </head>
                             
                             <body id="article-body">
-                                
-                                <!-- Navbar -->
-                                <div class="w3-top">
-                                    <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-                                        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-                                        <li class="w3-hide-small"><span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span></li>
-                                        <li class="w3-hide-small"><a href="#contents" class="w3-padding-large">CONTENTS</a></li>
-                                        <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large">CONTACT</a></li>
-                                    </ul>
-                                </div>
-        
-        
+    
                                 <div id="mySidenav" class="sidenav">
                                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                   <a href="/"><i class="fa fa-home w3-jumbo"> </i> Home</a>
@@ -53,6 +41,7 @@ function createTemplate(data){
                                 </div>
                         
                                 <div id="main">
+                                        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span>
                                         <h1 class="article-heading">
                                         ${heading}
                                         </h1>
