@@ -35,7 +35,7 @@ function createTemplate(data){
     
                                 <div id="mySidenav" class="sidenav">
                                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                  <a href="/"><i class="fa fa-home w3-jumbo"> </i> Home</a>
+                                  <a href="/"><i class="fa fa-home w3-large"> </i> Home</a>
                                   <a href="/articles/article-one">Article One</a>
                                   <a href="/articles/article-two">Article Two</a>
                                   <a href="/articles/article-three">Article Three</a>
