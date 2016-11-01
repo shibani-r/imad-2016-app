@@ -45,7 +45,7 @@ function createTemplate(data){
                                 
                                     <div class="w3-top">
                                         <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
-                                            <li><a href="#"><span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a></li>
+                                            <li class="w3-hide-small"><a href="#"><span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a></li>
                                         </ul>
                                 </div>
                                         <h1 class="article-heading">
