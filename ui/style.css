@@ -3,6 +3,10 @@ body {font-family: "Lato", sans-serif}
 
 .mySlides {display: none}
 
+#home {
+background-color:  #f4511e;
+    color: white;
+}
 .button {
     background-color: white; 
     border: none;
