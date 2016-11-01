@@ -75,7 +75,7 @@ input[type=submit]:hover{
 }
 
 #article-nav {
-    padding: 0px;
+    padding-left: 0px;
 }
 .sidenav {
     height: 100%;
