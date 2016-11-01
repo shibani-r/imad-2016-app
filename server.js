@@ -42,12 +42,15 @@ function createTemplate(data){
                                 </div>
                         
                                 <div id="main">
-                                <ul class="w3-navbar w3-black">
-  <li><span onclick="openNav()"><i class="fa fa-bars w3-small"></i> goto</span></li>
-  <li><a href="#">Link 1</a></li>
-  <li><a href="#">Link 2</a></li>
-  <li><a href="#">Link 3</a></li>
-</ul>
+                                <div class="w3-top">
+  <ul class="w3-navbar w3-red w3-large">
+    <li><span onclick="openNav()"><i class="fa fa-bars"></i> goto</span></li>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+  </ul>
+</div>
+  
+  
                                         
                                         <h1 class="article-heading">
                                         ${heading}
