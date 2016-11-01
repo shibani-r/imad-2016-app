@@ -41,7 +41,7 @@ function createTemplate(data){
                                 </div>
                         
                                 <div id="main">
-                                    <span style="cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i> goto</span>
+                                    <span style="cursor:pointer;font-size:25px" onclick="openNav()"><i class="fa fa-bars"></i> goto</span>
                                         <h1 class="article-heading">
                                         ${heading}
                                         </h1>
