@@ -32,6 +32,21 @@ function createTemplate(data){
                             
                             <body id="article-body">
                                 
+                                <!-- Navbar -->
+        <div class="w3-top">
+            <ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+                <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+                <li><a href="/" id="home" class="w3-hover-none w3-hover-text-grey w3-padding-large">
+                    <i class="fa fa-home w3-large"> </i> HOME
+                    </a></li>
+                <li class="w3-hide-small"><a href="#about" class="w3-padding-large">ABOUT</a></li>
+                <li class="w3-hide-small"><a href="#contents" class="w3-padding-large">CONTENTS</a></li>
+                <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large">CONTACT</a></li>
+            </ul>
+        </div>
                                 <div id="mySidenav" class="sidenav">
                                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                   <a href="/"><i class="fa fa-home w3-jumbo"> </i> Home</a>
