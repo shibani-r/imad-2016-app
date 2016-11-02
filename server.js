@@ -19,112 +19,120 @@ function createTemplate(data){
     var date = data.date;
     var content = data.content;
    
-    var htmlTemplate = `
-                        <!DOCTYPE html>             
+    var htmlTemplate = `<html>             
                             <head>
-                            
-       
+                                
                                 <title>
                                     ${title}
                                 </title>
-                                <meta name="viewport" content="width=device-width, initial-scale=1">
-                                <link href="/ui/style.css" rel="stylesheet" />
-                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-                                <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-                                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+                                    <link href="/ui/style.css" rel="stylesheet" />
+                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+                                    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+                                    
                             </head>
-                            
+                                
                             <body id="article-body">
-    
+        
                                 <div id="mySidenav" class="sidenav">
-                                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                  <a href="/"><i class="fa fa-home w3-xxlarge"> </i> Home</a>
-                                  <a href="/articles/article-one">Article One</a>
-                                  <a href="/articles/article-two">Article Two</a>
-                                  <a href="/articles/article-three">Article Three</a>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <a href="/"><i class="fa fa-home w3-xxlarge"> </i> Home</a>
+                                    <a href="/articles/article-one">Article One</a>
+                                    <a href="/articles/article-two">Article Two</a>
+                                    <a href="/articles/article-three">Article Three</a>
                                 </div>
-                        
+                            
                                 <div id="main">
-                                
-                                <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span>
-  </div>
-                          
-                                     <div class="w3-display-middle">
-    <h1 class="w3-large w3-animate-top">${heading}</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center"> <i class="fa fa-clock-o"> </i>${date.toDateString()}</p>
-  </div>
-                                            
-                                   
-                                        <div class="article-content">
-                                         ${content}
+                                    
+                                    <div class="w3-top">
+                                        <ul class="w3-navbar w3-black w3-large">
+                                            <li><a href="#"><span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a></li>
+                                        </ul>
+                                    </div>
+                                        <br/>
+                                        <br/>
+                                                
+                                    <h1 class="article-heading">
+                                        ${heading}
+                                    </h1>
+                                        <br/>
+                                        
+                                    <div class="article-date">
+                                        <i class="fa fa-clock-o"> </i>
+                                        <strong>
+                                            ${date.toDateString()}
+                                        </strong>
+                                    </div>
+                                        <br/>
+                                        
+                                    <div class="article-content">
+                                        ${content}
+                                    </div>
+                                        <br/>
+                                        <br/>
+                                        
+                                    <h2><i class="fa fa-pencil"></i> post your comments here</h2>
+                                        <form><input type="text" id="comment" palceholder="comment"></input></form>
+                                        <input type="submit" value="post" id="add_btn"></input>
+                                        <div id="commentlist">
                                         </div>
-                                    <br/>
-                                    <br/>
-                                        <h2><i class="fa fa-pencil"></i> post your comments here</h2>
-                                            <form><input type="text" id="comment" palceholder="comment"></input></form>
-                                            <input type="submit" value="post" id="add_btn"></input>
-                                            <div id="commentlist">
-                                            </div>
                                 </div>
-                                
-                                <script>
-                                    function openNav() {
-                                     document.getElementById("mySidenav").style.width = "250px";
-                                     document.getElementById("main").style.marginLeft = "250px";
-                                    }
-                        
-                                    function closeNav() {
-                                     document.getElementById("mySidenav").style.width = "0";
-                                    document.getElementById("main").style.marginLeft= "0";
-                                    }
-                                </script>
-                                
-                                <script>
-                                //submit comment
-                        
-                                    var add = document.getElementById('add_btn');
-                                    add.onclick = function () {
-                                        //make a request to the server and send the comment
+                                    
+                                    <script>
+                                        function openNav() {
+                                         document.getElementById("mySidenav").style.width = "250px";
+                                         document.getElementById("main").style.marginLeft = "250px";
+                                        }
+                            
+                                        function closeNav() {
+                                         document.getElementById("mySidenav").style.width = "0";
+                                        document.getElementById("main").style.marginLeft= "0";
+                                        }
+                                    </script>
+                                    
+                                    <script>
+                                    //submit comment
+                            
+                                        var add = document.getElementById('add_btn');
+                                        add.onclick = function () {
+                                            //make a request to the server and send the comment
+                                            
+                                             //create a request object
+                                            var request = new XMLHttpRequest();
+                                            
+                                            //capture the response and store it in a variable
+                                            request.onreadystatechange = function(){
+                                            // process the server response
+                                            if(request.readyState === XMLHttpRequest.DONE){
+                                                //take some action
+                                                if(request.status === 200){
+                                                 //capture a list of comments and render it as a list
+                                            var comments = request.responseText;
+                                            comments = JSON.parse(comments);
+                                            var clist = '';
+                                            for(var i=0; i< comments.length; i++){
+                                                clist += '<p>' + '<i class="fa fa-comments-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
+                                            }
+                                            var div = document.getElementById('commentlist');
+                                            div.innerHTML = clist;
+                                            }
+                                            }
+                                            //not done yet
+                                        };
                                         
-                                         //create a request object
-                                        var request = new XMLHttpRequest();
+                                        //make the request
+                                        var commentInput = document.getElementById('comment');
+                                        var comment = commentInput.value;
+                                            request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
+                                            request.send(null);
                                         
-                                        //capture the response and store it in a variable
-                                        request.onreadystatechange = function(){
-                                        // process the server response
-                                        if(request.readyState === XMLHttpRequest.DONE){
-                                            //take some action
-                                            if(request.status === 200){
-                                             //capture a list of comments and render it as a list
-                                        var comments = request.responseText;
-                                        comments = JSON.parse(comments);
-                                        var clist = '';
-                                        for(var i=0; i< comments.length; i++){
-                                            clist += '<p>' + '<i class="fa fa-comments-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
-                                        }
-                                        var div = document.getElementById('commentlist');
-                                        div.innerHTML = clist;
-                                        }
-                                        }
-                                        //not done yet
-                                    };
+                                        };
+    
+                                        
+                                    </script>
                                     
-                                    //make the request
-                                    var commentInput = document.getElementById('comment');
-                                    var comment = commentInput.value;
-                                        request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
-                                        request.send(null);
-                                    
-                                    };
-
-                                    
-                                </script>
-                                
                             </body>
                         </html>
+                        
 `;
     return htmlTemplate;
 }
