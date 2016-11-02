@@ -87,15 +87,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
-      <i class="fa fa-comments-o w3-padding-64 w3-text-black w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Comments</h1>
+      
       <h5 class="w3-padding-32"><i class="fa fa-pencil"></i> post your comments here</h5>
 
       <p class="w3-text-black"><form><input type="text" id="comment" palceholder="comment"></input></form>
                                             <input type="submit" value="post" id="add_btn"></input>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Comments</h1>
+      
                                             <div id="commentlist">
                                             </div></p>
     </div>
