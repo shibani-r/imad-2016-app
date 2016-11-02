@@ -96,11 +96,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <p class="w3-text-black"><form><input type="text" id="comment" palceholder="comment"></input></form>
                                             <input type="submit" value="post" id="add_btn"></input>
     </div>
-
-    
-      
-                                            <div id="commentlist">
-                                            </div></p>
+          </p>
+          <div id="commentlist">
+          </div>
     </div>
   </div>
 </div>
@@ -118,7 +116,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
    <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
  </div>
- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script>
