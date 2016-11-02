@@ -32,6 +32,7 @@ function createTemplate(data){
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-music,.fa-comments-o {font-size:200px}
+header {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;}
 </style>
 <body>
 
