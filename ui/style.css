@@ -32,7 +32,7 @@ body {font-family: "Lato", sans-serif}
 
 
 input[type=text] {
-    width: 50%;
+    width: 75%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
