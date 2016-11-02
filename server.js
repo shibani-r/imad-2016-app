@@ -30,7 +30,7 @@ function createTemplate(data){
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-music,.fa-comments {font-size:200px}
+.fa-music,.fa-comments-o {font-size:200px}
 </style>
 <body>
 
@@ -87,7 +87,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="comments-section">
   <div class="w3-content">
     <div class="w3-third w3-center">
-      <i class="fa fa-comments w3-padding-64 w3-text-red w3-margin-right"></i>
+      <i class="fa fa-comments-o w3-padding-64 w3-text-red w3-margin-right"></i>
     </div>
 
     <div class="w3-twothird">
