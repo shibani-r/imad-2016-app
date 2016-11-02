@@ -68,8 +68,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>heading</h1>
+      <h5 class="w3-padding-32">${content}</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -86,16 +86,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      <i class="fa fa-comments-o w3-padding-64 w3-text-black w3-margin-right"></i>
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>Comments</h1>
+      <h5 class="w3-padding-32"><i class="fa fa-pencil"></i> post your comments here</h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-black"><form><input type="text" id="comment" palceholder="comment"></input></form>
+                                            <input type="submit" value="post" id="add_btn"></input>
+                                            <div id="commentlist">
+                                            </div></p>
     </div>
   </div>
 </div>
@@ -127,6 +128,46 @@ function myFunction() {
     }
 }
 </script>
+<script>
+                                //submit comment
+                        
+                                    var add = document.getElementById('add_btn');
+                                    add.onclick = function () {
+                                        //make a request to the server and send the comment
+                                        
+                                         //create a request object
+                                        var request = new XMLHttpRequest();
+                                        
+                                        //capture the response and store it in a variable
+                                        request.onreadystatechange = function(){
+                                        // process the server response
+                                        if(request.readyState === XMLHttpRequest.DONE){
+                                            //take some action
+                                            if(request.status === 200){
+                                             //capture a list of comments and render it as a list
+                                        var comments = request.responseText;
+                                        comments = JSON.parse(comments);
+                                        var clist = '';
+                                        for(var i=0; i< comments.length; i++){
+                                            clist += '<p>' + '<i class="fa fa-comments-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
+                                        }
+                                        var div = document.getElementById('commentlist');
+                                        div.innerHTML = clist;
+                                        }
+                                        }
+                                        //not done yet
+                                    };
+                                    
+                                    //make the request
+                                    var commentInput = document.getElementById('comment');
+                                    var comment = commentInput.value;
+                                        request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
+                                        request.send(null);
+                                    
+                                    };
+
+                                    
+                                </script>
 
 </body>
 </html>
