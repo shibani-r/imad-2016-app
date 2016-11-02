@@ -87,7 +87,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="comments-section">
   <div class="w3-content">
     <div class="w3-third w3-center">
-      <i class="fa fa-comment w3-padding-64 w3-text-red w3-margin-right"></i>
+      <i class="fa fa-comments w3-padding-64 w3-text-red w3-margin-right"></i>
     </div>
 
     <div class="w3-twothird">
