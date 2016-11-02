@@ -150,7 +150,7 @@ function myFunction() {
                                         comments = JSON.parse(comments);
                                         var clist = '';
                                         for(var i=0; i< comments.length; i++){
-                                            clist += '<p>' + '<i class="fa fa-comments-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
+                                            clist += '<p>' + '<i class="fa fa-comment-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
                                         }
                                         var div = document.getElementById('commentlist');
                                         div.innerHTML = clist;
