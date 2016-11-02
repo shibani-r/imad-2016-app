@@ -37,6 +37,15 @@ function createTemplate(data){
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
+<div id="mySidenav" class="sidenav">
+                                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                  <a href="/"><i class="fa fa-home w3-xxlarge"> </i> Home</a>
+                                  <a href="/articles/article-one">Article One</a>
+                                  <a href="/articles/article-two">Article Two</a>
+                                  <a href="/articles/article-three">Article Three</a>
+                                </div>
+<div id="main">
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -45,7 +54,7 @@ function createTemplate(data){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#"><span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -293,7 +302,7 @@ function createTemplate(data){
   </div>
 </div>
 
-<div id="googleMap" style="height:400px;width:100%;"></div>
+</div>
 
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
