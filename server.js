@@ -50,17 +50,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
       <a class="w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     </li>
-    <li><a href="#" class="w3-padding-large w3-white"></a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 1</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 2</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 3</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 4</a></li>
+    
+    <li class="w3-hide-small"><a href="#article-content" class="w3-padding-large w3-hover-white">Content/a></li>
+    <li class="w3-hide-small"><a href="#comments-section" class="w3-padding-large w3-hover-white">Comments</a></li>
+    
   </ul>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
     <ul class="w3-navbar w3-left-align w3-large w3-black">
-      <li><a class="w3-padding-large" href="#content">Content</a></li>
+      <li><a class="w3-padding-large" href="#article-content">Content</a></li>
       <li><a class="w3-padding-large" href="#comments">Comments</a></li>
       
     </ul>
@@ -74,7 +73,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </header>
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="content">
+<div class="w3-row-padding w3-padding-64 w3-container" id="article-content">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>heading</h1>
@@ -92,7 +91,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="comments">
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="comments-section">
   <div class="w3-content">
   <div class="w3-twothird">
       <h1 class="w3-margin w3-xlarge">Comments</h1>
