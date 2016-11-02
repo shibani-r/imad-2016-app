@@ -20,7 +20,7 @@ function createTemplate(data){
     var content = data.content;
    
     var htmlTemplate = `
-                        <html>             
+                        <!DOCTYPE html>             
                             <head>
                             
        
