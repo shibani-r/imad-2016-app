@@ -50,18 +50,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
       <a class="w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     </li>
-    
-    <li class="w3-hide-small"><a href="#article-content" class="w3-padding-large w3-hover-white">Content/a></li>
+    <li><a href="#" class="w3-padding-large w3-white">Home</a></li>
+    <li class="w3-hide-small"><a href="#article-content" class="w3-padding-large w3-hover-white">Content</a></li>
     <li class="w3-hide-small"><a href="#comments-section" class="w3-padding-large w3-hover-white">Comments</a></li>
+   
     
   </ul>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
     <ul class="w3-navbar w3-left-align w3-large w3-black">
-      <li><a class="w3-padding-large" href="#article-content">Content</a></li>
-      <li><a class="w3-padding-large" href="#comments">Comments</a></li>
       
+      <li><a class="w3-padding-large" href="#article-content">Content</a></li>
+      <li><a class="w3-padding-large" href="#comments-section">Comments</a></li>
     </ul>
   </div>
 </div>
