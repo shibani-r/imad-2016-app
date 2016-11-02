@@ -35,14 +35,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 header {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;}
 </style>
 <body>
-
+<div id="mySidenav" class="sidenav">
+                                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                  <a href="/"><i class="fa fa-home w3-xxlarge"> </i> Home</a>
+                                  <a href="/articles/article-one">Article One</a>
+                                  <a href="/articles/article-two">Article Two</a>
+                                  <a href="/articles/article-three">Article Three</a>
+                                </div>
+                                
 <!-- Navbar -->
 <div class="w3-top">
   <ul class="w3-navbar w3-black w3-card-2 w3-left-align w3-large">
     <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
       <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     </li>
-    <li><a href="#" class="w3-padding-large w3-white">Home</a></li>
+    <li><a href="#" class="w3-padding-large w3-white"><span style="font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a></li>
     <li class="w3-hide-small"><a href="#article-content" class="w3-padding-large w3-hover-white">Content</a></li>
     <li class="w3-hide-small"><a href="#comments-section" class="w3-padding-large w3-hover-white">Comments</a></li>
     <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 3</a></li>
@@ -131,6 +138,17 @@ function myFunction() {
     }
 }
 </script>
+<script>
+                                    function openNav() {
+                                     document.getElementById("mySidenav").style.width = "250px";
+                                     document.getElementById("main").style.marginLeft = "250px";
+                                    }
+                        
+                                    function closeNav() {
+                                     document.getElementById("mySidenav").style.width = "0";
+                                    document.getElementById("main").style.marginLeft= "0";
+                                    }
+                                </script>
 <script>
                                 //submit comment
                         
