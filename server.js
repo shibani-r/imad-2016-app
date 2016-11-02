@@ -94,10 +94,12 @@ function createTemplate(data){
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2><i class="fa fa-pencil"></i> post your comments here</h2>
+                                            <form><input type="text" id="comment" palceholder="comment"></input></form>
+                                            <input type="submit" value="post" id="add_btn"></input>
+                                            <div id="commentlist">
+                                            </div>
+      
     </div>
   </div>
 </div>
@@ -364,6 +366,58 @@ $(document).ready(function(){
 })
 </script>
 
+                                <script>
+                                    function openNav() {
+                                     document.getElementById("mySidenav").style.width = "250px";
+                                     document.getElementById("main").style.marginLeft = "250px";
+                                    }
+                        
+                                    function closeNav() {
+                                     document.getElementById("mySidenav").style.width = "0";
+                                    document.getElementById("main").style.marginLeft= "0";
+                                    }
+                                </script>
+                                
+                                <script>
+                                //submit comment
+                        
+                                    var add = document.getElementById('add_btn');
+                                    add.onclick = function () {
+                                        //make a request to the server and send the comment
+                                        
+                                         //create a request object
+                                        var request = new XMLHttpRequest();
+                                        
+                                        //capture the response and store it in a variable
+                                        request.onreadystatechange = function(){
+                                        // process the server response
+                                        if(request.readyState === XMLHttpRequest.DONE){
+                                            //take some action
+                                            if(request.status === 200){
+                                             //capture a list of comments and render it as a list
+                                        var comments = request.responseText;
+                                        comments = JSON.parse(comments);
+                                        var clist = '';
+                                        for(var i=0; i< comments.length; i++){
+                                            clist += '<p>' + '<i class="fa fa-comments-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
+                                        }
+                                        var div = document.getElementById('commentlist');
+                                        div.innerHTML = clist;
+                                        }
+                                        }
+                                        //not done yet
+                                    };
+                                    
+                                    //make the request
+                                    var commentInput = document.getElementById('comment');
+                                    var comment = commentInput.value;
+                                        request.open('GET','http://shibani-r.imad.hasura-app.io/add-comment?comment=' + comment, true);
+                                        request.send(null);
+                                    
+                                    };
+
+                                    
+                                </script>
 </body>
 </html>
 `;
