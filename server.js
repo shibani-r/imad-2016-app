@@ -42,7 +42,8 @@ header {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds
                                   <a href="/articles/article-two">Article Two</a>
                                   <a href="/articles/article-three">Article Three</a>
                                 </div>
-                                
+                 
+                 <div id=main">               
 <!-- Navbar -->
 <div class="w3-top">
   <ul class="w3-navbar w3-black w3-card-2 w3-left-align w3-large">
@@ -124,8 +125,9 @@ header {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds
    <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
  </div>
- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+</div>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
