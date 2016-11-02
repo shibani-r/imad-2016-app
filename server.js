@@ -306,6 +306,19 @@ function createTemplate(data){
 
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+                                    function openNav() {
+                                     document.getElementById("mySidenav").style.width = "250px";
+                                     document.getElementById("main").style.marginLeft = "250px";
+                                    }
+                        
+                                    function closeNav() {
+                                     document.getElementById("mySidenav").style.width = "0";
+                                    document.getElementById("main").style.marginLeft= "0";
+                                    }
+                                </script>
+                                
 <script>
 var myCenter = new google.maps.LatLng(41.878114, -87.629798);
 
