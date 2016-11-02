@@ -27,10 +27,11 @@ function createTemplate(data){
                                 <title>
                                     ${title}
                                 </title>
+                                <meta name="viewport" content="width=device-width, initial-scale=1">
                                 <link href="/ui/style.css" rel="stylesheet" />
                                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
                                 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-                            
+                                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
                             </head>
                             
                             <body id="article-body">
@@ -45,24 +46,18 @@ function createTemplate(data){
                         
                                 <div id="main">
                                 
-                                    <div class="w3-top">
-                                        <ul class="w3-navbar w3-black w3-large">
-                                            <li><a href="#"><span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span></a></li>
-                                        </ul>
-                                    </div>
-                                    <br><br>
+                                <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <span style="cursor:pointer;font-size:25px;" onclick="openNav()"><i class="fa fa-bars"></i> goto</span>
+  </div>
+                          
+                                     <div class="w3-display-middle">
+    <h1 class="w3-large w3-animate-top">${heading}</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"> <i class="fa fa-clock-o"> </i>${date.toDateString()}</p>
+  </div>
                                             
-                                        <h1 class="article-heading">
-                                        ${heading}
-                                        </h1>
-                                    <br/>
-                                        <div class="article-date">
-                                        <i class="fa fa-clock-o"> </i>
-                                        <strong>
-                                        ${date.toDateString()}
-                                        </strong>
-                                        </div>
-                                    <br/>
+                                   
                                         <div class="article-content">
                                          ${content}
                                         </div>
