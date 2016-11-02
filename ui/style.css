@@ -64,15 +64,6 @@ input[type=submit]:hover{
     background-color:#191919;
 }
 
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-    background-image: url('https://static.pexels.com/photos/1826/wood-nature-sunny-forest-medium.jpg');
-    min-height: 25%;
-    background-position: center;
-    background-size: cover;
-}
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -107,6 +98,17 @@ body, html {height: 100%}
     margin-left: 50px;
 }
 
+#article-body {      
+    font-family: "Lato", sans-serif;        
+    transition: background-color .5s;       
+    text-align: justify;        
+    background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;      
+  -webkit-background-size: cover;       
+  -moz-background-size: cover;      
+   -o-background-size: cover;       
+    background-size: cover;     
+ }
+ 
 #main {
     transition: margin-left .5s;
     padding: 16px;
