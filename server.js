@@ -43,7 +43,7 @@ header {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds
                                   <a href="/articles/article-three">Article Three</a>
                                 </div>
                  
-                 <div id=main">               
+                 <div id="main">               
 <!-- Navbar -->
 <div class="w3-top">
   <ul class="w3-navbar w3-black w3-card-2 w3-left-align w3-large">
