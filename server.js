@@ -76,7 +76,7 @@ function createTemplate(data){
                             <h1>${heading}</h1>
                             <h5 class="w3-padding-32 w3-justify">${content}</h5>
                 
-                            <p class="w3-text-grey">
+                            <p class="w3-text-grey w3-justify">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
                                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat.
