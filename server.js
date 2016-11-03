@@ -66,8 +66,6 @@ function createTemplate(data){
                         <li><a href="#" class="w3-padding-large w3-white"><span style="cursor:pointer" onclick="openNav()"><i class="fa fa-bars"></i><strong>  goto</strong></span></a></li>
                         <li class="w3-hide-small"><a href="#article-content" class="w3-padding-large w3-hover-white">Content</a></li>
                         <li class="w3-hide-small"><a href="#comments-section" class="w3-padding-large w3-hover-white">Comments</a></li>
-                        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 3</a></li>
-                        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 4</a></li>
                     </ul>
     
                     <!-- Navbar on small screens -->
@@ -75,8 +73,6 @@ function createTemplate(data){
                         <ul class="w3-navbar w3-left-align w3-large w3-black">
                             <li><a class="w3-padding-large" href="#article-content">Content</a></li>
                             <li><a class="w3-padding-large" href="#comments-section">Comments</a></li>
-                            <li><a class="w3-padding-large" href="#">Link 3</a></li>
-                            <li><a class="w3-padding-large" href="#">Link 4</a></li>
                         </ul>
                     </div>
                 </div>
