@@ -137,16 +137,16 @@ function createTemplate(data){
                 </div>
                 
                 <!-- Footer -->
-                <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+                <footer class="w3-container w3-padding-64 w3-center">
                     <div class="w3-xlarge w3-padding-32">
-                        <p class="w3-medium w3-text-red w3-xxxlarge">
+                        <p class="w3-medium w3-text-orange w3-xxxlarge">
                             <a href="#" title="To Top"><i class="fa fa-angle-up"></i></a>
                         </p>
-                        <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
-                        <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
-                        <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
-                        <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-facebook-official"></i></a>
+                        <a href="#" class="w3-hover-text-red w3-opacity"><i class="fa fa-pinterest-p"></i></a>
+                        <a href="#" class="w3-hover-text-light-blue w3-opacity"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="w3-hover-text-grey w3-opacity"><i class="fa fa-flickr"></i></a>
+                        <a href="#" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </footer>
     
