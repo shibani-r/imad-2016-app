@@ -141,11 +141,11 @@ function createTemplate(data){
                         <p class="w3-medium w3-text-orange w3-xxxlarge">
                             <a href="#" title="To Top"><i class="fa fa-angle-double-up"></i></a>
                         </p>
-                        <a href="#" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-facebook-official"></i></a>
-                        <a href="#" class="w3-hover-text-red w3-opacity"><i class="fa fa-pinterest-p"></i></a>
-                        <a href="#" class="w3-hover-text-light-blue w3-opacity"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="w3-hover-text-grey w3-opacity"><i class="fa fa-flickr"></i></a>
-                        <a href="#" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/login/" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-facebook-official"></i></a>
+                        <a href="https://www.pinterest.com/" class="w3-hover-text-red w3-opacity"><i class="fa fa-pinterest-p"></i></a>
+                        <a href="https://twitter.com/login" class="w3-hover-text-light-blue w3-opacity"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.flickr.com/" class="w3-hover-text-grey w3-opacity"><i class="fa fa-flickr"></i></a>
+                        <a href="https://www.linkedin.com/uas/login" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-linkedin"></i></a>
                 </footer>
     
                 <script>
