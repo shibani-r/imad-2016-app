@@ -41,6 +41,7 @@ function createTemplate(data){
                                 -o-background-size: cover;       
                                 background-size: cover; 
                                 color:white;
+                    #quote_box {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;}            
                     }
                 </style>
             </head>
@@ -129,7 +130,7 @@ function createTemplate(data){
                 </div>
                 
                 <!--Quote of the day-->
-                <div class="w3-container w3-center w3-opacity w3-padding-64">
+                <div  id="quote_box" class="w3-container w3-center w3-opacity w3-padding-64">
                     <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
                 </div>
                 
