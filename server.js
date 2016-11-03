@@ -128,8 +128,8 @@ function createTemplate(data){
                     </div>
                 </div>
                 
-                <!--grey box-->
-                <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+                <!--Quote of the day-->
+                <div class="w3-container w3-center w3-opacity w3-padding-64" style="background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;">
                     <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
                 </div>
                 
