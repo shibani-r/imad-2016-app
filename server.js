@@ -63,7 +63,7 @@ function createTemplate(data){
                         <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
                           <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
                         </li>
-                        <li><a href="#" class="w3-padding-large w3-white"><span style="font-size:18px;cursor:pointer" onclick="openNav()">&#9776; goto</span></a></li>
+                        <li><a href="#" class="w3-padding-large w3-white"><span style="cursor:pointer" onclick="openNav()">&#9776; goto</span></a></li>
                         <li class="w3-hide-small"><a href="#article-content" class="w3-padding-large w3-hover-white">Content</a></li>
                         <li class="w3-hide-small"><a href="#comments-section" class="w3-padding-large w3-hover-white">Comments</a></li>
                         <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Link 3</a></li>
