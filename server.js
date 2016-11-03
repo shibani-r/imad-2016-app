@@ -50,7 +50,7 @@ function createTemplate(data){
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn"  style="margin-top:20px;" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <a href="/"><i class="fa fa-home w3-xlarge"> </i> Home</a>
+                        <a href="/"><i class="fa fa-home w3-xxlarge"> </i> Home</a>
                         <a href="/articles/article-one">Article One</a>
                         <a href="/articles/article-two">Article Two</a>
                         <a href="/articles/article-three">Article Three</a>
