@@ -37,9 +37,11 @@ function createTemplate(data){
                     .w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
                     .fa-music,.fa-comments-o {font-size:200px}
                     header {background: URL("${image_url}") no-repeat center center fixed; -webkit-background-size: cover;       
-  -moz-background-size: cover;      
-   -o-background-size: cover;       
-    background-size: cover; }
+                                -moz-background-size: cover;      
+                                -o-background-size: cover;       
+                                background-size: cover; 
+                                color:white;
+                    }
                 </style>
             </head>
             <body>
