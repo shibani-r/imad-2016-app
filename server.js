@@ -46,15 +46,16 @@ function createTemplate(data){
             </head>
             <body>
                      
-                    <div id="myNav" class="overlay">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <div class="overlay-content">
-                            <a href="#">About</a>
-                            <a href="#">Services</a>
-                            <a href="#">Clients</a>
-                            <a href="#">Contact</a>
-                        </div>
+                <!--sliding navbar-->
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn"  style="margin-top:20px;" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="/"><i class="fa fa-home w3-xlarge"> </i> Home</a>
+                        <a href="/articles/article-one">Article One</a>
+                        <a href="/articles/article-two">Article Two</a>
+                        <a href="/articles/article-three">Article Three</a>
                     </div>
+                </div>
                     
                 <!-- Navbar -->
                 <div class="w3-top">
