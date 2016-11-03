@@ -140,7 +140,7 @@ function createTemplate(data){
                 <footer class="w3-container w3-padding-64 w3-center">
                     <div class="w3-xlarge w3-padding-32">
                         <p class="w3-medium w3-text-orange w3-xxxlarge">
-                            <a href="#" title="To Top"><i class="fa fa-angle-up"></i></a>
+                            <a href="#" title="To Top"><i class="fa fa-angle-double-up"></i></a>
                         </p>
                         <a href="#" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-facebook-official"></i></a>
                         <a href="#" class="w3-hover-text-red w3-opacity"><i class="fa fa-pinterest-p"></i></a>
