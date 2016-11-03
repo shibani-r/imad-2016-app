@@ -40,7 +40,9 @@ function createTemplate(data){
                                 -moz-background-size: cover;      
                                 -o-background-size: cover;       
                                 background-size: cover; 
-                                color:white;
+                                color:white;}
+                     #quote_box {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;}            
+                    }
                    
                 </style>
             </head>
