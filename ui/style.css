@@ -84,7 +84,7 @@ input[type=submit]:hover{
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: justify;
+    text-align: left;
     margin-top: 30px;
 }
 
