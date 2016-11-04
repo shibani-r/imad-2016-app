@@ -123,7 +123,7 @@ function createTemplate(data){
                                     <textarea id="comment" palceholder="comment"></textarea>
                                 </form>
                                 <input type="submit" value="post" id="add_btn"></input>
-                                <div id="commentlist" style="white-space:pre;">
+                                <div id="commentlist" style="white-space:pre-wrap;">
                                 </div>
                             </p>
                         </div>
