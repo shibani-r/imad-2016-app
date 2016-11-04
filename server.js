@@ -123,7 +123,7 @@ function createTemplate(data){
                                     <textarea id="comment" palceholder="comment"></textarea>
                                 </form>
                                 <input type="submit" value="post" id="add_btn"></input>
-                                <div id="commentlist" style="white-space:pre-line;">
+                                <div id="commentlist">
                                 </div>
                             </p>
                         </div>
@@ -194,7 +194,7 @@ function createTemplate(data){
                                     comments = JSON.parse(comments);
                                     var clist = '';
                                     for(var i=0; i< comments.length; i++) {
-                                        clist += '<p>' + '<i class="fa fa-comment-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>';
+                                        clist += '<pre>' + '<p>' + '<i class="fa fa-comment-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>' + '</pre>';
                                     }
                                     
                                     var div = document.getElementById('commentlist');
