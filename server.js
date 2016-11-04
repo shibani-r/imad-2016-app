@@ -194,7 +194,7 @@ function createTemplate(data){
                                     comments = JSON.parse(comments);
                                     var clist = '';
                                     for(var i=0; i< comments.length; i++) {
-                                        clist += '<p>' + '<div id="comment_box">' + '<i class="fa fa-comment-o"></i>' + ' comment ' + i + '<div> + ' : ' + '"' + comments[i] + '"' + '</p>';
+                                        clist += '<div id="comment_box">' + '<p>' + '<i class="fa fa-comment-o"></i>' + ' comment ' + i + ' : ' + '"' + comments[i] + '"' + '</p>' + '<div>';
                                     }
                                     
                                     var div = document.getElementById('commentlist');
