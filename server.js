@@ -120,11 +120,13 @@ function createTemplate(data){
                 
                             <p class="w3-text-black">
                                 <form>  
-                                    <textarea id="comment" palceholder="comment"></textarea>
+                                    <pre><textarea id="comment" palceholder="comment"></textarea></pre>
                                 </form>
                                 <input type="submit" value="post" id="add_btn"></input>
+                                <pre>
                                 <div id="commentlist">
                                 </div>
+                                </pre>
                             </p>
                         </div>
                         
