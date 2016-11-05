@@ -241,9 +241,9 @@ app.get('/hash/:input', function (req, res) {
 });
 
 app.post('/create-user', function (req, res) {
-    //username, password
-    //{"username": "shibani", "password": "password"}
-    //JSON
+    // username, password
+    // {"username": "shibani", "password": "password"}
+    // JSON
     var username = req.body.username;
     var password = req.body.password;
     var salt = crypto.randomBytes(128).toString('hex');
@@ -268,12 +268,14 @@ app.post('/login', function (req, res) {
                 if (result.rows.length === 0) {
                     res.send(403).send('username/password is invalid');
                 }   else {
-                        //Match the password
+                        // Match the password
                         var dbString = result.rows[0].password;
                         var salt = dbString.split('$')[2];
                         var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
                         if (hashedPassword === dbString) {
                             res.send('Credentials correct!');
+                            
+                            // Set a session
                         }   else {
                                 res.send(403).send('username/password is invalid');
                             }
@@ -285,8 +287,8 @@ app.post('/login', function (req, res) {
 
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
-    //make a select request
-    //return a response with the results
+    // make a select request
+    // return a response with the results
     pool.query('SELECT * FROM test', function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
@@ -304,20 +306,20 @@ app.get('/counter', function (req, res) {
 
 var comments = [];
 app.get('/add-comment', function (req, res) {// /add-comment?comment=xxxx
-    //get the comment from the request
+    // get the comment from the request
     var comment = req.query.comment;
     
     comments.push(comment);
-    //JSON: javascript object notation
+    // JSON: javascript object notation
     res.send(JSON.stringify(comments));
 });
 
 
 app.get('/articles/:articleName', function (req, res) {
-    //articleName == article-one
-    //articles[articleName] == {} content object for article-one
+    // articleName == article-one
+    // articles[articleName] == {} content object for article-one
     
-    //SELECT * FROM article WHERE title = '/'; DELETE WHERE a = /'asdf'
+    // SELECT * FROM article WHERE title = '/'; DELETE WHERE a = /'asdf'
     pool.query('SELECT * FROM article WHERE title = $1', [req.params.articleName], function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
