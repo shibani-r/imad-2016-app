@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
 
 var config = {
     user : 'shibani-r',
@@ -226,11 +227,22 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+function hash (input, salt) {
+    //How do we create a hash?
+    var hashed = crypto.pbkdf2Sync(input, salt, 100000, 512, 'sha512');
+    return hashed.toString('hex');
+}
+
+app.get('/hash/:input', function (req,res){
+    var hashedString = hash(req.params.input, 'this-is-some-random-string');
+    res.send(hashedString);
+});
+
 var pool = new Pool(config);
-app.get('/test-db',function(req,res){
+app.get('/test-db', function (req,res){
     //make a select request
     //return a response with the results
-    pool.query('SELECT * FROM test',function(err,result){
+    pool.query('SELECT * FROM test', function (err,result){
         if(err) {
             res.status(500).send(err.toString());
         }
@@ -241,13 +253,13 @@ app.get('/test-db',function(req,res){
 });
 
 var counter = 0;
-app.get('/counter',function(req, res){
+app.get('/counter', function (req, res){
     counter = counter+1;
     res.send(counter.toString());
 });
 
 var comments = [];
-app.get('/add-comment', function(req,res){// /add-comment?comment=xxxx
+app.get('/add-comment', function (req,res){// /add-comment?comment=xxxx
     //get the comment from the request
     var comment = req.query.comment;
     
@@ -262,7 +274,7 @@ app.get('/articles/:articleName', function (req, res){
     //articles[articleName] == {} content object for article-one
     
     //SELECT * FROM article WHERE title = '/'; DELETE WHERE a = /'asdf'
-    pool.query('SELECT * FROM article WHERE title = $1', [req.params.articleName], function(err,result){
+    pool.query('SELECT * FROM article WHERE title = $1', [req.params.articleName], function (err,result){
         if(err) {
             res.status(500).send(err.toString());
         }
