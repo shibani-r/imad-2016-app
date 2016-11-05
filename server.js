@@ -235,12 +235,12 @@ function hash (input, salt) {
     return ['pbkdf2', '10000', salt, hashed.toString('hex')].join('$');
 }
 
-app.get('/hash/:input', function (req,res) {
+app.get('/hash/:input', function (req, res) {
     var hashedString = hash(req.params.input, 'this-is-some-random-string');
     res.send(hashedString);
 });
 
-app.post('/create-user', function (req,res) {
+app.post('/create-user', function (req, res) {
     //username, password
     //{"username": "shibani", "password": "password"}
     //JSON
@@ -251,35 +251,59 @@ app.post('/create-user', function (req,res) {
     pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
-        }
-        else    {
-            res.send('User successfully created: ' + username);
-        }
+        }   else {
+                res.send('User successfully created: ' + username);
+            }
+    });
+});
+
+app.post('/login', function (req, res) {
+    var username = req.body.username;
+    var password = req.body.password;
+    
+    pool.query('SELECT * from "user" username = $1',[username], function (err, result) {
+        if(err) {
+            res.status(500).send(err.toString());
+        }   else {
+                if (result.rows.length === 0) {
+                    res.send(403).send('username/password is invalid');
+                }   else {
+                        //Match the password
+                        var dbString = result.rows[0].password;
+                        var salt = dbString.split('$')[2];
+                        var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
+                        if (hashedPassword === dbString) {
+                            res.send('Credentials correct!');
+                        }   else {
+                                res.send(403).send('username/password is invalid');
+                            }
+                
+                    }
+            }
     });
 });
 
 var pool = new Pool(config);
-app.get('/test-db', function (req,res){
+app.get('/test-db', function (req, res) {
     //make a select request
     //return a response with the results
-    pool.query('SELECT * FROM test', function (err,result){
+    pool.query('SELECT * FROM test', function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
-        }
-        else    {
-            res.send(JSON.stringify(result.rows));
-        }
+        }   else {
+                res.send(JSON.stringify(result.rows));
+            }
     });
 });
 
 var counter = 0;
-app.get('/counter', function (req, res){
+app.get('/counter', function (req, res) {
     counter = counter+1;
     res.send(counter.toString());
 });
 
 var comments = [];
-app.get('/add-comment', function (req,res){// /add-comment?comment=xxxx
+app.get('/add-comment', function (req, res) {// /add-comment?comment=xxxx
     //get the comment from the request
     var comment = req.query.comment;
     
@@ -289,24 +313,22 @@ app.get('/add-comment', function (req,res){// /add-comment?comment=xxxx
 });
 
 
-app.get('/articles/:articleName', function (req, res){
+app.get('/articles/:articleName', function (req, res) {
     //articleName == article-one
     //articles[articleName] == {} content object for article-one
     
     //SELECT * FROM article WHERE title = '/'; DELETE WHERE a = /'asdf'
-    pool.query('SELECT * FROM article WHERE title = $1', [req.params.articleName], function (err,result){
+    pool.query('SELECT * FROM article WHERE title = $1', [req.params.articleName], function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
-        }
-        else    {
-            if(result.rows.length === 0)    {
-                res.status(404).send('Article not found');
+        }   else {
+                if(result.rows.length === 0) {
+                    res.status(404).send('Article not found');
+                }   else {
+                        var articleData = result.rows[0];
+                        res.send(createTemplate(articleData));
+                    }
             }
-            else    {
-               var articleData = result.rows[0];
-               res.send(createTemplate(articleData));
-            }
-        }
     });
 });
 
