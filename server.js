@@ -233,9 +233,14 @@ function hash (input, salt) {
     return ['pbkdf2', '10000', salt, hashed.toString('hex')].join('$');
 }
 
-app.get('/hash/:input', function (req,res){
+app.get('/hash/:input', function (req,res) {
     var hashedString = hash(req.params.input, 'this-is-some-random-string');
     res.send(hashedString);
+});
+
+app.get('/create-user', function (req,res) {
+    //username, password
+    var dbString = hash(password, salt);
 });
 
 var pool = new Pool(config);
