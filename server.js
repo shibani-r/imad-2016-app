@@ -118,9 +118,6 @@ function createTemplate(data){
                 <!-- Second Grid -->
                 <div class="w3-row-padding w3-black w3-padding-64 w3-container" id="comments-section">
                     <div class="w3-content">
-                        <div class="w3-third w3-center">
-                            <i class="fa fa-comments-o w3-padding-64 w3-text-orange "></i>
-                        </div>
                 
                         <div class="w3-twothird">
                             <h1>Comments</h1>
@@ -134,6 +131,10 @@ function createTemplate(data){
                                 <div id="commentlist">
                                 </div>
                             </p>
+                        </div>
+                        
+                         <div class="w3-third w3-center">
+                            <i class="fa fa-comments-o w3-padding-64 w3-text-orange "></i>
                         </div>
                         
                     </div>
