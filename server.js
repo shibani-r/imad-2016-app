@@ -158,7 +158,8 @@ function createTemplate(data){
                 </footer>
     
                 <script>
-                // Used to toggle the menu on small screens when clicking on the menu button
+                    // Used to toggle the menu on small screens when clicking on the menu button
+                    
                     function myFunction() {
                         var x = document.getElementById("navDemo");
                         if (x.className.indexOf("w3-show") == -1) {
@@ -180,11 +181,11 @@ function createTemplate(data){
                 </script>
     
                 <script>
-                //submit comment
+                    //submit comment
                             
                     var add = document.getElementById('add_btn');
                     add.onclick = function () {
-                    //make a request to the server and send the comment
+                        //make a request to the server and send the comment
                                             
                         //create a request object
                         var request = new XMLHttpRequest();
@@ -303,13 +304,13 @@ app.get('/check-login', function (req, res) {
        pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function (err, result) {
            if (err) {
               res.status(500).send(err.toString());
-           } else {
-              res.send(result.rows[0].username);    
-           }
+           }    else {
+                    res.send(result.rows[0].username);    
+                }
        });
-   } else {
-       res.status(400).send('You are not logged in');
-   }
+   }    else {
+            res.status(400).send('You are not logged in');
+        }
 });
 
 app.get('/logout', function (req, res) {
