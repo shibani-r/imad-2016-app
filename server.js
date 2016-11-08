@@ -164,9 +164,9 @@ function createTemplate(data){
                         var x = document.getElementById("navDemo");
                         if (x.className.indexOf("w3-show") == -1) {
                             x.className += " w3-show";
-                        } else {
-                            x.className = x.className.replace(" w3-show", "");
-                        }
+                        }   else {
+                                x.className = x.className.replace(" w3-show", "");
+                            }
                     }
                 </script>
                 
@@ -233,11 +233,12 @@ function createTemplate(data){
 }
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 function hash (input, salt) {
-    //How do we create a hash?
+    // How do we create a hash?
+    
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
     return ['pbkdf2', '10000', salt, hashed.toString('hex')].join('$');
 }
@@ -280,9 +281,10 @@ app.post('/login', function (req, res) {
                         var salt = dbString.split('$')[2];
                         var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
                         if (hashedPassword === dbString) {
+                            
                             // Set the session
                             req.session.auth = {userId: result.rows[0].id};
-                            // set cookie with asession id
+                            // set cookie with a session id
                             // internally, on the server side, it maps the session id to an object
                             // { auth: {userId }}
                             
