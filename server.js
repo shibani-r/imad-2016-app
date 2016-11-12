@@ -273,6 +273,7 @@ app.post('/login', function (req, res) {
         if(err) {
             res.status(500).send(err.toString());
         }   else {
+            console.log("dd");
             console.log("result",result);
             console.log("lenth",result.rows.length);
                 if (result.rows.length === 0) {
@@ -323,17 +324,7 @@ app.get('/logout', function (req, res) {
 });
 
 var pool = new Pool(config);
-app.get('/test-db', function (req, res) {
-    // make a select request
-    // return a response with the results
-    pool.query('SELECT * FROM test', function (err, result) {
-        if(err) {
-            res.status(500).send(err.toString());
-        }   else {
-                res.send(JSON.stringify(result.rows));
-            }
-    });
-});
+
 
 var counter = 0;
 app.get('/counter', function (req, res) {
