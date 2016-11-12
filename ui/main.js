@@ -29,7 +29,7 @@ button.onclick = function () {
     request.send(null);
 };
 
-// counter code
+// logout code
 
 var buttonl = document.getElementById('logout');
 
@@ -56,6 +56,7 @@ buttonl.onclick = function () {
     request.open('GET','http://shibani-r.imad.hasura-app.io/logout', true);
     request.send(null);
 };
+
 // submit username/password to login 
 
 var submit = document.getElementById('submit_btn');
@@ -74,7 +75,7 @@ submit.onclick = function () {
             // take some action
             if(request.status === 200) {
             
-                // capture a list of names and render it as a list
+                
                 console.log("user loggedin");
                 alert('logged in successfully');
             
@@ -98,7 +99,7 @@ submit.onclick = function () {
     request.send(JSON.stringify({username: username, password: password}));
 };
    
-   // submit username/password to login 
+   // submit username/password to register 
 
 var submitR = document.getElementById('submit_btnR');
 submitR.onclick = function () {
@@ -116,7 +117,7 @@ submitR.onclick = function () {
             // take some action
             if(request.status === 200) {
             
-                // capture a list of names and render it as a list
+                
                 console.log("user registered");
                 alert('registered in successfully');
             
