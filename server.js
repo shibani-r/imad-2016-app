@@ -273,6 +273,8 @@ app.post('/login', function (req, res) {
         if(err) {
             res.status(500).send(err.toString());
         }   else {
+            console.log("result",result);
+            console.log("lenth",result.rows.length);
                 if (result.rows.length === 0) {
                     res.send(403).send('username/password is invalid');
                 }   else {
