@@ -29,6 +29,33 @@ button.onclick = function () {
     request.send(null);
 };
 
+// counter code
+
+var buttonl = document.getElementById('logout');
+
+buttonl.onclick = function () {
+    
+    // create a request object
+    var request = new XMLHttpRequest();
+    
+    // capture the response and store it in a variable
+    request.onreadystatechange = function() {
+        
+        // process the server response
+        if(request.readyState === XMLHttpRequest.DONE) {
+            
+            // take some action
+            if(request.status === 200) {
+                alert('logged out');
+            }
+        }
+        // not done yet
+    };
+
+    // make the request
+    request.open('GET','http://shibani-r.imad.hasura-app.io/logout', true);
+    request.send(null);
+};
 // submit username/password to login 
 
 var submit = document.getElementById('submit_btn');
