@@ -276,7 +276,7 @@ app.post('/login', function (req, res) {
         }   else {
            
                 if (result.rows.length === 0) {
-                    res.send(403).send('username/password is invalid');
+                    res.status(403).send('username/password is invalid');
                 }   else {
                         // Match the password
                         var dbString = result.rows[0].password;
@@ -294,7 +294,7 @@ app.post('/login', function (req, res) {
                             
                     
                         }   else {
-                                res.send(403).send('username/password is invalid');
+                                res.status(403).send('username/password is invalid');
                             }
                 
                     }
@@ -362,7 +362,7 @@ app.get('/articles/:articleName', function (req, res) {
 });
 
 app.get('/ui/:filename', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'filename'));
+  res.sendFile(path.join(__dirname, 'ui', req.params.filename));
 });
 
 
