@@ -76,13 +76,13 @@ submit.onclick = function () {
             if(request.status === 200) {
             
                 
-                console.log("user loggedin");
+                console.log('user loggedin');
                 alert('logged in successfully');
             
-            }   else if(request.status ===403) {
-                    alert("username/password is incorrect");
+            }   else if(request.status === 403) {
+                    alert('username/password is incorrect');
                 }   else if(request.status === 500) {
-                        alert("something went wrong on the server");
+                        alert('something went wrong on the server');
         
                     }
         }
@@ -118,13 +118,13 @@ submitR.onclick = function () {
             if(request.status === 200) {
             
                 
-                console.log("user registered");
+                console.log('user registered');
                 alert('registered in successfully');
             
             }   else if(request.status ===403) {
-                    alert("username/password is incorrect");
+                    alert('username/password is incorrect');
                 }   else if(request.status === 500) {
-                        alert("something went wrong on the server");
+                        alert('something went wrong on the server');
         
                     }
         }
