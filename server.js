@@ -124,7 +124,12 @@ function createTemplate(data){
                             <h5 class="w3-padding-32"><i class="fa fa-pencil"></i> post your comments here</h5>
                 
                             <p class="w3-text-black">
-                                
+                                <h4>Comments</h4>
+              <div id="comment_form">
+              </div>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
                             </p>
                         </div>
                         
@@ -174,7 +179,7 @@ function createTemplate(data){
                         document.getElementById("myNav").style.height = "0%";
                     }
                 </script>
-    
+    <script type="text/javascript" src="/ui/article.js"></script>
               
     
             </body>
