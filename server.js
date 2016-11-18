@@ -121,10 +121,10 @@ function createTemplate(data){
                 
                         <div class="w3-twothird">
                             <h1>Comments</h1>
-                            <h5 class="w3-padding-32"><i class="fa fa-pencil"></i> post your comments here</h5>
+                            
                 
                             <p class="w3-text-black">
-                                <h4>Comments</h4>
+                            
               <div id="comment_form">
               </div>
               <div id="comments">
