@@ -21,13 +21,9 @@
                     <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
                         <i class="fa fa-bars"></i>
                     </a></li>
-                <li><a href="/" id="user" class="w3-hover-none w3-hover-text-grey w3-padding-large">
-                    <i class="fa fa-user w3-large"></i>
+                <li><a href="/" id="home" class="w3-hover-none w3-hover-text-grey w3-padding-large">
+                    <i class="fa fa-home w3-large"> </i> HOME
                     </a></li>
-                    
-                
-                
-                
                 <li class="w3-hide-small"><a href="#about" class="w3-padding-large">ABOUT</a></li>
                 <li class="w3-hide-small"><a href="#contents" class="w3-padding-large">CONTENTS</a></li>
                 <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large">CONTACT</a></li>
@@ -85,49 +81,23 @@
                     <p class="w3-justify">Personally, i believe there are certain things one must have in his or her life to make it more valuable and joyous. A lot of us live our lives all maxed out in the hype of the moment that we have forgotten to care about ourselves, and other people as well. But that's not exactly living life to the fullest. The articles here may help you remind the tiny little things you've missed out in your busy life which actually matter a lot. Have a good time reading them! Stay happy and live long!
                     </p>
                     <h3>login to unlock some awesome features</h3>
-                   
-                    <label><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="usernameR" required>
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="username" required>
     
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="passwordR" required>
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="password" required>
             
-          <button type="submit" id="register_btn">Sign Up</button>
-                    
-                    <button id="logout" class="button button5">LOGOUT</button>
-            
+                        <button type="submit" id="login_btn">Login</button>
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="usernameR" required>
     
-                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate">
-    <div class="imgcontainer">
-        <span id="login">LOGIN</span> | <span id="signup">SIGN UP</span>
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    </div>
-    <br/><br/>
-    <div class="container" id="form-details">
-        
-          <label><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="username" required>
-    
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="password" required>
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="passwordR" required>
             
-          <button type="submit" id="login_btn">Login</button>
-        
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+                        <button type="submit" id="register_btn">Sign Up</button>
                     
-                    
-               
+                        <button id="logout" class="button button5">LOGOUT</button>
+            
              </div>           
                     
                     
@@ -245,41 +215,6 @@
             }
         </script>
         
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-<script>
-    $(function() {
-    
- $('#login').click(function() {
-  $('#form-details').html(`<label><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="username" required>
-    
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="password" required>
-            
-          <button type="submit" id="login_btn">Login</button>`
-      );
-});
-$('#signup').click(function() {
-   $('#form-details').html(`<label><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="usernameR" required>
-    
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="passwordR" required>
-            
-          <button type="submit" id="register_btn">Sign Up</button>`
-      );
-});
-});
-</script>
     </body>
 </html>
