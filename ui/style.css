@@ -151,15 +151,11 @@ button {
 
 /* Center the image and position the close button */
 .imgcontainer {
-    text-align: center;
+    text-align: right;
     margin: 24px 0 12px 0;
     position: relative;
 }
 
-.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
 
 .container {
     padding: 16px;
