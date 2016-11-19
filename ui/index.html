@@ -101,18 +101,20 @@
   
   <form class="modal-content animate">
     <div class="imgcontainer">
+        <span id="login">LOGIN</span> | <span id="signup">SIGN UP</span>
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
-<br/><br/>
+    <br/><br/>
     <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" id="username" required>
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" id="password" required>
-        
-      <button type="submit" id="login_btn" value="login">Login</button>
-      
+        <div id="logindetails">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="username" required>
+    
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="password" required>
+            
+          <button type="submit" id="login_btn" value="login">Login</button>
+        </div>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
