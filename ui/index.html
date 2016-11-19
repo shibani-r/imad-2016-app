@@ -87,11 +87,7 @@
                     <h3>login to unlock some awesome features</h3>
                    
                     
-                    <div>
-                        <input type="text" id="usernameR" placeholder="username" /><br/>
-                        <input type="password" id="passwordR" placeholder="password"/><br/>
-                        <input type="submit" id="register_btn" value="register"/><br/>
-                    </div>
+                    
                     <button id="logout" class="button button5">LOGOUT</button>
             
     
@@ -106,15 +102,15 @@
     </div>
     <br/><br/>
     <div class="container">
-        <div id="logindetails">
+        
           <label><b>Username</b></label>
           <input type="text" placeholder="Enter Username" id="username" required>
     
           <label><b>Password</b></label>
           <input type="password" placeholder="Enter Password" id="password" required>
             
-          <button type="submit" id="login_btn" value="login">Login</button>
-        </div>
+          <button type="submit" id="login_btn">Login</button>
+        
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
@@ -253,6 +249,31 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+</script>
+<script>
+    $(function() {
+    
+ $('#login').click(function() {
+  $('#container').html(`<label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="username" required>
+    
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="password" required>
+            
+          <button type="submit" id="login_btn">Login</button>`
+      );
+});
+$('#signup').click(function() {
+  $('#container').html(`<label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" id="usernameR" required>
+    
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="passwordR" required>
+            
+          <button type="submit" id="register_btn">Sign Up</button>`
+      );
+});
+});
 </script>
     </body>
 </html>
