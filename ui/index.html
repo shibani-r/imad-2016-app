@@ -21,11 +21,33 @@
                     <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
                         <i class="fa fa-bars"></i>
                     </a></li>
-                <li><a href="/" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-hover-none w3-hover-text-grey w3-padding-large">
-                    <i class="fa fa-home w3-large"> </i> login
+                <li><span onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="w3-hover-none w3-hover-text-grey w3-padding-large">login
+                    </span></li>
+                
+                <div id="id01" class="modal">
+                      <form class="modal-content animate">
+                        <div class="imgcontainer">
+                          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                          <img src="img_avatar.png" alt="Avatar" class="avatar">
+                        </div>
                     
-
-                    </a></li>
+                        <div class="container">
+                          <label><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                          <label><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                          <button type="submit">Login</button>
+                              </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          
+                        </div>
+                      </form>
+                    </div>
+                
                 <li class="w3-hide-small"><a href="#about" class="w3-padding-large">ABOUT</a></li>
                 <li class="w3-hide-small"><a href="#contents" class="w3-padding-large">CONTENTS</a></li>
                 <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large">CONTACT</a></li>
@@ -212,7 +234,17 @@
                     }
             }
         </script>
-        
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     
     </body>
 </html>
