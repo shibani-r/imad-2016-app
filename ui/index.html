@@ -101,7 +101,7 @@
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
     <br/><br/>
-    <div class="container">
+    <div class="container" id="form-details">
         
           <label><b>Username</b></label>
           <input type="text" placeholder="Enter Username" id="username" required>
@@ -254,7 +254,7 @@ window.onclick = function(event) {
     $(function() {
     
  $('#login').click(function() {
-  $('.container').html(`<label><b>Username</b></label>
+  $('#form-details').html(`<label><b>Username</b></label>
           <input type="text" placeholder="Enter Username" id="username" required>
     
           <label><b>Password</b></label>
@@ -264,7 +264,7 @@ window.onclick = function(event) {
       );
 });
 $('#signup').click(function() {
-  $('.container').html(`<label><b>Username</b></label>
+   $('#form-details').html(`<label><b>Username</b></label>
           <input type="text" placeholder="Enter Username" id="usernameR" required>
     
           <label><b>Password</b></label>
