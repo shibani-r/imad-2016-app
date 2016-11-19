@@ -151,7 +151,7 @@ button {
     position: relative;
 }
 
-avatar {
+.avatar {
     width: 40%;
     border-radius: 50%;
 }
