@@ -89,7 +89,7 @@ function createTemplate (data){
                 </div>
     
                 <!-- Header -->
-                <header class="w3-container w3-center w3-padding-128">
+                <header class="w3-container w3-center w3-padding-128 margin-top:46px">
                   <h1 class="w3-margin w3-jumbo">${heading}</h1>
                   <p class="w3-xlarge"><i class="fa fa-clock-o"> </i> ${date.toDateString()}</p>
                 </header>
