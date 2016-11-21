@@ -3,13 +3,13 @@ function loadLoginForm () {
     var loginHtml = `
              <div class="w3-btn-group">
              
-             <button class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:50%" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
+             <button class="w3-btn w3-blue-grey w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:50%" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
 
-            <button class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:50%" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Sign Up</button>
+            <button class="w3-btn w3-blue-grey w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:50%" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Sign Up</button>
             
             <div class="w3-btn-group">
             
-            <div id="id01" class="w3-panel w3-black" style="display:none">
+            <div id="id01" class="w3-panel w3-dark-grey" style="display:none">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
                 <h3>Welcome Back!</h3>
                 <label><b>Username</b></label>
@@ -21,7 +21,7 @@ function loadLoginForm () {
                 <input type="submit" id="login_btn" value="Login"/>
             </div>
 
-            <div id="id02" class="w3-panel w3-black" style="display:none">
+            <div id="id02" class="w3-panel w3-dark-grey" style="display:none">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
                 <h3>Sign Up for Free!</h3>
                 <label><b> Set Username</b></label>
