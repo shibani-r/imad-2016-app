@@ -31,15 +31,15 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   submit.value = 'Success!';
-                  alert('success');
+                  alert('You are successfully logged in!');
               } else if (request.status === 403) {
                   submit.value = 'Invalid credentials. Try again?';
-                  alert('invalid credentials');
+                  alert('Invalid username or password!');
               } else if (request.status === 500) {
-                  alert('Something went wrong on the server');
+                  alert('Something went wrong on the server!');
                   submit.value = 'Login';
               } else {
-                  alert('Something went wrong on the server');
+                  alert('Something went wrong on the server!');
                   submit.value = 'Login';
               }
               loadLogin();
@@ -69,10 +69,10 @@ function loadLoginForm () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  alert('User created successfully');
+                  alert('User registered successfully');
                   register.value = 'Registered!';
               } else {
-                  alert('Could not register the user');
+                  alert('Could not register the user!');
                   register.value = 'Register';
               }
           }
@@ -94,7 +94,7 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi <i>${username}</i></h3>
+        <h3> Hi <i>${username}</i>!</h3>
         <a href="/logout"><button id="logout" class="button button5">LOGOUT</button></a>
     `;
 }
