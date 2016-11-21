@@ -3,6 +3,7 @@ function loadLoginForm () {
     var loginHtml = `<span id="login">Login</span>  |  <span id="signup">Sign Up</span>
              
                     <div id="formdetails">
+                    
                         <div id="logindetails">
                             <h3>Welcome Back!</h3>
                             <label><b>Username</b></label>
@@ -13,7 +14,16 @@ function loadLoginForm () {
                         
                             <input type="submit" id="login_btn" value="Login"/>
                         </div>
-                        
+                        <div id="signupdetails">
+                            <h3>Sign Up for Free!</h3>
+                            <label><b> Set Username</b></label>
+                            <input type="text" placeholder="Enter Username" id="usernameR" required>
+                                                   
+                            <label><b>Set Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="passwordR" required>
+                                            
+                            <input type="submit" id="register_btn" value="Register"/>
+                        </div>   
                         
                     </div>
         `;
