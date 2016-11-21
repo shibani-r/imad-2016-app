@@ -1,11 +1,14 @@
 
 function loadLoginForm () {
     var loginHtml = `
+             <div class="w3-btn-group">
              
-             <button class="w3-btn w3-hover-teal" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
+             <button class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge" style="width:33.3%" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
 
-            <button class="w3-btn w3-hover-teal" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Sign Up</button>
-
+            <button class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge" style="width:33.3%" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Sign Up</button>
+            
+            <div class="w3-btn-group">
+            
             <div id="id01" class="w3-panel w3-red" style="display:none">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
                 <h3>Welcome Back!</h3>
