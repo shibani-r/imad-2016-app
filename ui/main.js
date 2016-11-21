@@ -26,7 +26,7 @@ function loadLoginForm () {
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
                 <h2 class="w3-text-white">Sign Up for Free!</h2>
                 <label class="w3-text-grey w3-left">Set Username</label>
-                <input type="text" placeholder="Enter Username" id="usernameR" style="border:2px solid #a0b3b0background-color:rgba(19, 35, 47, 0.9);color:white;" required>
+                <input type="text" placeholder="Enter Username" id="usernameR" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                                                                
                 <label class="w3-text-grey w3-left">Set Password</label>
                 <input type="password" placeholder="Enter Password" id="passwordR" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
