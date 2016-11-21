@@ -75,7 +75,7 @@ function loadComments () {
                 var commentsData = JSON.parse(this.responseText);
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
-                    content += `<div class="comment w3-panel w3-card-8 w3-black">
+                    content += `<div class="comment w3-panel w3-card-8 w3-orange">
                         <p><i>"${escapeHTML(commentsData[i].comment)}"</i></p>
                         <div class="commenter">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
