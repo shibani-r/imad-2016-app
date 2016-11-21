@@ -1,47 +1,36 @@
 
 function loadLoginForm () {
-    var loginHtml = `<span id="login">Login</span>  |  <span id="signup">Sign Up</span>
+    var loginHtml = `
              
-             <button class="w3-btn" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Show red Panel</button>
+             <button class="w3-btn" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
 
-<button class="w3-btn" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Show green Panel</button>
+            <button class="w3-btn" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Sign Up</button>
 
-<div id="id01" class="w3-panel w3-red" style="display:none">
-  <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
-  <p>Click on the X to close this panel.</p>
-  <p>Click on the X to close this panel.</p>
-</div>
+            <div id="id01" class="w3-panel w3-red" style="display:none">
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
+                <h3>Welcome Back!</h3>
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="username" required>
+                            
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="password" required>
+                                    
+                <input type="submit" id="login_btn" value="Login"/>
+            </div>
 
-<div id="id02" class="w3-panel w3-green" style="display:none">
-  <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
-  <p>Click on the X to close this panel.</p>
-  <p>Click on the X to close this panel.</p>
-</div>
+            <div id="id02" class="w3-panel w3-green" style="display:none">
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
+                <h3>Sign Up for Free!</h3>
+                <label><b> Set Username</b></label>
+                <input type="text" placeholder="Enter Username" id="usernameR" required>
+                                                               
+                <label><b>Set Password</b></label>
+                <input type="password" placeholder="Enter Password" id="passwordR" required>
+                                                        
+                <input type="submit" id="register_btn" value="Register"/>
+            </div>
 
-                    <div id="formdetails">
                     
-                        <div id="logindetails">
-                            <h3>Welcome Back!</h3>
-                            <label><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" id="username" required>
-                
-                            <label><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" id="password" required>
-                        
-                            <input type="submit" id="login_btn" value="Login"/>
-                        </div>
-                        <div id="signupdetails">
-                            <h3>Sign Up for Free!</h3>
-                            <label><b> Set Username</b></label>
-                            <input type="text" placeholder="Enter Username" id="usernameR" required>
-                                                   
-                            <label><b>Set Password</b></label>
-                            <input type="password" placeholder="Enter Password" id="passwordR" required>
-                                            
-                            <input type="submit" id="register_btn" value="Register"/>
-                        </div>   
-                        
-                    </div>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
