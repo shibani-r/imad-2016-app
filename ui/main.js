@@ -17,8 +17,9 @@ function loadLoginForm () {
                             
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" id="password" required>
-                                    
+                <br/>                    
                 <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="login_btn" value="Login"/>
+                <br/>
             </div>
 
             <div id="id02" class="w3-panel w3-blue-grey" style="display:none">
@@ -29,8 +30,9 @@ function loadLoginForm () {
                                                                
                 <label><b>Set Password</b></label>
                 <input type="password" placeholder="Enter Password" id="passwordR" required>
-                                                        
+                <br/>                                       
                 <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="register_btn" value="Register"/>
+                <br/>
             </div>
 
                     
