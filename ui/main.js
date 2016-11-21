@@ -2,6 +2,22 @@
 function loadLoginForm () {
     var loginHtml = `<span id="login">Login</span>  |  <span id="signup">Sign Up</span>
              
+             <button class="w3-btn" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Show red Panel</button>
+
+<button class="w3-btn" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Show green Panel</button>
+
+<div id="id01" class="w3-panel w3-red" style="display:none">
+  <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
+  <p>Click on the X to close this panel.</p>
+  <p>Click on the X to close this panel.</p>
+</div>
+
+<div id="id02" class="w3-panel w3-green" style="display:none">
+  <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
+  <p>Click on the X to close this panel.</p>
+  <p>Click on the X to close this panel.</p>
+</div>
+
                     <div id="formdetails">
                     
                         <div id="logindetails">
