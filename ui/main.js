@@ -32,14 +32,18 @@ function loadLoginForm () {
               if (request.status === 200) {
                   submit.value = 'Success!';
                   alert('You are successfully logged in!');
+                  console.log('You are successfully logged in!');
               } else if (request.status === 403) {
                   submit.value = 'Invalid credentials. Try again?';
                   alert('Invalid username or password!');
+                  console.log('Invalid username or password!');
               } else if (request.status === 500) {
                   alert('Something went wrong on the server!');
+                  console.log('Something went wrong on the server!');
                   submit.value = 'Login';
               } else {
                   alert('Something went wrong on the server!');
+                  console.log('Something went wrong on the server!');
                   submit.value = 'Login';
               }
               loadLogin();
@@ -56,6 +60,7 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
+        console.log('Logging in...');
         
     };
     
@@ -70,9 +75,11 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   alert('User registered successfully');
+                  console.log('User registered successfully');
                   register.value = 'Registered!';
               } else {
                   alert('Could not register the user!');
+                  console.log('Could not register the user!');
                   register.value = 'Register';
               }
           }
@@ -87,6 +94,7 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: usernameR, password: passwordR}));  
         register.value = 'Registering...';
+        console.log('Registering...');
     
     };
 }
