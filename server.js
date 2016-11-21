@@ -215,7 +215,7 @@ app.post('/create-user', function (req, res) {
     pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
-        }  else if (username.length === 0 || password.length === 0) {
+        }  else if (username.value.length === 0 || password.value.length === 0) {
             res.send('Empty fields');      
                   
             } else {
