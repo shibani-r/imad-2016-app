@@ -95,11 +95,7 @@ function loadLoginForm () {
                   alert('User registered successfully');
                   console.log('User registered successfully');
                   register.value = 'Registered!';
-              } else if (document.getElementById('usernameR').value.length === 0 || document.getElementById('passwordR').value.length ===0) {
-                  alert('Please fill out the fields!');
-                  console.log('Empty fields!');
-                  register.value = 'Register';
-                  } else {
+              } else {
                   alert('Could not register the user!');
                   console.log('Could not register the user!');
                   register.value = 'Register';
@@ -108,13 +104,13 @@ function loadLoginForm () {
         };
         
         // Make the request
-        var username = document.getElementById('usernameR').value;
-        var password = document.getElementById('passwordR').value;
-        console.log(username);
-        console.log(password);
+        var usernameR = document.getElementById('usernameR').value;
+        var passwordR = document.getElementById('passwordR').value;
+        console.log(usernameR);
+        console.log(passwordR);
         request.open('POST', '/create-user', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({username: username, password: password}));  
+        request.send(JSON.stringify({usernameR: usernameR, passwordR: passwordR}));  
         register.value = 'Registering...';
         console.log('Registering...');
     
