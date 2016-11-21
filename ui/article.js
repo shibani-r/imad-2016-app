@@ -77,12 +77,12 @@ function loadComments () {
                     var time = new Date(commentsData[i].timestamp);
                     content += `<div class="w3-panel w3-card-8 w3-white w3-leftbar w3-border-orange" style="padding:10px">
                                    <div class="comment">
-                                        <p><i>"${escapeHTML(commentsData[i].comment)}"</i></p>
+                                        <p><i>" ${escapeHTML(commentsData[i].comment)} "</i></p>
                                         <div class="commenter">
-                                            ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
+                                            ${commentsData[i].username}  -  ${time.toLocaleTimeString()}  on  ${time.toLocaleDateString()} 
                                         </div>
                                     </div>
-                                </div>`
+                                </div>`;
                 }
                 comments.innerHTML = content;
             } else {
