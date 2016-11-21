@@ -18,7 +18,7 @@ function loadLoginForm () {
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" id="password" required>
                                     
-                <input type="submit" id="login_btn" value="Login"/>
+                <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="login_btn" value="Login"/>
             </div>
 
             <div id="id02" class="w3-panel w3-blue-grey" style="display:none">
@@ -30,7 +30,7 @@ function loadLoginForm () {
                 <label><b>Set Password</b></label>
                 <input type="password" placeholder="Enter Password" id="passwordR" required>
                                                         
-                <input type="submit" id="register_btn" value="Register"/>
+                <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="register_btn" value="Register"/>
             </div>
 
                     
@@ -121,7 +121,7 @@ function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
         <h3> Hi <i>${username}</i>!</h3>
-        <a href="/logout"><button id="logout" class="button button5">LOGOUT</button></a>
+        <a href="/logout"><button id="logout" class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple"">LOGOUT</button></a>
     `;
 }
 
