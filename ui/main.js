@@ -3,9 +3,9 @@ function loadLoginForm () {
     var loginHtml = `
              <div class="w3-btn-group">
              
-             <button id="login" class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:33.3%" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';document.getElementById('login').style.background-color='teal';">Login</button>
+             <button class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:33.3%" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
 
-            <button id="signup" class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:33.3%" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';document.getElementById('signup').style.background-color='teal';">Sign Up</button>
+            <button class="w3-btn w3-hover-teal w3-wide w3-padding-xlarge w3-ripple" style="width:33.3%" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Sign Up</button>
             
             <div class="w3-btn-group">
             
