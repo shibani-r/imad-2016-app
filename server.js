@@ -234,7 +234,6 @@ app.post('/login', function (req, res) {
            
                 if (result.rows.length === 0) {
                     res.status(403).send('username/password is invalid');
-                    console.log('username/password is invalid');
                 }   else {
                         // Match the password
                         var dbString = result.rows[0].password;
@@ -249,11 +248,11 @@ app.post('/login', function (req, res) {
                             // { auth: {userId }}
                             
                             res.send('Credentials correct!');
-                            console.log('Credentials correct!')
+                            
                     
                         }   else {
                                 res.status(403).send('username/password is invalid');
-                                console.log('username/password is invalid')
+                                
                             }
                 
                     }
@@ -273,14 +272,14 @@ app.get('/check-login', function (req, res) {
        });
    }    else {
             res.status(400).send('You are not logged in');
-            console.log('You are not logged in');
+            
         }
 });
 
 app.get('/logout', function (req, res) {
     delete req.session.auth;
     res.send('logged out');
-    console.log('logged out');
+    
 });
 
 var pool = new Pool(config);
@@ -307,7 +306,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
             } else {
                 if (result.rows.length === 0) {
                     res.status(400).send('Article not found');
-                    console.log('Article not found');
+                    
                 } else {
                     var articleId = result.rows[0].id;
                     // Now insert the right comment for this article
@@ -319,7 +318,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                                 res.status(500).send(err.toString());
                             } else {
                                 res.status(200).send('Comment inserted!');
-                                console.log('Comment inserted!');
+                                
                             }
                         });
                 }
@@ -327,7 +326,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
        });     
     } else {
         res.status(403).send('Only logged in users can comment');
-        console.log('Only logged in users can comment');
+        
     }
 });
 
@@ -343,7 +342,7 @@ app.get('/articles/:articleName', function (req, res) {
         }   else {
                 if(result.rows.length === 0) {
                     res.status(404).send('Article not found');
-                    console.log('Article not found');
+                    
                 }   else {
                         var articleData = result.rows[0];
                         res.send(createTemplate(articleData));
