@@ -38,6 +38,9 @@ function loadLoginForm () {
                         <ul class="w3-navbar w3-black w3-card-2 w3-left-align w3-large">
                             <li class="w3-padding-large w3-hover-white" id="login">Log In</li>
                             <li class="w3-padding-large w3-hover-white" id="signup">Sign Up</li>
+                        <ul>
+                    </div>
+                    
                         <div id="formdetails">
                         
                             <div id="logindetails">
