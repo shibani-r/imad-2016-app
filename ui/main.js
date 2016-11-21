@@ -87,7 +87,7 @@ function loadLoginForm () {
                   alert('User registered successfully');
                   console.log('User registered successfully');
                   register.value = 'Registered!';
-              } else if (document.getElementById('usernameR').value === '' || document.getElementById('passwordR').value === '') {
+              } else if (usernameR.length === 0 || passwordR.length === 0) {
                   alert('Please fill out the fields!');
                   console.log('Empty fields!');
                   register.value = 'Register';
