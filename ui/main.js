@@ -10,12 +10,12 @@ function loadLoginForm () {
             <div class="w3-btn-group">
             
             <div id="id01" class="w3-panel w3-blue-grey w3-padding-large" style="display:block">
-                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-teal">x</span>
-                <h2 class="w3-teal">Welcome Back!</h2>
-                <label class="w3-teal">Username</label>
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
+                <h2 class="w3-text-teal">Welcome Back!</h2>
+                <label class="w3-text-teal">Username</label>
                 <input type="text" placeholder="Enter Username" id="username" required>
                             
-                <label class="w3-teal">Password</label>
+                <label class="w3-text-teal">Password</label>
                 <input type="password" placeholder="Enter Password" id="password" required>
                 <br/>                    
                 <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="login_btn" value="Login"/>
@@ -23,12 +23,12 @@ function loadLoginForm () {
             </div>
 
             <div id="id02" class="w3-panel w3-blue-grey w3-padding-large" style="display:none">
-                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-teal">x</span>
-                <h2 class="w3-teal">Sign Up for Free!</h2>
-                <label class="w3-teal">Set Username</label>
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
+                <h2 class="w3-text-teal">Sign Up for Free!</h2>
+                <label class="w3-text-teal">Set Username</label>
                 <input type="text" placeholder="Enter Username" id="usernameR" required>
                                                                
-                <label class="w3-teal">Set Password</label>
+                <label class="w3-text-teal">Set Password</label>
                 <input type="password" placeholder="Enter Password" id="passwordR" required>
                 <br/>                                       
                 <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="register_btn" value="Register"/>
