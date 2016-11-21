@@ -11,7 +11,7 @@ function loadLoginForm () {
                             <label><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" id="password" required>
                         
-                            <input type="submit" id="login_btn" value="Login">LOGIN</button>
+                            <input type="submit" id="login_btn" value="Login"/>
                         </div>
                         
                         
