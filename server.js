@@ -122,18 +122,17 @@ function createTemplate (data){
                         <div class="w3-twothird">
                             <h1>Comments</h1>
                             
-                
                             <p class="w3-text-black">
-                            
-              <div id="comment_form">
-              </div>
-              <div id="comments">
-                <center>Loading comments...</center>
-              </div>
+                              <div id="comment_form">
+                              </div>
+                              <div id="comments">
+                                <center>Loading comments...</center>
+                              </div>
                             </p>
+                            
                         </div>
                         
-                         <div class="w3-third w3-center">
+                        <div class="w3-third w3-center">
                             <i class="fa fa-comments-o w3-padding-64 w3-text-orange "></i>
                         </div>
                         
@@ -179,9 +178,9 @@ function createTemplate (data){
                         document.getElementById("myNav").style.height = "0%";
                     }
                 </script>
-    <script type="text/javascript" src="/ui/article.js"></script>
-              
-    
+                
+                <script type="text/javascript" src="/ui/article.js"></script>
+             
             </body>
         </html>
     
@@ -209,18 +208,18 @@ app.post('/create-user', function (req, res) {
     // username, password
     // {"username": "shibani", "password": "password"}
     // JSON
-    var usernameR = req.body.usernameR;
-    var passwordR = req.body.passwordR;
+    var username = req.body.username;
+    var password = req.body.password;
     var salt = crypto.randomBytes(128).toString('hex');
-    var dbString = hash(passwordR, salt);
+    var dbString = hash(password, salt);
     pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
-        }  else if (usernameR.length === 0 || passwordR.length === 0) {
+        }  else if (username.length === 0 || password.length === 0) {
             res.send('Empty fields');      
                   
             } else {
-                res.send('User successfully created: ' + usernameR);
+                res.send('User successfully created: ' + username);
               }
     });
 });
