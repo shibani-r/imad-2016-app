@@ -11,7 +11,7 @@ function loadLoginForm () {
                             <label><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" id="password" required>
                         
-                            <button type="submit" id="login_btn" value="Login">LOGIN</button>
+                            <button type="submit" id="login_btn" value="Login"></button>
                         </div>
                         
                         
@@ -31,8 +31,10 @@ function loadLoginForm () {
               // Take some action
               if (request.status === 200) {
                   submit.value = 'Success!';
+                  alert('success');
               } else if (request.status === 403) {
                   submit.value = 'Invalid credentials. Try again?';
+                  alert('invalid credentials');
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
