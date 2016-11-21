@@ -11,12 +11,12 @@ function loadLoginForm () {
             
             <div id="id01" class="w3-panel w3-padding-large" style="display:block; background-color:rgba(19, 35, 47, 0.9);">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
-                <h2>Welcome Back!</h2>
-                <label class="w3-text-teal">Username</label>
-                <input type="text" placeholder="Enter Username" id="username" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);" required>
+                <h2 class="w3-text-white">Welcome Back!</h2>
+                <label class="w3-text-grey w3-left">Username</label>
+                <input type="text" placeholder="Enter Username" id="username" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                             
-                <label class="w3-text-teal">Password</label>
-                <input type="password" placeholder="Enter Password" id="password" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);" required>
+                <label class="w3-text-grey w3-left">Password</label>
+                <input type="password" placeholder="Enter Password" id="password" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                 <br/>                    
                 <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="login_btn" value="Login"/>
                 <br/>
@@ -24,12 +24,12 @@ function loadLoginForm () {
 
             <div id="id02" class="w3-panel w3-padding-large" style="display:none; background-color:rgba(19, 35, 47, 0.9);">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
-                <h2>Sign Up for Free!</h2>
-                <label class="w3-text-teal">Set Username</label>
-                <input type="text" placeholder="Enter Username" id="usernameR" style="border:2px solid #a0b3b0background-color:rgba(19, 35, 47, 0.9);;" required>
+                <h2 class="w3-text-white">Sign Up for Free!</h2>
+                <label class="w3-text-grey w3-left">Set Username</label>
+                <input type="text" placeholder="Enter Username" id="usernameR" style="border:2px solid #a0b3b0background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                                                                
-                <label class="w3-text-teal">Set Password</label>
-                <input type="password" placeholder="Enter Password" id="passwordR" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);" required>
+                <label class="w3-text-grey w3-left">Set Password</label>
+                <input type="password" placeholder="Enter Password" id="passwordR" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                 <br/>                                       
                 <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="register_btn" value="Register"/>
                 <br/>
