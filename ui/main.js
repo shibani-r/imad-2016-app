@@ -33,22 +33,36 @@ button.onclick = function () {
 
 
 function loadLoginForm () {
-    var loginHtml = `<h3>LOGIN HERE!</h3>
+    var loginHtml = `<!--navbar-->
+                    <div class="w3-top">
+                        <ul class="w3-navbar w3-black w3-card-2 w3-left-align w3-large">
+                            <li class="w3-padding-large w3-hover-white" id="login">Log In</li>
+                            <li class="w3-padding-large w3-hover-white" id="signup">Sign Up</li>
+                        <div id="formdetails">
+                        
+                            <div id="logindetails">
+                            <h3>Welcome Back!</h3>
                                 <label><b>Username</b></label>
                                 <input type="text" placeholder="Enter Username" id="username" required>
             
                                 <label><b>Password</b></label>
                                 <input type="password" placeholder="Enter Password" id="password" required>
                     
-                                <button type="submit" id="login_btn" value="Login">Login</button>
-                            <h3>SIGN-UP HERE!</h3>
-                                <label><b>Username</b></label>
+                                <button type="submit" id="login_btn" value="Login">LOGIN</button>
+                            </div>
+                            
+                            <div id="signupdetails">
+                            <h3>Sign Up for Free!</h3>
+                                <label><b>Your Name</b></label>
                                 <input type="text" placeholder="Enter Username" id="usernameR" required>
                            
-                                <label><b>Password</b></label>
+                                <label><b>Set Password</b></label>
                                 <input type="password" placeholder="Enter Password" id="passwordR" required>
                     
-                                <button type="submit" id="register_btn" value="Register">Sign Up</button>
+                                <button type="submit" id="register_btn" value="Register">GET STARTED</button>
+                            </div>  
+                            
+                        </div>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
