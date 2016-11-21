@@ -106,7 +106,7 @@ function loadLoginForm () {
         console.log(passwordR);
         request.open('POST', '/create-user', true);
         request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({username: usernameR, password: passwordR}));  
+        request.send(JSON.stringify({usernameR: usernameR, passwordR: passwordR}));  
         register.value = 'Registering...';
         console.log('Registering...');
     
