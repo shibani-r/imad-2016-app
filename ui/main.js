@@ -33,23 +33,31 @@ button.onclick = function () {
 
 
 function loadLoginForm () {
-    var loginHtml = `<h3>LOGIN HERE!</h3>
-                        <label><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" id="username" required>
-            
-                        <label><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" id="password" required>
-                    
-                            <button type="submit" id="login_btn" value="Login">Login</button>
-                            
-                    <h3>SIGN-UP HERE!</h3>
-                        <label><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" id="usernameR" required>
-                           
-                        <label><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" id="passwordR" required>
-                    
-                            <button type="submit" id="register_btn" value="Register">Sign Up</button>
+    var loginHtml = `<span id="login">Login<span>  |  <span id="signup">Sign Up</span>
+    
+                    <div id="formdetails">
+                        <div id="logindetails">
+                            <h3>Welcome Back!</h3>
+                            <label><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" id="username" required>
+                
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="password" required>
+                        
+                            <button type="submit" id="login_btn" value="Login">LOGIN</button>
+                        </div>
+                        
+                        <div id="signupdetails">
+                            <h3>Sign Up for Free!</h3>
+                            <label><b> Set Username</b></label>
+                            <input type="text" placeholder="Enter Username" id="usernameR" required>
+                               
+                            <label><b>Set Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="passwordR" required>
+                        
+                            <button type="submit" id="register_btn" value="Register">GET STARTED</button>
+                        </div>
+                    </div>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
