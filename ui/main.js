@@ -9,7 +9,7 @@ function loadLoginForm () {
             
             <div class="w3-btn-group">
             
-            <div id="id01" class="w3-panel w3-blue-grey w3-padding-large" style="display:block">
+            <div id="id01" class="w3-panel w3-black w3-padding-large" style="display:block">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
                 <h2 class="w3-text-teal">Welcome Back!</h2>
                 <label class="w3-text-teal">Username</label>
@@ -22,7 +22,7 @@ function loadLoginForm () {
                 <br/>
             </div>
 
-            <div id="id02" class="w3-panel w3-blue-grey w3-padding-large" style="display:none">
+            <div id="id02" class="w3-panel w3-black w3-padding-large" style="display:none">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
                 <h2 class="w3-text-teal">Sign Up for Free!</h2>
                 <label class="w3-text-teal">Set Username</label>
