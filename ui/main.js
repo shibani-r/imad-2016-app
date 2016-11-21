@@ -33,7 +33,7 @@ button.onclick = function () {
 
 
 function loadLoginForm () {
-    var loginHtml = `<h2 id="login">Login</h2>  |  <h2 id="signup">Sign Up</h2>
+    var loginHtml = `<span id="login">Login</span>  |  <span id="signup">Sign Up</span>
     
                     <div id="formdetails">
                         <div id="logindetails">
