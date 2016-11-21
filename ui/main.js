@@ -9,7 +9,7 @@ function loadLoginForm () {
             
             <div class="w3-btn-group">
             
-            <div id="id01" class="w3-panel w3-blue-grey w3-padding-large" style="display:none">
+            <div id="id01" class="w3-panel w3-blue-grey w3-padding-large" style="display:block">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
                 <h3>Welcome Back!</h3>
                 <label><b>Username</b></label>
