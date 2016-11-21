@@ -33,7 +33,7 @@ button.onclick = function () {
 
 
 function loadLoginForm () {
-    var loginHtml = `<span id="login">Login<span>  |  <span id="signup">Sign Up</span>
+    var loginHtml = `<span id="login"><h1>Login</h1><span>  |  <span id="signup"><h1>Sign Up</h1></span>
     
                     <div id="formdetails">
                         <div id="logindetails">
@@ -47,16 +47,7 @@ function loadLoginForm () {
                             <button type="submit" id="login_btn" value="Login">LOGIN</button>
                         </div>
                         
-                        <div id="signupdetails">
-                            <h3>Sign Up for Free!</h3>
-                            <label><b> Set Username</b></label>
-                            <input type="text" placeholder="Enter Username" id="usernameR" required>
-                               
-                            <label><b>Set Password</b></label>
-                            <input type="password" placeholder="Enter Password" id="passwordR" required>
                         
-                            <button type="submit" id="register_btn" value="Register">GET STARTED</button>
-                        </div>
                     </div>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
