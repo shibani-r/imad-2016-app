@@ -105,11 +105,14 @@ function loadLoginForm () {
                   alert('User registered successfully');
                   console.log('User registered successfully');
                   register.value = 'Registered!';
-              } else {
-                  alert('Could not register the user!');
-                  console.log('Could not register the user!');
-                  register.value = 'Register';
-              }
+                } else if (usernameR === '' || passwordR === '') {
+                        alert("Username/Password field can't be left empty!");
+                        return;
+                    } else {
+                            alert('Could not register the user!');
+                            console.log('Could not register the user!');
+                            register.value = 'Register';
+                        }
           }
         };
         
