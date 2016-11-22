@@ -123,7 +123,7 @@ function loadLoginForm () {
         // Make the request
         var usernameR = document.getElementById('usernameR').value;
         var passwordR = document.getElementById('passwordR').value;
-        if( usernameR === '' || password === '')
+        if( usernameR === '' || passwordR === '')
         { alert('empty');
         }
         console.log(usernameR);
