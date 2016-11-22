@@ -112,6 +112,10 @@ function loadLoginForm () {
         // Make the request
         var usernameR = document.getElementById('usernameR').value;
         var passwordR = document.getElementById('passwordR').value;
+        if (usernameR === '' || passwordR === '') {
+            alert("Username/Password field can't be left empty!");
+            return;
+        }
         console.log(usernameR);
         console.log(passwordR);
         request.open('POST', '/create-user', true);
