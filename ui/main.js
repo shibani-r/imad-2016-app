@@ -105,7 +105,7 @@ function loadLoginForm () {
             
                 if (request.readyState === XMLHttpRequest.DONE) {
                     // Take some action
-                    if (request.status === 200 && check()=== true) {
+                    if (request.status === 200 && check()=== false) {
                         alert('User registered successfully');
                         console.log('User registered successfully');
                         register.value = 'Registered!';
@@ -126,8 +126,10 @@ function loadLoginForm () {
         function check(usenameR,passwordR){
             if( usernameR === '' || passwordR === '')
         { alert('empty');
-        return false;
-        }}
+        return true;
+        }
+            else{return false}
+        }
         console.log(usernameR);
         console.log(passwordR);
         request.open('POST', '/create-user', true);
