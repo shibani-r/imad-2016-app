@@ -99,7 +99,7 @@ function loadLoginForm () {
         
             // Create a request object
             var request = new XMLHttpRequest();
-            if(checkNotEmpty() === true) {
+    
             // Capture the response and store it in a variable
             request.onreadystatechange = function () {
             
@@ -116,19 +116,15 @@ function loadLoginForm () {
                         }
                 }
             };
-            } else{alert('empty');console.log('empty');}
+        
          
         
         
         // Make the request
         var usernameR = document.getElementById('usernameR').value;
         var passwordR = document.getElementById('passwordR').value;
-        function checkNotEmpty(usernameR, passwordR) {
-	        if( usernameR === '' || passwordR === '') {		
-		        return false;
-		    } else {
-			        return true;
-		        }
+        if( usernameR === '' || password === '')
+        { alert('empty');
         }
         console.log(usernameR);
         console.log(passwordR);
