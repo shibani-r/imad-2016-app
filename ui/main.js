@@ -95,7 +95,7 @@ function loadLoginForm () {
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {
-        if(checkNotEmpty()) {
+        while(checkNotEmpty()) {
         
         // Create a request object
         var request = new XMLHttpRequest();
