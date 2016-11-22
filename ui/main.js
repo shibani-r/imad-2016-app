@@ -95,11 +95,11 @@ function loadLoginForm () {
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {
-        if(checkNotEmpty() === true) {
+        
         
             // Create a request object
             var request = new XMLHttpRequest();
-            
+            if(checkNotEmpty() === true) {
             // Capture the response and store it in a variable
             request.onreadystatechange = function () {
             
@@ -115,13 +115,10 @@ function loadLoginForm () {
                             register.value = 'Register';
                         }
                 }
-        
             };
-        } else {
-            alert('Please fill out the username/password fields!');
-            console.log('Empty fields!');
+            } else{alert('empty');console.log('empty');}
+         
         
-        }
         
         // Make the request
         var usernameR = document.getElementById('usernameR').value;
