@@ -95,23 +95,27 @@ function loadLoginForm () {
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {
+        
         // Create a request object
         var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
         request.onreadystatechange = function () {
-          if (request.readyState === XMLHttpRequest.DONE) {
-              // Take some action
-              if (request.status === 200) {
-                  alert('User registered successfully');
-                  console.log('User registered successfully');
-                  register.value = 'Registered!';
+        if(checkNotEmpty()) {
+            if (request.readyState === XMLHttpRequest.DONE) {
+                // Take some action
+                if (request.status === 200) {
+                    alert('User registered successfully');
+                    console.log('User registered successfully');
+                    register.value = 'Registered!';
                 } else {
-                            alert('Could not register the user!');
-                            console.log('Could not register the user!');
-                            register.value = 'Register';
-                        }
-          }
+                        alert('Could not register the user!');
+                        console.log('Could not register the user!');
+                        register.value = 'Register';
+                    }
+            }
+        }
+    
         };
         
         // Make the request
@@ -126,6 +130,16 @@ function loadLoginForm () {
         console.log('Registering...');
     
     };
+}
+
+function checkNotEmpty() {
+	var username = document.getElementById("usernameR").value;
+	var password = document.getElementById("passwordR").value;
+	if( username === '' || password === '') {		
+		return false;
+		} else {
+			return true;
+		}
 }
 
 function loadLoggedInUser (username) {
