@@ -128,7 +128,7 @@ function loadLoginForm () {
         { alert('empty');
         return true;
         }
-            else{return false}
+            else{return false;}
         }
         console.log(usernameR);
         console.log(passwordR);
