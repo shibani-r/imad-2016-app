@@ -7,7 +7,7 @@ function loadLoginForm () {
 
             <button class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" style="width:50%" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none';">Sign Up</button>
             
-            <div class="w3-btn-group">
+            </div>
             
             <div id="id01" class="w3-panel w3-padding-large" style="display:block; background-color:rgba(19, 35, 47, 0.9);">
                 <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-text-teal">x</span>
