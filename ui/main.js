@@ -95,28 +95,32 @@ function loadLoginForm () {
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {
-        while(checkNotEmpty()) {
+        if(checkNotEmpty() === true) {
         
-        // Create a request object
-        var request = new XMLHttpRequest();
+            // Create a request object
+            var request = new XMLHttpRequest();
+            
+            // Capture the response and store it in a variable
+            request.onreadystatechange = function () {
+            
+                if (request.readyState === XMLHttpRequest.DONE) {
+                    // Take some action
+                    if (request.status === 200) {
+                        alert('User registered successfully');
+                        console.log('User registered successfully');
+                        register.value = 'Registered!';
+                    } else {
+                            alert('Could not register the user!');
+                            console.log('Could not register the user!');
+                            register.value = 'Register';
+                        }
+                }
         
-        // Capture the response and store it in a variable
-        request.onreadystatechange = function () {
+            };
+        } else {
+            alert('Please fill out the username/password fields!');
+            console.log('Empty fields!');
         
-            if (request.readyState === XMLHttpRequest.DONE) {
-                // Take some action
-                if (request.status === 200) {
-                    alert('User registered successfully');
-                    console.log('User registered successfully');
-                    register.value = 'Registered!';
-                } else {
-                        alert('Could not register the user!');
-                        console.log('Could not register the user!');
-                        register.value = 'Register';
-                    }
-            }
-    
-        };
         }
         
         // Make the request
