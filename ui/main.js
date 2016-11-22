@@ -107,6 +107,7 @@ function loadLoginForm () {
                   register.value = 'Registered!';
                 } else if (usernameR === '' || passwordR === '') {
                         alert("Username/Password field can't be left empty!");
+                        console.log('Empty fields!');
                         return;
                     } else {
                             alert('Could not register the user!');
