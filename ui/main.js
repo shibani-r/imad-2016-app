@@ -1,6 +1,7 @@
 
 function loadLoginForm () {
     var loginHtml = `
+        <div class="w3-panel w3-padding-large" style="display:block;background-color:rgba( 15 , 28 , 37 );">
              <div class="w3-btn-group">
              
              <button class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" style="width:50%" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
@@ -36,7 +37,7 @@ function loadLoginForm () {
                 <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="register_btn" value="Register"/>
                 <br/><br/>
             </div>
-
+        </div>
                     
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
