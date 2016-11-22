@@ -105,7 +105,7 @@ function loadLoginForm () {
             
                 if (request.readyState === XMLHttpRequest.DONE) {
                     // Take some action
-                    if (request.status === 200) {
+                    if (request.status === 200 && check()=== true) {
                         alert('User registered successfully');
                         console.log('User registered successfully');
                         register.value = 'Registered!';
@@ -123,10 +123,11 @@ function loadLoginForm () {
         // Make the request
         var usernameR = document.getElementById('usernameR').value;
         var passwordR = document.getElementById('passwordR').value;
-        if( usernameR === '' || passwordR === '')
+        function check(usenameR,passwordR){
+            if( usernameR === '' || passwordR === '')
         { alert('empty');
-        return;
-        }
+        return false;
+        }}
         console.log(usernameR);
         console.log(passwordR);
         request.open('POST', '/create-user', true);
@@ -134,10 +135,9 @@ function loadLoginForm () {
         request.send(JSON.stringify({usernameR: usernameR, passwordR: passwordR}));  
         register.value = 'Registering...';
         console.log('Registering...');
-    
+        
     };
 }
-
 
 
 function loadLoggedInUser (username) {
