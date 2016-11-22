@@ -270,14 +270,14 @@ app.get('/check-login', function (req, res) {
                 }
        });
    }    else {
-            res.status(400).send('You are not logged in');
+            res.status(400).send('You are not logged in!');
             
         }
 });
 
 app.get('/logout', function (req, res) {
     delete req.session.auth;
-    res.send('logged out');
+    res.send('You are logged out!');
     
 });
 
