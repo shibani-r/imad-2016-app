@@ -32,10 +32,10 @@ function loadLoginForm () {
                 <br/>
                 <form>
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Set Username</label>
-                    <input type="text" placeholder="Enter Username" id="username" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
+                    <input type="text" placeholder="Enter Username" id="usernameReg" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>                                    
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Set Password</label>
-                    <input type="password" placeholder="Enter Password" id="password" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
+                    <input type="password" placeholder="Enter Password" id="passwordReg" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>                                
                     <input class="w3-btn w3-teal w3-hover-blue-grey w3-padding-xlarge w3-ripple" style="width:100%" type="submit" id="register_btn" value="Register"/>
                 </form>
@@ -121,8 +121,8 @@ function loadLoginForm () {
         
         
         // Make the request
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
+        var username = document.getElementById('usernameReg').value;
+        var password = document.getElementById('passwordReg').value;
         console.log(username);
         console.log(password);
         request.open('POST', '/create-user', true);
