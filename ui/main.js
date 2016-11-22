@@ -95,13 +95,14 @@ function loadLoginForm () {
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {
+        if(checkNotEmpty()) {
         
         // Create a request object
         var request = new XMLHttpRequest();
         
         // Capture the response and store it in a variable
         request.onreadystatechange = function () {
-        if(checkNotEmpty()) {
+        
             if (request.readyState === XMLHttpRequest.DONE) {
                 // Take some action
                 if (request.status === 200) {
@@ -114,13 +115,20 @@ function loadLoginForm () {
                         register.value = 'Register';
                     }
             }
-        }
     
         };
+        }
         
         // Make the request
         var usernameR = document.getElementById('usernameR').value;
         var passwordR = document.getElementById('passwordR').value;
+        function checkNotEmpty() {
+	        if( usernameR === '' || passwordR === '') {		
+		        return false;
+		    } else {
+			        return true;
+		        }
+        }
         console.log(usernameR);
         console.log(passwordR);
         request.open('POST', '/create-user', true);
@@ -132,15 +140,7 @@ function loadLoginForm () {
     };
 }
 
-function checkNotEmpty() {
-	var username = document.getElementById("usernameR").value;
-	var password = document.getElementById("passwordR").value;
-	if( username === '' || password === '') {		
-		return false;
-		} else {
-			return true;
-		}
-}
+
 
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
