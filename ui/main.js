@@ -21,7 +21,7 @@ function loadLoginForm () {
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Password</label>
                     <input type="password" placeholder="Enter Password" id="password" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>              
-                    <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" style="width:100%" type="submit" id="login_btn" value="Login"/>
+                    <input class="w3-btn w3-teal w3-hover-blue-grey w3-padding-xlarge w3-ripple" style="width:100%" type="submit" id="login_btn" value="Login"/>
                 </form>
                 <br/><br/>
             </div>
@@ -37,7 +37,7 @@ function loadLoginForm () {
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Set Password</label>
                     <input type="password" placeholder="Enter Password" id="passwordR" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>                                
-                    <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="register_btn" value="Register"/>
+                    <input class="w3-btn w3-teal w3-hover-blue-grey w3-padding-xlarge w3-ripple" style="width:100%" type="submit" id="register_btn" value="Register"/>
                 </form>
                 <br/><br/>
             </div>
