@@ -125,6 +125,7 @@ function loadLoginForm () {
         var passwordR = document.getElementById('passwordR').value;
         if( usernameR === '' || passwordR === '')
         { alert('empty');
+        return;
         }
         console.log(usernameR);
         console.log(passwordR);
