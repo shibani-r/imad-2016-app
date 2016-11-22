@@ -85,10 +85,6 @@ function loadLoginForm () {
         
         console.log(username);
         console.log(password);
-        if (username === '' || password === '') {
-            alert("Username/Password field can't be left empty!");
-            return;
-        }
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
@@ -121,10 +117,6 @@ function loadLoginForm () {
         // Make the request
         var usernameR = document.getElementById('usernameR').value;
         var passwordR = document.getElementById('passwordR').value;
-        if (usernameR === '' || passwordR === '') {
-            alert("Username/Password field can't be left empty!");
-            return;
-        }
         console.log(usernameR);
         console.log(passwordR);
         request.open('POST', '/create-user', true);
