@@ -103,7 +103,9 @@ function createTemplate (data){
                             <h5 class="w3-padding-32 w3-justify">${content}</h5>
                 
                             <p class="w3-text-grey w3-justify">
+                            <div class="w3-panel w3-card-8 w3-white w3-leftbar w3-border-teal" style="padding:10px">
                                 ${quotes}
+                            </div>
                             </p>
                         </div>
                 
