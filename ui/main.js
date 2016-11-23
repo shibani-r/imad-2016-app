@@ -1,3 +1,25 @@
+function validateSignUpForm()
+{
+	var username = document.getElementById("usernameReg").value.trim();
+	if( username === '' ) {
+	    
+   	    document.getElementById("username-span").innerHTML = "*Username cannot be empty";
+		return false;
+	}
+	var password =  document.getElementById("passwordReg").value.trim();
+	if( password === '' ) {
+		document.getElementById("password-span").innerHTML = "*Password cannot be empty";		
+		return false;
+	}
+	if( password.length < 8 ) {
+		document.getElementById("password-span").innerHTML = "*Password must be atleast 8 characters";		
+		return false;
+	}
+	
+	
+
+	return true;
+}
 
 function loadLoginForm () {
     var loginHtml = `
@@ -15,6 +37,7 @@ function loadLoginForm () {
                 <h2 class="w3-text-white">Welcome Back!</h2>
                 <br/>
                 <form>
+                <span id="username-span"></span>
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Username</label>
                     <input type="text" placeholder="Enter Username" id="username" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>
@@ -31,6 +54,7 @@ function loadLoginForm () {
                 <h2 class="w3-text-white">Sign Up for Free!</h2>
                 <br/>
                 <form>
+                <span id="password-span"></span>
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Set Username</label>
                     <input type="text" placeholder="Enter Username" id="usernameReg" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>                                    
@@ -96,7 +120,8 @@ function loadLoginForm () {
     // Submit username/password to signup
     var register = document.getElementById('register_btn');
     register.onclick = function () {
-        
+        if(validateSignUpForm()) {
+	  
             // Create a request object
             var request = new XMLHttpRequest();
     
@@ -130,8 +155,8 @@ function loadLoginForm () {
         request.send(JSON.stringify({username: username, password: password}));  
         register.value = 'Registering...';
         console.log('Registering...');
-        
-    };
+	}  
+};
 }
 
 
