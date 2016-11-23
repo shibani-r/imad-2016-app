@@ -129,7 +129,6 @@ function loadLoginForm () {
                         console.log('User registered successfully');
                         register.value = 'Registered!';
                     } else {
-                            alert('Could not register the user!');
                             console.log('Could not register the user!');
                             register.value = 'Register';
                         }
