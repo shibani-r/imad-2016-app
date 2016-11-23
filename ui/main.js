@@ -37,7 +37,7 @@ function loadLoginForm () {
                 <h2 class="w3-text-white">Welcome Back!</h2>
                 <br/>
                 <form>
-                <span id="username-span"></span>
+                <span id="username-span" class="w3-text-grey w3-left"></span>
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Username</label>
                     <input type="text" placeholder="Enter Username" id="username" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>
@@ -54,7 +54,7 @@ function loadLoginForm () {
                 <h2 class="w3-text-white">Sign Up for Free!</h2>
                 <br/>
                 <form>
-                <span id="password-span"></span>
+                <span id="password-span" class="w3-text-grey w3-left"></span>
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Set Username</label>
                     <input type="text" placeholder="Enter Username" id="usernameReg" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>                                    
