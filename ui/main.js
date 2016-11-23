@@ -48,10 +48,12 @@ function loadLoginForm () {
                 <br/>
                 <form>
                     <span id="username-span" class="w3-text-grey w3-left"></span>
+                    <br/>
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Set Username</label>
                     <input type="text" placeholder="Enter Username" id="usernameReg" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>             
                     <span id="password-span" class="w3-text-grey w3-left"></span>
+                    <br/>
                     <label class="w3-text-grey w3-left" style="font-size: 22px;">Set Password</label>
                     <input type="password" placeholder="Enter Password" id="passwordReg" style="border:2px solid #a0b3b0;background-color:rgba(19, 35, 47, 0.9);color:white;" required>
                     <br/><br/>                                
