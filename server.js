@@ -134,7 +134,7 @@ function createTemplate (data){
                         </div>
                         
                         <div class="w3-third w3-center">
-                            <i class="fa fa-comments-o w3-padding-64 w3-text-teal "></i>
+                            <i class="fa fa-comments-o w3-padding-64 w3-text-white "></i>
                         </div>
                         
                     </div>
