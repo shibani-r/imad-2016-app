@@ -17,7 +17,7 @@ function validateSignUpForm()
 
 function loadLoginForm () {
     var loginHtml = `
-        <div class="w3-panel w3-padding-large" style="display:block;background-color:#0f1c25;">
+        <div class="w3-panel w3-padding-large" style="background-color:#0f1c25;">
              <div class="w3-btn-group">
              
              <button class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" style="width:50%" onclick="document.getElementById('id01').style.display='block';document.getElementById('id02').style.display='none';">Login</button>
