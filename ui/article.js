@@ -75,7 +75,7 @@ function loadComments () {
                 var commentsData = JSON.parse(this.responseText);
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
-                    content += `<div class="w3-panel w3-card-8 w3-white w3-leftbar w3-border-teal w3-hover-border-blue-grey" style="padding:10px">
+                    content += `<div class="w3-panel w3-card-8 w3-white w3-leftbar w3-rightbar w3-border-teal" style="padding:10px">
                                    <div class="comment">
                                         <p><i>" ${escapeHTML(commentsData[i].comment)} "</i></p>
                                         <div class="commenter">
