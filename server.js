@@ -142,7 +142,7 @@ function createTemplate (data){
                 
                 <!--Quote of the day-->
                 <div  id="quote_box" class="w3-container w3-center w3-padding-64">
-                    <h1 class="w3-margin w3-xlarge">When it rains, look for RAINBOWS <i class="fa fa-heart"></i> When it's dark, look for STARS</h1>
+                    <h1 class="w3-margin w3-xlarge">When it rains, look for RAINBOWS <h3><i class="fa fa-heart"></i></h3> When it's dark, look for STARS</h1>
                 </div>
                 
                 <!-- Footer -->
