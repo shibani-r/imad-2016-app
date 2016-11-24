@@ -73,7 +73,7 @@ function createTemplate (data){
                 <div class="w3-top">
                     <ul class="w3-navbar w3-black w3-card-2 w3-left-align w3-large">
                         <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-                          <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                          <a class="w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
                         </li>
                         <span onclick="openNav()"><li><a href="#" class="w3-padding-large w3-white"><i class="fa fa-bars"></i><strong>  goto</strong></a></li></span>
                         <li class="w3-hide-small"><a href="#article-content" class="w3-padding-large w3-hover-white">Content</a></li>
@@ -142,12 +142,12 @@ function createTemplate (data){
                 
                 <!--Quote of the day-->
                 <div  id="quote_box" class="w3-container w3-center w3-padding-64">
-                    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+                    <h1 class="w3-margin w3-xlarge"><i class="fa fa-heart"></i> When it rains, look for RAINBOWS <i class="fa fa-heart"></i> When it's dark, look for STARS <i class="fa fa-heart"></i></h1>
                 </div>
                 
                 <!-- Footer -->
                 <footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
-                        <p class="w3-medium w3-text-orange w3-xxxlarge">
+                        <p class="w3-medium w3-text-teal w3-xxxlarge">
                             <a href="#" title="To Top"><i class="fa fa-angle-double-up"></i></a>
                         </p>
                         <a href="https://www.facebook.com/login/" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-facebook-official"></i></a>
