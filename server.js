@@ -95,9 +95,9 @@ function createTemplate (data){
                 </header>
     
                 <!-- First Grid -->
-                <div class="w3-row-padding w3-padding-64 w3-container" id="article-content">
+                <div class="w3-row-padding w3-padding-64 w3-container" style="max-width:800px" id="article-content">
                     <div class="w3-content">
-                        <div class="w3-twothird">
+                        
                             <h1>${sub_heading}</h1>
                             <h5 class="w3-padding-32 w3-justify">${content}</h5>
                 
@@ -106,20 +106,14 @@ function createTemplate (data){
                                 ${quotes}
                             </div>
                             </p>
-                        </div>
-                
-                        <div class="w3-third w3-padding-64 w3-container">
-                         <!--right side if needed-->
-                        </div>
                         
                     </div>
                 </div>
                 
                 <!-- Second Grid -->
-                <div class="w3-row-padding w3-black w3-padding-64 w3-container" id="comments-section">
+                <div class="w3-row-padding w3-black w3-padding-64 w3-container" style="max-width:800px" id="comments-section">
                     <div class="w3-content">
                 
-                        <div class="w3-twothird">
                             <h1>Comments <i class="fa fa-comments-o"></i></h1>
                             
                             <p class="w3-text-black">
@@ -129,12 +123,6 @@ function createTemplate (data){
                                 <center>Loading comments...</center>
                               </div>
                             </p>
-                            
-                        </div>
-                        
-                        <div class="w3-third w3-center">
-                            <!--right side if needed-->
-                        </div>
                         
                     </div>
                 </div>
