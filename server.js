@@ -109,7 +109,18 @@ function createTemplate (data){
                         </div>
                 
                         <div class="w3-third w3-center">
-                            <!--right side if needed-->
+                            Things you should do everyday :
+                            <ul>
+                                <li>Get out in nature</li>
+                                <li>Exercise</li>
+                                <li>Spend time with friends and family</li>
+                                <li>Express gratitude</li>
+                                <li>Meditate</li>
+                                <li>Get enough sleep</li>
+                                <li>Challenge yourself</li>
+                                <li>Laugh</li>
+                                <li>Be optimistic</li>
+                            </ul>
                         </div>
                         
                     </div>
