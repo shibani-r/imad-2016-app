@@ -302,7 +302,7 @@ body, html {height: 100%}
   <div class="w3-display-middle">
     <h1 class="w3-jumbo w3-animate-top w3-center">LOGGED OUT!</h1>
     <hr class="w3-border-white" style="margin:auto;width:75%">
-    <p class="w3-large w3-center"><a href="/"><button class="w3-wide w3-btn w3-hover-white w3-padding-xlarge">Back to Home</button></a></p>
+    <p class="w3-large w3-center"><a href="/"><button class="w3-wide w3-btn w3-hover-white w3-padding-xlarge w3-ripple">Back to Home</button></a></p>
   </div>
   
 </div>
