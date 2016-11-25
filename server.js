@@ -108,7 +108,7 @@ function createTemplate (data){
                             </p>
                         </div>
                 
-                        <div class="w3-third w3-padding-64 w3-container" style="text-align:left;margin-left:10px;">
+                        <div class="w3-third w3-padding-64 w3-container" style="text-align:left;margin-left:5px">
                             Things you should do everyday :
                             <ul>
                                 <li>Get out in nature</li>
