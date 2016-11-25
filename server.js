@@ -297,12 +297,14 @@ body, html {height: 100%}
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-middle w3-jumbo w3-padding-jumbo">
-    <p>You are Logged Out!</p>
-    <div class="w3-padding-jumbo w3-xlarge">
-    <p><a href="/"><button class="w3-btn w3-hover-light-grey">Back to Home</button></a></p>
+    <div class="w3-display-middle w3-jumbo w3-padding-jumbo">
+        <p>You are Logged Out!</p>
+        <br/><br/>
     </div>
-</div>
+    <div class="w3-display-middle w3-padding-jumbo w3-xlarge">
+        <p><a href="/"><button class="w3-btn w3-hover-light-grey">Back to Home</button></a></p>
+    </div>
+
 </div>
 </body>
 </html>`);
