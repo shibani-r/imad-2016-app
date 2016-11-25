@@ -288,7 +288,7 @@ app.get('/logout', function (req, res) {
 body {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-    background-image: url('/w3images/onepage_restaurant.jpg');
+    background: URL('https://secure.static.tumblr.com/d629723295d45bb6cb952329214e0e7f/tnrejcf/jGQmy52xl/tumblr_static_beautiful-dandelion-wallpaper.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -299,7 +299,9 @@ body, html {height: 100%}
 <div class="bgimg w3-display-container w3-text-white">
   <div class="w3-display-middle w3-jumbo w3-padding-jumbo">
     <p>You are Logged Out!</p>
+    <div class="w3-display-middle w3-padding-jumbo w3-xlarge">
     <p><a href="/"><button class="w3-btn w3-hover-light-grey">Back to Home</button></a></p>
+    </div>
 </div>
 </div>
 </body>
