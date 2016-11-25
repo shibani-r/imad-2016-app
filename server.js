@@ -285,7 +285,7 @@ app.get('/logout', function (req, res) {
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1,h5 {font-family: "Raleway", sans-serif}
+body {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
     background-image: url('/w3images/onepage_restaurant.jpg');
