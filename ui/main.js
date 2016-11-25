@@ -163,6 +163,7 @@ function loadLoggedInUser (username) {
             <a href="/logout"><button id="logout" class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple"">LOGOUT</button></a>
         </div>
     `;
+    
 }
 
 function loadLogin () {
