@@ -278,7 +278,32 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
     delete req.session.auth;
-    res.send('<html><body>You are Logged Out!<br/><br/><a href="/">Back to home</a></body></html>');
+    res.send(`<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('/w3images/onepage_restaurant.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo w3-padding-jumbo">
+    <p>You are Logged Out!</p>
+    <p><a href="/"><button class="w3-btn w3-hover-light-grey">Back to Home</button></a></p>
+</div>
+</div>
+</body>
+</html>`);
     
 });
 
