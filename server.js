@@ -280,6 +280,7 @@ app.get('/logout', function (req, res) {
     delete req.session.auth;
     res.send(`<!DOCTYPE html>
 <html>
+<title>Logout</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
