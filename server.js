@@ -280,15 +280,16 @@ app.get('/logout', function (req, res) {
     delete req.session.auth;
     res.send(`<!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body {font-family: "Raleway", sans-serif}
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-    background: URL('https://secure.static.tumblr.com/d629723295d45bb6cb952329214e0e7f/tnrejcf/jGQmy52xl/tumblr_static_beautiful-dandelion-wallpaper.jpg');
+    background-image: url('https://secure.static.tumblr.com/d629723295d45bb6cb952329214e0e7f/tnrejcf/jGQmy52xl/tumblr_static_beautiful-dandelion-wallpaper.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -296,15 +297,14 @@ body, html {height: 100%}
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-text-white">
-    <div class="w3-display-middle w3-jumbo w3-padding-jumbo">
-        <p>You are Logged Out!</p>
-        <br/><br/>
-    </div>
-    <div class="w3-display-middle w3-padding-jumbo w3-xlarge">
-        <p><a href="/"><button class="w3-btn w3-hover-light-grey">Back to Home</button></a></p>
-    </div>
-
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+ 
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top w3-center">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"><a href="/"><button class="w3-btn w3-hover-light-grey">Back to Home</button></a></p>
+  </div>
+  
 </div>
 </body>
 </html>`);
