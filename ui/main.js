@@ -160,7 +160,7 @@ function loadLoggedInUser (username) {
     loginArea.innerHTML = `
         <div class="w3-panel w3-padding-large" style="display:block;background-color:#0f1c25;">
             <h3 class="w3-text-white"> Hi <i>${username}</i>!</h3>
-            <a href="/"><button id="logout" class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple"">LOGOUT</button></a>
+            <a href="/logout"><button id="logout" class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple"">LOGOUT</button></a>
         </div>
     `;
 }
