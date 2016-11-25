@@ -95,36 +95,38 @@ function createTemplate (data){
                 </header>
     
                 <!-- First Grid -->
-                <div class="w3-row-padding w3-padding-64 w3-container" style="max-width:800px" id="article-content">
-                    <div class="w3-content">
-                        
-                            <h1>${sub_heading}</h1>
-                            <h5 class="w3-padding-32 w3-justify">${content}</h5>
-                
-                            <p class="w3-text-grey w3-justify">
-                            <div class="w3-panel w3-card-8 w3-white w3-leftbar w3-border-teal" style="padding:10px">
-                                ${quotes}
-                            </div>
-                            </p>
-                        
+                 <header class="w3-display-container w3-wide">
+                    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;padding:10px;" id="article-content">
+                        <center>
+                             <h1>${sub_heading}</h1>
+                                <h5 class="w3-padding-32 w3-justify">${content}</h5>
+                    
+                                <p class="w3-text-grey w3-justify">
+                                <div class="w3-panel w3-card-8 w3-white w3-leftbar w3-border-teal" style="padding:10px">
+                                    ${quotes}
+                                </div>
+                                </p>
+                        </center>  
                     </div>
-                </div>
+                </header>
                 
+                        
                 <!-- Second Grid -->
-                <div class="w3-black w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="comments-section">
-        
-                            <h1>Comments <i class="fa fa-comments-o"></i></h1>
+                <header class="w3-display-container w3-wide">
+                    <div class="w3-black w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="comments-section">
+            
+                        <h1>Comments <i class="fa fa-comments-o"></i></h1>
+                                
+                        <p class="w3-text-black">
+                        <div id="comment_form">
+                        </div>
+                        <div id="comments">
+                            <center>Loading comments...</center>
+                        </div>
+                        </p>
                             
-                            <p class="w3-text-black">
-                              <div id="comment_form">
-                              </div>
-                              <div id="comments">
-                                <center>Loading comments...</center>
-                              </div>
-                            </p>
-                        
                     </div>
-                </div>
+                </header>
                 
                 <!--Quote of the day-->
                 <div  id="quote_box" class="w3-container w3-center w3-padding-64">
