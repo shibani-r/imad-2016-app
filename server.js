@@ -300,7 +300,7 @@ body, html {height: 100%}
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
  
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top w3-center">COMING SOON</h1>
+    <h1 class="w3-jumbo w3-animate-top w3-center">LOGGED OUT!</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center"><a href="/"><button class="w3-btn w3-hover-light-grey">Back to Home</button></a></p>
   </div>
