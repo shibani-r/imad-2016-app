@@ -111,9 +111,8 @@ function createTemplate (data){
                 </div>
                 
                 <!-- Second Grid -->
-                <div class="w3-row-padding w3-black w3-padding-64 w3-container" style="max-width:800px" id="comments-section">
-                    <div class="w3-content">
-                
+                <div class="w3-black w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="comments-section">
+        
                             <h1>Comments <i class="fa fa-comments-o"></i></h1>
                             
                             <p class="w3-text-black">
