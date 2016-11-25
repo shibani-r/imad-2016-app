@@ -121,7 +121,7 @@ function createTemplate (data){
                     <div class="w3-content">
                 
                         <div class="w3-twothird">
-                            <h1>Comments <i class="fa fa-comments"></i></h1>
+                            <h1>Comments <i class="fa fa-comments-o"></i></h1>
                             
                             <p class="w3-text-black">
                               <div id="comment_form">
