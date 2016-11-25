@@ -95,7 +95,7 @@ function createTemplate (data){
                 </header>
     
                 <!-- First Grid -->
-                 <div class="w3-display-container w3-wide">
+                 <div class="w3-display-container">
                     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;padding:10px;" id="article-content">
                         <center>
                              <h1>${sub_heading}</h1>
@@ -112,7 +112,7 @@ function createTemplate (data){
                 
                         
                 <!-- Second Grid -->
-                <div class="w3-display-container w3-black w3-wide">
+                <div class="w3-display-container w3-black">
                     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="comments-section">
             
                         <h1>Comments <i class="fa fa-comments-o"></i></h1>
