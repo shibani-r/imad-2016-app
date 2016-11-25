@@ -45,7 +45,6 @@ function createTemplate (data){
                 <style>
                     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                     .w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
-                    .fa-comments-o {font-size:200px}
                     header {background: URL("${image_url}") no-repeat center center fixed; -webkit-background-size: cover;       
                                 -moz-background-size: cover;      
                                 -o-background-size: cover;       
