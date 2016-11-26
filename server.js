@@ -50,7 +50,7 @@ function createTemplate (data){
                                 -o-background-size: cover;       
                                 background-size: cover; 
                                 color:white;}
-                     #quote_box {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;}            
+                     #quote_box {background: URL("http://s8.favim.com/orig/72/water-drop-art-black-blue-Favim.com-717310.jpg") no-repeat center center fixed;}            
                 </style>
             </head>
             <body>
