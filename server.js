@@ -50,7 +50,7 @@ function createTemplate (data){
                                 -o-background-size: cover;       
                                 background-size: cover; 
                                 color:white;}
-                     #quote_box {background: URL("http://cutewallpaper.org/wp-content/uploads/2016/07/glitter-wallpaper-2.jpg") no-repeat center center fixed;}            
+                     #quote_box {background: URL("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiGuI98eFmSJs2BTcwGAE1U4-RQ8Vepe5e_okKZNUUSkBfgn2D") no-repeat center center fixed;}            
                 </style>
             </head>
             <body>
