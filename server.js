@@ -19,7 +19,7 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
     secret: 'someRandomSecretValue',
-    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30 }
 }));
 
 function createTemplate (data){
@@ -51,8 +51,6 @@ function createTemplate (data){
                                 background-size: cover; 
                                 color:white;}
                      #quote_box {background: URL("http://www.intrawallpaper.com/static/images/Backgrounds-HD-3.jpg") no-repeat center center fixed;}            
-                    }
-                   
                 </style>
             </head>
             <body>
@@ -98,13 +96,13 @@ function createTemplate (data){
                  <div class="w3-display-container">
                     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;padding:10px;" id="article-content">
                         <center>
-                             <h1>${sub_heading}</h1>
-                                <h5 class="w3-padding-32 w3-justify">${content}</h5>
+                            <h1>${sub_heading}</h1>
+                            <h5 class="w3-padding-32 w3-justify">${content}</h5>
                     
-                                <p class="w3-text-grey w3-justify">
-                                <div class="w3-panel w3-card-8 w3-white w3-leftbar w3-border-teal" style="padding:10px">
-                                    ${quotes}
-                                </div>
+                            <p class="w3-text-grey w3-justify">
+                            <div class="w3-panel w3-card-8 w3-white w3-leftbar w3-border-teal" style="padding:10px">
+                                ${quotes}
+                            </div>
                                 </p>
                         </center>  
                     </div>
@@ -121,7 +119,7 @@ function createTemplate (data){
                         <div id="comment_form" style="margin:20px;">
                         </div>
                         <div id="comments" style="margin:20px;">
-                        <br/><br/>
+                            <br/><br/>
                             <center>Loading comments...</center>
                         </div>
                         </p>
@@ -136,14 +134,14 @@ function createTemplate (data){
                 
                 <!-- Footer -->
                 <footer class="w3-container w3-padding-64 w3-center w3-light-grey w3-xlarge">
-                        <p class="w3-medium w3-text-teal w3-xxxlarge">
-                            <a href="#" title="To Top"><i class="fa fa-angle-double-up"></i></a>
-                        </p>
-                        <a href="https://www.facebook.com/login/" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-facebook-official"></i></a>
-                        <a href="https://www.pinterest.com/" class="w3-hover-text-red w3-opacity"><i class="fa fa-pinterest-p"></i></a>
-                        <a href="https://twitter.com/" class="w3-hover-text-light-blue w3-opacity"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.flickr.com/" class="w3-hover-text-grey w3-opacity"><i class="fa fa-flickr"></i></a>
-                        <a href="https://www.linkedin.com/uas/login" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-linkedin"></i></a>
+                    <p class="w3-medium w3-text-teal w3-xxxlarge">
+                        <a href="#" title="To Top"><i class="fa fa-angle-double-up"></i></a>
+                    </p>
+                    <a href="https://www.facebook.com/login/" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-facebook-official"></i></a>
+                    <a href="https://www.pinterest.com/" class="w3-hover-text-red w3-opacity"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="https://twitter.com/" class="w3-hover-text-light-blue w3-opacity"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.flickr.com/" class="w3-hover-text-grey w3-opacity"><i class="fa fa-flickr"></i></a>
+                    <a href="https://www.linkedin.com/uas/login" class="w3-hover-text-indigo w3-opacity"><i class="fa fa-linkedin"></i></a>
                 </footer>
     
                 <script>
@@ -153,7 +151,7 @@ function createTemplate (data){
                         var x = document.getElementById("navDemo");
                         if (x.className.indexOf("w3-show") == -1) {
                             x.className += " w3-show";
-                        }   else {
+                        } else {
                                 x.className = x.className.replace(" w3-show", "");
                             }
                     }
@@ -205,9 +203,9 @@ app.post('/create-user', function (req, res) {
     pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
-        }  else {
+        } else {
                 res.send('User successfully created: ' + username);
-              }
+            }
     });
 });
 
@@ -219,31 +217,28 @@ app.post('/login', function (req, res) {
                   
         if(err) {
             res.status(500).send(err.toString());
-        }   else {
+        } else {
            
                 if (result.rows.length === 0) {
                     res.status(403).send('username/password is invalid');
-                }   else {
+                } else {
                         // Match the password
                         var dbString = result.rows[0].password;
                         var salt = dbString.split('$')[2];
                         var hashedPassword = hash(password, salt); // Creating a hash based on the password submitted and the original salt
                         if (hashedPassword === dbString) {
-                            
+                                
                             // Set the session
                             req.session.auth = {userId: result.rows[0].id};
                             // set cookie with a session id
                             // internally, on the server side, it maps the session id to an object
                             // { auth: {userId }}
-                            
-                            res.send('Credentials correct!');
-                            
-                    
-                        }   else {
-                                res.status(403).send('username/password is invalid');
                                 
+                            res.send('Credentials correct!');
+                               
+                        } else {
+                                res.status(403).send('username/password is invalid');
                             }
-                
                     }
             }
     });
@@ -251,16 +246,16 @@ app.post('/login', function (req, res) {
 
 app.get('/check-login', function (req, res) {
     if (req.session && req.session.auth && req.session.auth.userId) {
-       // Load the user object
-       pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function (err, result) {
-           if (err) {
-              res.status(500).send(err.toString());
-           }    else {
+        // Load the user object
+        pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function (err, result) {
+            if (err) {
+                res.status(500).send(err.toString());
+            } else {
                     res.send(result.rows[0].username);    
                 }
-       });
-   }    else {
-            res.status(400).send('You are not logged in!');
+        });
+   } else {
+           res.status(400).send('You are not logged in!');
             
         }
 });
@@ -268,37 +263,36 @@ app.get('/check-login', function (req, res) {
 app.get('/logout', function (req, res) {
     delete req.session.auth;
     res.send(`<!DOCTYPE html>
-<html>
-<title>Logout</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-    background-image: url('https://secure.static.tumblr.com/d629723295d45bb6cb952329214e0e7f/tnrejcf/jGQmy52xl/tumblr_static_beautiful-dandelion-wallpaper.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-</style>
-<body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
- 
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top w3-center">LOGGED OUT!</h1>
-    <hr class="w3-border-white" style="margin:auto;width:75%">
-    <p class="w3-large w3-center"><a href="/"><button class="w3-wide w3-btn w3-hover-white w3-padding-xlarge w3-ripple">Back to Home</button></a></p>
-  </div>
-  
-</div>
-</body>
-</html>`);
-    
+                <html>
+                    <head>
+                        <title>Logout</title>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+                        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+                        <style>
+                            body,h1 {font-family: "Raleway", sans-serif}
+                            body, html {height: 100%}
+                            .bgimg {
+                                background-image: url('https://secure.static.tumblr.com/d629723295d45bb6cb952329214e0e7f/tnrejcf/jGQmy52xl/tumblr_static_beautiful-dandelion-wallpaper.jpg');
+                                min-height: 100%;
+                                background-position: center;
+                                background-size: cover;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                    
+                        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+                         
+                            <div class="w3-display-middle">
+                                <h1 class="w3-jumbo w3-animate-top w3-center">LOGGED OUT!</h1>
+                                <hr class="w3-border-white" style="margin:auto;width:75%">
+                                <p class="w3-large w3-center"><a href="/"><button class="w3-wide w3-btn w3-hover-white w3-padding-xlarge w3-ripple">Back to Home</button></a></p>
+                            </div>
+                      
+                        </div>
+                    </body>
+                </html>`);
 });
 
 var pool = new Pool(config);
@@ -307,46 +301,40 @@ app.get('/get-comments/:articleName', function (req, res) {
    // make a select request
    // return a response with the results
    pool.query('SELECT comment.*, "user".username FROM article, comment, "user" WHERE article.title = $1 AND article.id = comment.article_id AND comment.user_id = "user".id ORDER BY comment.timestamp DESC', [req.params.articleName], function (err, result) {
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-          res.send(JSON.stringify(result.rows));
-      }
+        if (err) {
+            res.status(500).send(err.toString());
+        } else {
+                res.send(JSON.stringify(result.rows));
+            }
    });
 });
 
 app.post('/submit-comment/:articleName', function (req, res) {
-   // Check if the user is logged in
+    // Check if the user is logged in
     if (req.session && req.session.auth && req.session.auth.userId) {
         // First check if the article exists and get the article-id
         pool.query('SELECT * from article where title = $1', [req.params.articleName], function (err, result) {
             if (err) {
                 res.status(500).send(err.toString());
             } else {
-                if (result.rows.length === 0) {
-                    res.status(400).send('Article not found');
-                    
-                } else {
-                    var articleId = result.rows[0].id;
-                    // Now insert the right comment for this article
-                    pool.query(
-                        "INSERT INTO comment (comment, article_id, user_id) VALUES ($1, $2, $3)",
-                        [req.body.comment, articleId, req.session.auth.userId],
-                        function (err, result) {
-                            if (err) {
-                                res.status(500).send(err.toString());
-                            } else {
-                                res.status(200).send('Comment inserted!');
-                                
-                            }
-                        });
+                    if (result.rows.length === 0) {
+                        res.status(400).send('Article not found');
+                    } else {
+                            var articleId = result.rows[0].id;
+                            // Now insert the right comment for this article
+                            pool.query("INSERT INTO comment (comment, article_id, user_id) VALUES ($1, $2, $3)", [req.body.comment, articleId, req.session.auth.userId], function (err, result) {
+                                    if (err) {
+                                        res.status(500).send(err.toString());
+                                    } else {
+                                            res.status(200).send('Comment inserted!');
+                                        }
+                            });
+                        }
                 }
-            }
        });     
     } else {
-        res.status(403).send('Only logged in users can comment');
-        
-    }
+            res.status(403).send('Only logged in users can comment');
+        }
 });
 
 
@@ -358,11 +346,10 @@ app.get('/articles/:articleName', function (req, res) {
     pool.query('SELECT * FROM article WHERE title = $1', [req.params.articleName], function (err, result) {
         if(err) {
             res.status(500).send(err.toString());
-        }   else {
+        } else {
                 if(result.rows.length === 0) {
                     res.status(404).send('Article not found');
-                    
-                }   else {
+                } else {
                         var articleData = result.rows[0];
                         res.send(createTemplate(articleData));
                     }
@@ -372,12 +359,12 @@ app.get('/articles/:articleName', function (req, res) {
 
 
 app.get('/ui/:fileName', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
+    res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
 
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
+    console.log(`IMAD course app listening on port ${port}!`);
 });
