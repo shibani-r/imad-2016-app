@@ -1,5 +1,4 @@
-function validateSignUpForm()
-{
+function validateSignUpForm() {
 	var username = document.getElementById("usernameReg").value.trim();
 	if( username === '' ) {
 	    
@@ -75,27 +74,27 @@ function loadLoginForm () {
         
         // Capture the response and store it in a variable
         request.onreadystatechange = function () {
-          if (request.readyState === XMLHttpRequest.DONE) {
-              // Take some action
-              if (request.status === 200) {
-                  submit.value = 'Success!';
-                  alert('You are successfully logged in!');
-                  console.log('You are successfully logged in!');
-              } else if (request.status === 403) {
-                  submit.value = 'Invalid credentials. Try again?';
-                  alert('Invalid username or password!');
-                  console.log('Invalid username or password!');
-              } else if (request.status === 500) {
-                  alert('Something went wrong on the server!');
-                  console.log('Something went wrong on the server!');
-                  submit.value = 'Login';
-              } else {
-                  alert('Something went wrong on the server!');
-                  console.log('Something went wrong on the server!');
-                  submit.value = 'Login';
-              }
-              loadLogin();
-          }  
+            if (request.readyState === XMLHttpRequest.DONE) {
+                // Take some action
+                if (request.status === 200) {
+                    submit.value = 'Success!';
+                    alert('You are successfully logged in!');
+                    console.log('You are successfully logged in!');
+                } else if (request.status === 403) {
+                        submit.value = 'Invalid credentials. Try again?';
+                        alert('Invalid username or password!');
+                        console.log('Invalid username or password!');
+                    } else if (request.status === 500) {
+                            alert('Something went wrong on the server!');
+                            console.log('Something went wrong on the server!');
+                            submit.value = 'Login';
+                        } else {
+                                alert('Something went wrong on the server!');
+                                console.log('Something went wrong on the server!');
+                                submit.value = 'Login';
+                            }
+                 loadLogin();
+            }  
           // Not done yet
         };
         
@@ -174,8 +173,8 @@ function loadLogin () {
             if (request.status === 200) {
                 loadLoggedInUser(this.responseText);
             } else {
-                loadLoginForm();
-            }
+                    loadLoginForm();
+                }
         }
     };
     
