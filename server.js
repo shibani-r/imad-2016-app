@@ -122,6 +122,7 @@ function createTemplate (data){
                         </div>
                         <div id="comments">
                         <br/>
+                        <br/>
                             <center>Loading comments...</center>
                         </div>
                         </p>
