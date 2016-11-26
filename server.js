@@ -50,7 +50,7 @@ function createTemplate (data){
                                 -o-background-size: cover;       
                                 background-size: cover; 
                                 color:white;}
-                     #quote_box {background: URL("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiGuI98eFmSJs2BTcwGAE1U4-RQ8Vepe5e_okKZNUUSkBfgn2D") no-repeat center center fixed;}            
+                     #quote_box {background: URL("https://images.designtrends.com/wp-content/uploads/2016/04/05051810/Water-Drop-Glitter-Background.jpg") no-repeat center center fixed;}            
                 </style>
             </head>
             <body>
