@@ -32,7 +32,7 @@ function createTemplate (data){
     var quotes = data.quotes;
     
     var htmlTemplate = `
-    <!DOCTYPE html>
+        <!DOCTYPE html>
         <html>
             <head>
                 <title>${title}</title>
