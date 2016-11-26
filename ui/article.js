@@ -18,17 +18,17 @@ function loadCommentForm () {
         
         // Capture the response and store it in a variable
         request.onreadystatechange = function () {
-          if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.readyState === XMLHttpRequest.DONE) {
                 // Take some action
                 if (request.status === 200) {
                     // clear the form & reload all the comments
                     document.getElementById('comment_text').value = '';
                     loadComments();    
                 } else {
-                    alert('Error! Could not submit comment');
-                }
+                        alert('Error! Could not submit comment');
+                    }
                 submit.value = 'Submit';
-          }
+            }
         };
         
         // Make the request
@@ -56,8 +56,7 @@ function loadLogin () {
     request.send(null);
 }
 
-function escapeHTML (text)
-{
+function escapeHTML (text) {
     var $text = document.createTextNode(text);
     var $div = document.createElement('div');
     $div.appendChild($text);
@@ -65,7 +64,7 @@ function escapeHTML (text)
 }
 
 function loadComments () {
-        // Check if the user is already logged in
+    // Check if the user is already logged in
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
@@ -79,15 +78,15 @@ function loadComments () {
                                    <div class="comment">
                                         <p><i>" ${escapeHTML(commentsData[i].comment)} "</i></p>
                                         <div class="commenter">
-                                            ${commentsData[i].username}  -  ${time.toLocaleTimeString()}  on  ${time.toLocaleDateString()} 
+                                            ${commentsData[i].username}  -  ${time.toLocaleTimeString()}  on  ${time.toLocaleDateString()}
                                         </div>
                                     </div>
                                 </div>`;
                 }
                 comments.innerHTML = content;
             } else {
-                comments.innerHTML('Oops! Could not load comments!');
-            }
+                    comments.innerHTML('Oops! Could not load comments!');
+                }
         }
     };
     
