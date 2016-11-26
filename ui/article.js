@@ -2,10 +2,10 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <h5 class="w3-padding-32"><i class="fa fa-pencil"></i> post your comments here</h5>
+        <h5 class="w3-padding-32" style="text-align:left"><i class="fa fa-pencil"></i> post your comments here</h5>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         <br/><br/>
-        <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple" type="submit" id="submit" value="Submit" />
+        <input class="w3-btn w3-teal w3-hover-blue-grey w3-wide w3-padding-xlarge w3-ripple w3-left" type="submit" id="submit" value="Submit" />
         <br/><br/>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
@@ -75,7 +75,7 @@ function loadComments () {
                 var commentsData = JSON.parse(this.responseText);
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
-                    content += `<div class="w3-panel w3-card-8 w3-white w3-leftbar w3-rightbar w3-border-teal" style="padding:10px">
+                    content += `<div class="w3-panel w3-card-8 w3-white w3-leftbar w3-rightbar w3-border-teal" style="padding:10px;text-align:left;">
                                    <div class="comment">
                                         <p><i>" ${escapeHTML(commentsData[i].comment)} "</i></p>
                                         <div class="commenter">
