@@ -118,10 +118,10 @@ function createTemplate (data){
                         <h1>Comments <i class="fa fa-comments-o"></i></h1>
                                 
                         <p class="w3-text-black">
-                        <div id="comment_form">
+                        <div id="comment_form" style="margin:20px;">
                         </div>
                         <div id="comments" style="margin:20px;">
-                        <br/>
+                        <br/><br/>
                             <center>Loading comments...</center>
                         </div>
                         </p>
