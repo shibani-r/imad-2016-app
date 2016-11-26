@@ -120,8 +120,7 @@ function createTemplate (data){
                         <p class="w3-text-black">
                         <div id="comment_form">
                         </div>
-                        <div id="comments">
-                        <br/>
+                        <div id="comments" style="margin:20px;">
                         <br/>
                             <center>Loading comments...</center>
                         </div>
