@@ -50,7 +50,7 @@ function createTemplate (data){
                                 -o-background-size: cover;       
                                 background-size: cover; 
                                 color:white;}
-                     #quote_box {background: URL("http://s8.favim.com/orig/72/water-drop-art-black-blue-Favim.com-717310.jpg") no-repeat center center fixed;}            
+                     #quote_box {background: URL("https://images.designtrends.com/wp-content/uploads/2016/04/05051810/Water-Drop-Glitter-Background.jpg") no-repeat center center fixed;}            
                 </style>
             </head>
             <body>
